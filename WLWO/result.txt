@@ -1,0 +1,158 @@
+method:security_refresh
+cell lifetime: 100000
+deepth of the deepest point: 1
+access count: 1216191941
+total write count: 62597687840
+exceeded write count: 0
+
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612724530
+total write count: 625229111
+exceeded write count: 0
+
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612724530
+total write count: 625229111
+exceeded write count: 0
+
+method:security_refresh
+cell lifetime: 10000
+deepth of the deepest point: 5
+access count: 1839158057
+total write count: 6259311582
+exceeded write count: 0
+
+method:security_refresh
+cell lifetime: 1000000
+deepth of the deepest point: 1
+access count: 3585901253
+total write count: 625991078860
+exceeded write count: 0
+
+method:security_refresh
+cell lifetime: 10000
+deepth of the deepest point: 5
+access count: 1839158057
+total write count: 6259311582
+exceeded write count: 0
+normal space : backup space = 16758852 : 18364
+pointer deepth = 0  ; percent = 6e-008
+pointer deepth = 1  ; percent = 6e-008
+pointer deepth = 2  ; percent = 6e-008
+pointer deepth = 3  ; percent = 6e-008
+pointer deepth = 4  ; percent = 6e-008
+pointer deepth = 5  ; percent = 6e-008
+
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612724530
+total write count: 625229111
+exceeded write count: 0
+normal space : backup space = 16758852 : 18364
+pointer deepth = 0  ; count = 1
+
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612724530
+total write count: 625229111
+exceeded write count: 0
+normal space : backup space = 16758852 : 18364
+pointer deepth = 0  ; count = 16740546
+pointer deepth = 1  ; count = 18300
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612724530
+total write count: 625229111
+exceeded write count: 0
+normal space : backup space = 16758852 : 18364 backup space percent:0.0011
+pointer deepth = 0  ; count = 16740546
+pointer deepth = 1  ; count = 18300
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+cell lifetime: 10000
+deepth of the deepest point: 5
+access count: 1839158057
+total write count: 6259311582
+exceeded write count: 0
+normal space : backup space = 16758852 : 18364 backup space percent:0.0011
+pointer deepth = 0  ; count = 16740676
+pointer deepth = 1  ; count = 18175
+pointer deepth = 2  ; count = 1
+pointer deepth = 5  ; count = 1
+
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 78
+access count: 1838317332
+total write count: 1875834011
+exceeded write count: 0
+normal space : backup space = 15099495 : 1677721 backup space percent:0.1
+pointer deepth = 0  ; count = 14485703
+pointer deepth = 2  ; count = 164082
+pointer deepth = 3  ; count = 449626
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873990
+total write count: 625381621
+exceeded write count: 0
+normal space : backup space = 16609444 : 167772 backup space percent:0.01
+pointer deepth = 0  ; count = 16441730
+pointer deepth = 1  ; count = 167708
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+cell lifetime: 10000
+deepth of the deepest point: 14
+access count: 1839637760
+total write count: 6259801075
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441809
+pointer deepth = 1  ; count = 167621
+pointer deepth = 2  ; count = 6
+pointer deepth = 4  ; count = 5
+pointer deepth = 5  ; count = 1
+pointer deepth = 7  ; count = 1
+pointer deepth = 14  ; count = 1
+
+method:security_refresh
+cell lifetime: 10000
+deepth of the deepest point: 14
+access count: 1839831775
+total write count: 6259999050
+exceeded write count: 0
+normal space : backup space = 16441671 : 335545 backup space percent:0.02
+pointer deepth = 0  ; count = 16106173
+pointer deepth = 1  ; count = 335484
+pointer deepth = 2  ; count = 7
+pointer deepth = 4  ; count = 5
+pointer deepth = 5  ; count = 1
+pointer deepth = 7  ; count = 1
+pointer deepth = 14  ; count = 1
+
