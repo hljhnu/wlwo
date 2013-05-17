@@ -32,7 +32,7 @@ class line
         alive = true;
         remap_address=0;
         write_count=0;
-        lifetime=10000;
+        lifetime=1000;
         point_deep=0;
     };
     //failure_bits[8*line_size];

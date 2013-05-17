@@ -156,3 +156,18 @@ pointer deepth = 5  ; count = 1
 pointer deepth = 7  ; count = 1
 pointer deepth = 14  ; count = 1
 
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 26
+access count: 613951723
+total write count: 613951722
+exceeded write count: 0
+normal space : backup space = 16760438 : 16778 backup space percent:0.001
+pointer deepth = 0  ; count = 16743804
+pointer deepth = 1  ; count = 16549
+pointer deepth = 2  ; count = 79
+pointer deepth = 5  ; count = 1
+pointer deepth = 7  ; count = 1
+pointer deepth = 8  ; count = 4
+pointer deepth = 26  ; count = 1
+

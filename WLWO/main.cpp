@@ -65,6 +65,7 @@ bool access_address(unsigned int memory_address)
 }
 
 unsigned int write_count_sum[pcm_size];
+unsigned int overlay_threshold=pcm_size*refresh_requency;
 unsigned int overlay()//in order to reduce runing time, we overlay write count before wear-out.
 {
                        //it is used for security refresh.
@@ -108,8 +109,11 @@ unsigned int access_from_file(char * filename)
     {
         trace.close();
     }
-    trace_len--;//the last one is a counter,rather than an address.
-
+ //trace_len--;the last one is a count,rather than an address.
+    bool overlayed=false;
+    bool pcm_wear_out=false;
+    while(pcm_wear_out==false)
+    {
         unsigned int address;
         unsigned int i=0;
         bool successful=true;
@@ -133,31 +137,34 @@ unsigned int access_from_file(char * filename)
                 //cout<<" total write count: "<<total_write_count<<endl;
             if(successful==false)
             {
+                pcm_wear_out=true;
                 cout<<"The device is wear out!"<<endl;
                 break;
+            }
+            if((overlayed==false)&&(total_write_count==overlay_threshold))
+            {
+                overlayed=true;
+                cout<<"overlay"<<endl;
+                overlay();
             }
 /*
-            if(crp==outer_up_limitation)
+            if(!wear_leveling(wl_method))
             {
-                cout<<"******************************"<<endl;
-                //overlay();
-            }
-*/
-            if(wear_leveling(wl_method)==false)
-            {
+                pcm_wear_out=true;
                 cout<<"The device is wear out!"<<endl;
                 break;
             }
-
+*/
         }
 
+    }
     return access_count;
 }
 
 
 void output_result()
 {
-    char result_path[50]="D:\\programs\\WLWO\\WLWO\\result.txt";
+    char result_path[50]="D:\\programs\\WLWO-optimized\\WLWO\\result.txt";
     ofstream outfile(result_path,ofstream::out|ofstream::app);
     if(outfile.is_open()==false)
     {
@@ -223,8 +230,8 @@ void output_result()
 int main()
 {
     cout << "WLWO begins ... " << endl;
-    char * trace = "D:\\programs\\WLWO\\WLWO\\trace-LU.out";
-    char * random = "D:\\programs\\WLWO\\WLWO\\24bits_randomized_addr.dat";
+    char * trace = "D:\\programs\\WLWO-optimized\\WLWO\\trace-LU.out";
+    char * random = "D:\\programs\\WLWO-optimized\\WLWO\\24bits_randomized_addr.dat";
     if(strcmp(wl_method,"start_gap")==false)//random address for start_gap
     {
         ifstream random_map_file(random);
