@@ -1,0 +1,49 @@
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 26
+access count: 613953311
+total write count: 613953310
+exceeded write count: 0
+
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 26
+access count: 613953311
+total write count: 613953310
+exceeded write count: 0
+
+method:security_refresh
+cell lifetime: 10000
+deepth of the deepest point: 26
+access count: 6139368311
+total write count: 6139368310
+exceeded write count: 0
+
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 26
+access count: 613953311
+total write count: 613953310
+exceeded write count: 0
+
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 26
+access count: 613953311
+total write count: 613953310
+exceeded write count: 0
+
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 26
+access count: 613953311
+total write count: 613953310
+exceeded write count: 0
+
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 26
+access count: 613953311
+total write count: 613953310
+exceeded write count: 0
+

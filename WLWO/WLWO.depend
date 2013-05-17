@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1368772110 source:d:\programs\wlwo\wlwo\global.cpp
+	"global.h"
+
+1368510246 d:\programs\wlwo\wlwo\global.h
+
+1368513098 source:d:\programs\wlwo\wlwo\remapping.cpp
+	"global.h"
+	"space.h"
+	<iostream>
+
+1368516196 d:\programs\wlwo\wlwo\space.h
+	<cstdlib>
+	"global.h"
+
+1368366884 source:d:\programs\wlwo\wlwo\securityrefresh.cpp
+	"securityrefresh.h"
+	"space.h"
+	<math.h>
+
+1368366944 d:\programs\wlwo\wlwo\securityrefresh.h
+	"global.h"
+
+1367132944 source:d:\programs\wlwo\wlwo\space.cpp
+	"space.h"
+
+1368366884 source:d:\programs\wlwo\wlwo\startgap.cpp
+	"startgap.h"
+	"global.h"
+
+1368367000 d:\programs\wlwo\wlwo\startgap.h
+
+1368366884 source:d:\programs\wlwo\wlwo\wearleveling.cpp
+	"global.h"
+	"startgap.h"
+	"securityrefresh.h"
+	<cstring>
+
+1368540644 source:d:\programs\wlwo\wlwo\main.cpp
+	<iostream>
+	<fstream>
+	<cstdio>
+	<cstring>
+	"space.h"
+	"global.h"
+	"startgap.h"
+	"securityrefresh.h"
+
