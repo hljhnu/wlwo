@@ -17,16 +17,16 @@ return :
 unsigned int wear_leveling_map(unsigned int line_address,char* method)
 {
  //unsigned int line_address = memory_address/line_size;
-    unsigned int remapped_address=0;
+    unsigned int mapped_address=line_address;
     if(strcmp(method,"security_refresh")==0)
     {
-        remapped_address=security_refresh_map(line_address);
+        mapped_address=security_refresh_map(line_address);
     }
     else if(strcmp(method,"start_gap")==0)
     {
-        remapped_address=start_gap_map(line_address);
+        mapped_address=start_gap_map(line_address);
     }
-    return remapped_address;//it should return bool value. because address 0 is valid.
+    return mapped_address;//it should return bool value. because address 0 is valid.
 }
 
 bool wear_leveling(char* method)
