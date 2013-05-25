@@ -156,3 +156,1067 @@ pointer deepth = 5  ; count = 1
 pointer deepth = 7  ; count = 1
 pointer deepth = 14  ; count = 1
 
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 142
+access count: 1196178277
+total write count: 5603209766
+exceeded write count: 0
+normal space : backup space = 11744051 : 5033165 backup space percent:0.3
+pointer deepth = 0  ; count = 11080013
+pointer deepth = 1  ; count = 153
+pointer deepth = 2  ; count = 38630
+pointer deepth = 3  ; count = 11514
+pointer deepth = 4  ; count = 4
+pointer deepth = 5  ; count = 2286
+pointer deepth = 6  ; count = 45760
+pointer deepth = 7  ; count = 2725
+pointer deepth = 8  ; count = 452132
+pointer deepth = 9  ; count = 110718
+pointer deepth = 10  ; count = 20
+pointer deepth = 11  ; count = 50
+pointer deepth = 12  ; count = 11
+pointer deepth = 13  ; count = 6
+pointer deepth = 14  ; count = 4
+pointer deepth = 15  ; count = 6
+pointer deepth = 16  ; count = 5
+pointer deepth = 19  ; count = 2
+pointer deepth = 21  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 30  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 45  ; count = 4
+pointer deepth = 55  ; count = 1
+pointer deepth = 142  ; count = 1
+
+method:security_refresh
+cell lifetime: 1000
+deepth of the deepest point: 140
+access count: 3667951496
+total write count: 3742807647
+exceeded write count: 0
+normal space : backup space = 13421772 : 3355444 backup space percent:0.2
+pointer deepth = 0  ; count = 12807921
+pointer deepth = 1  ; count = 59
+pointer deepth = 5  ; count = 328076
+pointer deepth = 6  ; count = 285625
+pointer deepth = 8  ; count = 1
+pointer deepth = 9  ; count = 1
+pointer deepth = 10  ; count = 63
+pointer deepth = 11  ; count = 19
+pointer deepth = 21  ; count = 1
+pointer deepth = 27  ; count = 1
+pointer deepth = 38  ; count = 1
+pointer deepth = 43  ; count = 4
+pointer deepth = 140  ; count = 1
+
+method:security_refresh
+trace file: D
+cell lifetime: 1000
+deepth of the deepest point: 78
+access count: 1838317333
+total write count: 1875834012
+exceeded write count: 0
+normal space : backup space = 15099494 : 1677722 backup space percent:0.1
+pointer deepth = 0  ; count = 14485702
+pointer deepth = 2  ; count = 164081
+pointer deepth = 3  ; count = 449627
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 78
+access count: 1838317333
+total write count: 1875834012
+exceeded write count: 0
+normal space : backup space = 15099494 : 1677722 backup space percent:0.1
+pointer deepth = 0  ; count = 14485702
+pointer deepth = 2  ; count = 164081
+pointer deepth = 3  ; count = 449627
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 78
+access count: 1838317333
+total write count: 1875834012
+exceeded write count: 0
+normal space : backup space = 15099494 : 1677722 backup space percent:0.1
+pointer deepth = 0  ; count = 14485702
+pointer deepth = 2  ; count = 164081
+pointer deepth = 3  ; count = 449627
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 78
+access count: 1838317333
+total write count: 1875834012
+exceeded write count: 0
+normal space : backup space = 15099494 : 1677722 backup space percent:0.1
+pointer deepth = 0  ; count = 14485702
+pointer deepth = 2  ; count = 164081
+pointer deepth = 3  ; count = 449627
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 78
+access count: 1838317333
+total write count: 1875834012
+exceeded write count: 0
+normal space : backup space = 15099494 : 1677722 backup space percent:0.1
+pointer deepth = 0  ; count = 14485702
+pointer deepth = 2  ; count = 164081
+pointer deepth = 3  ; count = 449627
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 78
+access count: 1838317333
+total write count: 1875834012
+exceeded write count: 0
+normal space : backup space = 15099494 : 1677722 backup space percent:0.1
+pointer deepth = 0  ; count = 14485702
+pointer deepth = 2  ; count = 164081
+pointer deepth = 3  ; count = 449627
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873991
+total write count: 625381622
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873991
+total write count: 625381622
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873991
+total write count: 625381622
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873990
+total write count: 625381621
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873990
+total write count: 625381621
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612722941
+total write count: 625227488
+exceeded write count: 0
+normal space : backup space = 16760438 : 16778 backup space percent:0.001
+pointer deepth = 0  ; count = 16743718
+pointer deepth = 1  ; count = 16714
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612707669
+total write count: 625211906
+exceeded write count: 0
+normal space : backup space = 16775538 : 1678 backup space percent:0.0001
+pointer deepth = 0  ; count = 16773918
+pointer deepth = 1  ; count = 1614
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 140
+access count: 3667951502
+total write count: 3742807653
+exceeded write count: 0
+normal space : backup space = 13421772 : 3355444 backup space percent:0.2
+pointer deepth = 0  ; count = 12807921
+pointer deepth = 1  ; count = 59
+pointer deepth = 5  ; count = 328076
+pointer deepth = 6  ; count = 285625
+pointer deepth = 8  ; count = 1
+pointer deepth = 9  ; count = 1
+pointer deepth = 10  ; count = 63
+pointer deepth = 11  ; count = 19
+pointer deepth = 21  ; count = 1
+pointer deepth = 27  ; count = 1
+pointer deepth = 38  ; count = 1
+pointer deepth = 43  ; count = 4
+pointer deepth = 140  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 120
+access count: 1196178286
+total write count: 5603209775
+exceeded write count: 0
+normal space : backup space = 11744051 : 5033165 backup space percent:0.3
+pointer deepth = 0  ; count = 11079891
+pointer deepth = 1  ; count = 64
+pointer deepth = 2  ; count = 41039
+pointer deepth = 3  ; count = 9248
+pointer deepth = 4  ; count = 12
+pointer deepth = 5  ; count = 2235
+pointer deepth = 6  ; count = 43459
+pointer deepth = 7  ; count = 5077
+pointer deepth = 8  ; count = 451763
+pointer deepth = 9  ; count = 111094
+pointer deepth = 10  ; count = 146
+pointer deepth = 11  ; count = 21
+pointer deepth = 26  ; count = 1
+pointer deepth = 27  ; count = 1
+pointer deepth = 35  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873990
+total write count: 625381621
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873990
+total write count: 625381621
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873990
+total write count: 625381621
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873990
+total write count: 625381621
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873990
+total write count: 625381621
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873990
+total write count: 625381621
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873990
+total write count: 625381621
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873990
+total write count: 625381621
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873990
+total write count: 625381621
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873990
+total write count: 625381621
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612722941
+total write count: 625227488
+exceeded write count: 0
+normal space : backup space = 16760438 : 16778 backup space percent:0.001
+pointer deepth = 0  ; count = 16743718
+pointer deepth = 1  ; count = 16714
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612722941
+total write count: 625227488
+exceeded write count: 0
+normal space : backup space = 16760438 : 16778 backup space percent:0.001
+pointer deepth = 0  ; count = 16743718
+pointer deepth = 1  ; count = 16714
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612722941
+total write count: 625227488
+exceeded write count: 0
+normal space : backup space = 16760438 : 16778 backup space percent:0.001
+pointer deepth = 0  ; count = 16743718
+pointer deepth = 1  ; count = 16714
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:100
+last crp:6252274
+refresh count: 6252274
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612722941
+total write count: 625227488
+exceeded write count: 0
+normal space : backup space = 16760438 : 16778 backup space percent:0.001
+pointer deepth = 0  ; count = 16743718
+pointer deepth = 1  ; count = 16714
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:100
+last crp:6253816
+refresh count: 6253816
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873990
+total write count: 625381621
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:100
+last crp:1981124
+refresh count: 18758340
+cell lifetime: 1000
+deepth of the deepest point: 78
+access count: 1838317334
+total write count: 1875834013
+exceeded write count: 0
+normal space : backup space = 15099494 : 1677722 backup space percent:0.1
+pointer deepth = 0  ; count = 14485702
+pointer deepth = 2  ; count = 164081
+pointer deepth = 3  ; count = 449627
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+“‘œ¬kc=0xffffffff
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:100
+last crp:6252274
+refresh count: 6252274
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612722941
+total write count: 625227488
+exceeded write count: 0
+normal space : backup space = 16760438 : 16778 backup space percent:0.001
+pointer deepth = 0  ; count = 16743718
+pointer deepth = 1  ; count = 16714
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:100
+last crp:6253816
+refresh count: 6253816
+cell lifetime: 1000
+deepth of the deepest point: 25
+access count: 612873990
+total write count: 625381621
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441728
+pointer deepth = 1  ; count = 167709
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 4
+pointer deepth = 25  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:100
+last crp:1981124
+refresh count: 18758340
+refresh round: 1
+cell lifetime: 1000
+deepth of the deepest point: 78
+access count: 1838317334
+total write count: 1875834013
+exceeded write count: 0
+normal space : backup space = 15099494 : 1677722 backup space percent:0.1
+pointer deepth = 0  ; count = 14485702
+pointer deepth = 2  ; count = 164081
+pointer deepth = 3  ; count = 449627
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:100
+last crp:1981124
+refresh count: 18758340
+refresh round: 1
+cell lifetime: 1000
+deepth of the deepest point: 78
+access count: 1838317334
+total write count: 1875834013
+exceeded write count: 0
+normal space : backup space = 15099494 : 1677722 backup space percent:0.1
+pointer deepth = 0  ; count = 14485702
+pointer deepth = 2  ; count = 164081
+pointer deepth = 3  ; count = 449627
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:8816640
+refresh count: 75925504
+refresh round: 4
+cell lifetime: 1000
+deepth of the deepest point: 5
+access count: 607404035
+total write count: 759255042
+exceeded write count: 0
+normal space : backup space = 16760438 : 16778 backup space percent:0.001
+pointer deepth = 0  ; count = 16743699
+pointer deepth = 1  ; count = 16716
+pointer deepth = 2  ; count = 19
+pointer deepth = 3  ; count = 2
+pointer deepth = 4  ; count = 1
+pointer deepth = 5  ; count = 2
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:8888991
+refresh count: 75997855
+refresh round: 4
+cell lifetime: 1000
+deepth of the deepest point: 4
+access count: 607982848
+total write count: 759978557
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+pointer deepth = 0  ; count = 16441663
+pointer deepth = 1  ; count = 167757
+pointer deepth = 2  ; count = 14
+pointer deepth = 3  ; count = 7
+pointer deepth = 4  ; count = 3
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:5261682
+refresh count: 760236402
+refresh round: 45
+cell lifetime: 10000
+deepth of the deepest point: 2
+access count: 1786923923
+total write count: 7602364022
+exceeded write count: 0
+normal space : backup space = 16760438 : 16778 backup space percent:0.001
+pointer deepth = 0  ; count = 16743552
+pointer deepth = 1  ; count = 16884
+pointer deepth = 2  ; count = 3
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:5261682
+refresh count: 760236402
+refresh round: 45
+cell lifetime: 10000
+deepth of the deepest point: 2
+access count: 1786923923
+total write count: 7602364022
+exceeded write count: 0
+normal space : backup space = 16760438 : 16778 backup space percent:0.001
+
+wear-out percent: 0.0
+pointer deepth = 0  ; count = 16743552
+pointer deepth = 1  ; count = 16884
+pointer deepth = 2  ; count = 3
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:5261682
+refresh count: 760236402
+refresh round: 45
+cell lifetime: 10000
+deepth of the deepest point: 2
+access count: 1786923923
+total write count: 7602364022
+wear-out count: 16778
+exceeded write count: 0
+normal space : backup space = 16760438 : 16778 backup space percent:0.001
+
+wear-out percent: 0.0010
+pointer deepth = 0  ; count = 16743552
+pointer deepth = 1  ; count = 16884
+pointer deepth = 2  ; count = 3
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:8816640
+refresh count: 75925504
+refresh round: 4
+cell lifetime: 1000
+deepth of the deepest point: 5
+access count: 607404035
+total write count: 759255042
+wear-out count: 16778
+exceeded write count: 0
+normal space : backup space = 16760438 : 16778 backup space percent:0.001
+
+wear-out percent: 0.0010
+pointer deepth = 0  ; count = 16743699
+pointer deepth = 1  ; count = 16716
+pointer deepth = 2  ; count = 19
+pointer deepth = 3  ; count = 2
+pointer deepth = 4  ; count = 1
+pointer deepth = 5  ; count = 2
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:8888991
+refresh count: 75997855
+refresh round: 4
+cell lifetime: 1000
+deepth of the deepest point: 4
+access count: 607982848
+total write count: 759978557
+wear-out count: 167773
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+
+wear-out percent: 0.0100
+pointer deepth = 0  ; count = 16441663
+pointer deepth = 1  ; count = 167757
+pointer deepth = 2  ; count = 14
+pointer deepth = 3  ; count = 7
+pointer deepth = 4  ; count = 3
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:5392780
+refresh count: 760367500
+refresh round: 45
+cell lifetime: 10000
+deepth of the deepest point: 1
+access count: 1787972708
+total write count: 7603675003
+wear-out count: 167773
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+
+wear-out percent: 0.0100
+pointer deepth = 0  ; count = 16441512
+pointer deepth = 1  ; count = 167932
+
+==============================================================================
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14435837
+pointer deepth = 1  ; count = 34095
+pointer deepth = 2  ; count = 244963
+pointer deepth = 3  ; count = 384600
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:9678931
+refresh count: 2241048659
+refresh round: 133
+cell lifetime: 10000
+deepth of the deepest point: 3
+access count: 748520093
+total write count: 22410486594
+wear-out count: 1677722
+exceeded write count: 0
+normal space : backup space = 15099494 : 1677722 backup space percent:0.10
+
+wear-out percent: 0.1000
+pointer deepth = 0  ; count = 28871674
+pointer deepth = 1  ; count = 68190
+pointer deepth = 2  ; count = 489926
+pointer deepth = 3  ; count = 769200
+
+==============================================================================
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14435735
+pointer deepth = 1  ; count = 35387
+pointer deepth = 2  ; count = 242580
+pointer deepth = 3  ; count = 385793
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27192749
+pointer deepth = 1  ; count = 35392
+pointer deepth = 2  ; count = 242722
+pointer deepth = 3  ; count = 419880
+pointer deepth = 4  ; count = 132521
+pointer deepth = 5  ; count = 263476
+pointer deepth = 6  ; count = 234529
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:2894780
+refresh count: 70003644
+refresh round: 260
+cell lifetime: 10000
+deepth of the deepest point: 6
+access count: 560029158
+total write count: 43649709405
+wear-out count: 3355444
+exceeded write count: 0
+normal space : backup space = 13421772 : 3355444 backup space percent:0.20
+
+wear-out percent: 0.2000
+pointer deepth = 0  ; count = 39949762
+pointer deepth = 1  ; count = 35397
+pointer deepth = 2  ; count = 242864
+pointer deepth = 3  ; count = 453967
+pointer deepth = 4  ; count = 265042
+pointer deepth = 5  ; count = 526951
+pointer deepth = 6  ; count = 469059
+
+==============================================================================
+method:
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+cell lifetime: 1000
+deepth of the deepest point: 0
+access count: 1
+total write count: 1
+wear-out count: 0
+exceeded write count: 0
+normal space : backup space = 13421772 : 3355444 backup space percent:0.2
+
+wear-out percent: 0.0000
+pointer deepth = 0  ; count = 16777216
+==============================================================================
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14485702
+pointer deepth = 2  ; count = 164081
+pointer deepth = 3  ; count = 449627
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27293683
+pointer deepth = 2  ; count = 164081
+pointer deepth = 3  ; count = 449627
+pointer deepth = 5  ; count = 328162
+pointer deepth = 6  ; count = 285624
+pointer deepth = 12  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 30  ; count = 1
+pointer deepth = 42  ; count = 1
+pointer deepth = 48  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 156  ; count = 1
+method:
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+cell lifetime: 1000
+deepth of the deepest point: 156
+access count: 3683889774
+total write count: 3683889773
+wear-out count: 3355444
+exceeded write count: 0
+normal space : backup space = 13421772 : 3355444 backup space percent:0.20
+
+wear-out percent: 0.2000
+pointer deepth = 0  ; count = 40101663
+pointer deepth = 2  ; count = 164081
+pointer deepth = 3  ; count = 449627
+pointer deepth = 5  ; count = 656323
+pointer deepth = 6  ; count = 571171
+pointer deepth = 12  ; count = 156
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 30  ; count = 2
+pointer deepth = 42  ; count = 2
+pointer deepth = 48  ; count = 8
+pointer deepth = 78  ; count = 1
+pointer deepth = 156  ; count = 2
+==============================================================================
+
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:10587815
+refresh count: 60919463
+refresh round: 3
+cell lifetime: 1000
+deepth of the deepest point: 13
+access count: 609194632
+total write count: 609194631
+wear-out count: 167773
+exceeded write count: 0
+normal space : backup space = 16609443 : 167773 backup space percent:0.01
+
+wear-out percent: 0.0100
+pointer deepth = 0  ; count = 16441701
+pointer deepth = 1  ; count = 167728
+pointer deepth = 2  ; count = 6
+pointer deepth = 3  ; count = 1
+pointer deepth = 4  ; count = 5
+pointer deepth = 5  ; count = 1
+pointer deepth = 7  ; count = 1
+pointer deepth = 13  ; count = 1
+==============================================================================
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14485702
+pointer deepth = 2  ; count = 163996
+pointer deepth = 3  ; count = 449712
+pointer deepth = 5  ; count = 78
+pointer deepth = 14  ; count = 1
+pointer deepth = 20  ; count = 1
+pointer deepth = 23  ; count = 4
+pointer deepth = 77  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27293683
+pointer deepth = 2  ; count = 163996
+pointer deepth = 3  ; count = 449712
+pointer deepth = 5  ; count = 328240
+pointer deepth = 6  ; count = 285546
+pointer deepth = 12  ; count = 78
+pointer deepth = 14  ; count = 1
+pointer deepth = 20  ; count = 1
+pointer deepth = 23  ; count = 4
+pointer deepth = 30  ; count = 1
+pointer deepth = 42  ; count = 1
+pointer deepth = 48  ; count = 4
+pointer deepth = 77  ; count = 1
+pointer deepth = 156  ; count = 1
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:589052
+refresh count: 352910588
+refresh round: 21
+cell lifetime: 1000
+deepth of the deepest point: 156
+access count: 3529105886
+total write count: 3529105885
+wear-out count: 3355444
+exceeded write count: 0
+normal space : backup space = 13421772 : 3355444 backup space percent:0.20
+
+wear-out percent: 0.2000
+pointer deepth = 0  ; count = 40101663
+pointer deepth = 2  ; count = 163996
+pointer deepth = 3  ; count = 449712
+pointer deepth = 5  ; count = 656401
+pointer deepth = 6  ; count = 571093
+pointer deepth = 12  ; count = 156
+pointer deepth = 14  ; count = 1
+pointer deepth = 20  ; count = 1
+pointer deepth = 23  ; count = 4
+pointer deepth = 30  ; count = 2
+pointer deepth = 42  ; count = 2
+pointer deepth = 48  ; count = 8
+pointer deepth = 77  ; count = 1
+pointer deepth = 156  ; count = 2
+==============================================================================
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 13469233
+pointer deepth = 1  ; count = 1563280
+pointer deepth = 2  ; count = 66853
+pointer deepth = 3  ; count = 128
+pointer deepth = 5  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 24456521
+pointer deepth = 1  ; count = 3103265
+pointer deepth = 2  ; count = 906044
+pointer deepth = 3  ; count = 54894
+pointer deepth = 4  ; count = 543
+pointer deepth = 5  ; count = 1
+pointer deepth = 8  ; count = 1
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:265954
+refresh count: 486805218
+refresh round: 29
+cell lifetime: 1000
+deepth of the deepest point: 8
+access count: 573084891
+total write count: 4868052186
+wear-out count: 3355444
+exceeded write count: 0
+normal space : backup space = 13421772 : 3355444 backup space percent:0.20
+
+wear-out percent: 0.2000
+pointer deepth = 0  ; count = 35443808
+pointer deepth = 1  ; count = 4643249
+pointer deepth = 2  ; count = 1745236
+pointer deepth = 3  ; count = 109660
+pointer deepth = 4  ; count = 1086
+pointer deepth = 5  ; count = 1
+pointer deepth = 8  ; count = 2
+==============================================================================
+

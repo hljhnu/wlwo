@@ -14,13 +14,13 @@ return :
         If it is a fault block, it will be remapped to a valid block.
 ********************************************************************/
 
-unsigned int wear_leveling_map(unsigned int line_address,char* method)
+unsigned int wear_leveling_map(unsigned int line_address,char* method,bool update)
 {
  //unsigned int line_address = memory_address/line_size;
     unsigned int mapped_address=line_address;
     if(strcmp(method,"security_refresh")==0)
     {
-        mapped_address=security_refresh_map(line_address);
+        mapped_address=security_refresh_map(line_address,update);
     }
     else if(strcmp(method,"start_gap")==0)
     {
@@ -39,4 +39,5 @@ bool wear_leveling(char* method)
     {
         return start_gap();
     }
+    return true;
 }

@@ -34,7 +34,7 @@ bool allocate_address(unsigned int physical_address,unsigned int * remapped_addr
         return false;
     }
     *remapped_address=pcm.begin_address;//begin_address is a logical address
-    unsigned int wl_pysical_address=wear_leveling_map(*remapped_address,wl_method);
+    unsigned int wl_pysical_address=wear_leveling_map(*remapped_address,wl_method,false);
     //pcm.lines[pcm.begin_address].write_count=1;
     pcm.lines[wl_pysical_address].point_deep=pcm.lines[physical_address].point_deep+1;
 /*
@@ -52,7 +52,7 @@ void perform_access_pcm(unsigned int line_address)
 {
     pcm.lines[line_address].write_count++;
 #ifdef PRE_WL
-    total_write_count++;
+    //total_write_count++;
 #else
     if(line_address<=pivot)
     {

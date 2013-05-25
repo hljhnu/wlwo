@@ -1,7 +1,8 @@
 #include "securityrefresh.h"
 #include "space.h"
 #include <math.h>
-
+#include <iostream>
+using namespace std;
 unsigned int sub_region_bit=7;
 unsigned int line_bit_number=log10(line_size)/log10(2);
 unsigned int outer_map_bits=32-line_bit_number-2;//2^20
@@ -9,12 +10,12 @@ unsigned int inner_map_bits=outer_map_bits-sub_region_bit;//2^13
 unsigned int outer_count[16777216];//(unsigned int)(pow(2.0,outer_map_bits))
 unsigned int inner_count[131072];//(unsigned int)(pow(2.0,inner_map_bits))
 unsigned int outer_up_limitation=0x3fffffc0;
-unsigned int outer_down_limitation=0x40;
-
-
-unsigned int kp=0,kc=0,crp=1<<line_bit_number;//used for security refresh: kp--previous key, kc--current key, cp--current position
+unsigned int outer_down_limitation=0<<line_bit_number;
+unsigned int refresh_count=0;
+unsigned int refresh_round=0;
+unsigned int kp=0,kc=(rand()%pcm_size)<<line_bit_number,crp=0;//used for security refresh: kp--previous key, kc--current key, cp--current position
 unsigned int kp2,kc2,crp2;//used for security refresh on back device;
-unsigned int refresh_requency=100;
+unsigned int refresh_requency=10;
 //unsigned int total_write_count=0;
 unsigned int refresh_requency2=100;
 //unsigned int total_write_count2=0;
@@ -41,17 +42,17 @@ unsigned int xor_map(unsigned int byte_address,unsigned int end, unsigned int st
 }
 
 
-unsigned int security_refresh_map(unsigned int line_address)
+unsigned int security_refresh_map(unsigned int line_address,bool refreshing)
 {
-    unsigned mapped_byte_address;
+    unsigned int mapped_byte_address;
     unsigned int mapped_line_address;
 #define PRE_WL
 #ifdef PRE_WL
     unsigned int byte_address=line_address<<line_bit_number;
-    unsigned int pre_matched_address=byte_address;
-    pre_matched_address=xor_map(pre_matched_address,29,6,kc);
-    pre_matched_address=xor_map(pre_matched_address,29,6,kp);
-    if(byte_address<crp||pre_matched_address<crp)
+    unsigned int exchanged_address;
+    exchanged_address=xor_map(byte_address,29,6,kc);
+    exchanged_address=xor_map(exchanged_address,29,6,kp);
+    if((byte_address<crp)||(exchanged_address<crp)||((refreshing==true)&&((crp==(line_address<<line_bit_number))||(crp==exchanged_address))))// when refreshing, we need kc
     {
         mapped_byte_address=xor_map(byte_address,29,6,kc);
     }
@@ -101,20 +102,40 @@ bool security_refresh()
 #ifdef PRE_WL
     if(total_write_count%refresh_requency==0)
     {
+        refresh_count++;
         unsigned int exchange_address;
         //We do not need to real data migration as we are simulating the process.
         //We only update the write count;
         exchange_address = xor_map(crp,29,6,kc);
         exchange_address = xor_map(exchange_address,29,6,kp);
-        if(!access_address(exchange_address))return false;
-        if(!access_address(crp))return false;
+
+        unsigned int mapped_address1=security_refresh_map(exchange_address>>line_bit_number,true);
+        unsigned int mapped_address2=security_refresh_map(crp>>line_bit_number,true);
+        int point_deepth1=pcm.lines[mapped_address1].point_deep-1;
+        int point_deepth2=pcm.lines[mapped_address2].point_deep-1;
+/*        if(exchange_address!=crp)
+        {
+            cout<<"not equal"<<endl;
+        }
+        if((point_deepth1>=0)||(point_deepth2>=0))
+        {
+            cout<<"address "<<exchange_address<<" "<<crp<<endl;
+            cout<<"mapped_address "<<mapped_address1<<" "<<mapped_address2<<endl;
+            cout<<"point_deepth "<<point_deepth1<<" "<<point_deepth2<<endl;
+        }*/
+
+        //exchange data
+        if(!exchange_access_line(crp>>line_bit_number,point_deepth1))return false;
+        if(!exchange_access_line(exchange_address>>line_bit_number,point_deepth2))return false;
+
         //pcm.lines[temp_address>>line_bit_number].write_count++;
         //pcm.lines[cp].write_count++;
         if(crp==outer_up_limitation)
         {
+            refresh_round++;
             crp=outer_down_limitation;
             kp=kc;
-            kc=rand()%0xffffffff;
+            kc=(rand()%pcm_size)<<line_bit_number;
         }
         else
         {
@@ -133,4 +154,48 @@ bool security_refresh()
 
 #endif
     return true;
+}
+
+bool exchange_access_line(unsigned int line_address,int deepth)//update:whether to update pointer deepth
+{
+
+    //we do not need to consider read access.
+
+    unsigned int mapped_address = wear_leveling_map(line_address,wl_method,true);
+    pcm.lines[mapped_address].point_deep=deepth+1;
+    if(pcm.lines[mapped_address].dpflag)//if dpflag == true , it is data in that cacheline.
+    {
+        if(pcm.lines[mapped_address].write_count>=pcm.lines[mapped_address].lifetime)
+        {
+            wear_out_count++;
+            unsigned int re_mapped_address;
+            bool success=remapping(mapped_address,&re_mapped_address);//A failure block is remapped to a logical address
+            if(success)
+            {
+                return access_line(re_mapped_address,true,deepth+1);
+                //perform_access_pcm(re_mapped_address);
+                //wear_leveling("start_gap");
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            perform_access_pcm(mapped_address);
+            int percent=wear_out_count/(pcm_size*0.1);
+            if((pointer_printed[percent]==false)&&(wear_out_count>0)&&((wear_out_count%(pcm_size/10)==0)))
+            {
+                pointer_printed[percent]=true;
+                print_pointer();
+            }
+            return true;
+            //wear_leveling("start_gap");
+        }
+    }
+    else// dp == false , it is a pointer in that line.
+    {
+         return access_line(pcm.lines[mapped_address].remap_address,true,deepth+1);
+    }
 }

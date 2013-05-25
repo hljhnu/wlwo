@@ -24,15 +24,17 @@ class line
     unsigned int lifetime;
     unsigned int point_deep;//in order to save memory, we use unsigned char
     //class bytes[line_size];
+    unsigned int prev_address;//the pointer device line address which points to this line
     unsigned int remap_address;
     unsigned int write_count;
     line()
     {
         dpflag = true;//true:data
         alive = true;
+        prev_address=0;
         remap_address=0;
         write_count=0;
-        lifetime=10000;
+        lifetime=1000;
         point_deep=0;
     };
     //failure_bits[8*line_size];
