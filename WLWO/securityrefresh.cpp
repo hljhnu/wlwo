@@ -52,7 +52,10 @@ unsigned int security_refresh_map(unsigned int line_address,bool refreshing)
     unsigned int exchanged_address;
     exchanged_address=xor_map(byte_address,29,6,kc);
     exchanged_address=xor_map(exchanged_address,29,6,kp);
-    if((byte_address<crp)||(exchanged_address<crp)||((refreshing==true)&&((crp==(line_address<<line_bit_number))||(crp==exchanged_address))))// when refreshing, we need kc
+    bool use_kc=(byte_address<crp)||(exchanged_address<crp);// line_address has been refreshed
+    use_kc=use_kc||((refreshing==true)&&((crp==(line_address<<line_bit_number))||(crp==exchanged_address)));//access the two address to be refreshed
+    use_kc=use_kc||((refreshing==false)&&((total_write_count%refresh_requency)==0));//crp is in the path of the address matched to crp;
+    if(use_kc)// when refreshing, we need kc
     {
         mapped_byte_address=xor_map(byte_address,29,6,kc);
     }

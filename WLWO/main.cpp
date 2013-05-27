@@ -221,12 +221,27 @@ unsigned int access_from_file(char * filename)
             }
 */
             total_write_count++;
+#ifdef DEBUG
+            if(total_write_count>=83886200)
+            {
+                cout<<"total write count = "<<total_write_count<<endl;
+                int i=0;
+                i++;
+            }
+#endif
             if(wear_leveling(wl_method)==false)
             {
                 cout<<"The device is wear out!"<<endl;
                 break;
             }
-
+#ifdef DEBUG
+            if(total_write_count>=83886200)
+            {
+                cout<<"total write count = "<<total_write_count<<endl;
+                int i=0;
+                i++;
+            }
+#endif
         }
     return access_count;
 }

@@ -5,7 +5,7 @@
                                     //total space:     16793600
 #define line_size 64
 #define PRE_WL
-#define DEBUG
+//#define DEBUG
 extern char wl_method[20];
 //extern unsigned int line_size;
 extern unsigned int pivot;//pivot is the limitation between pcm space and back space;

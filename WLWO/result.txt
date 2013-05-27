@@ -1220,3 +1220,2852 @@ pointer deepth = 5  ; count = 1
 pointer deepth = 8  ; count = 2
 ==============================================================================
 
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 13473953
+pointer deepth = 1  ; count = 1560289
+pointer deepth = 2  ; count = 65183
+pointer deepth = 3  ; count = 69
+pointer deepth = 5  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 24468044
+pointer deepth = 1  ; count = 3101526
+pointer deepth = 2  ; count = 898925
+pointer deepth = 3  ; count = 52445
+pointer deepth = 4  ; count = 327
+pointer deepth = 5  ; count = 1
+pointer deepth = 8  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 33379349
+pointer deepth = 1  ; count = 4225522
+pointer deepth = 2  ; count = 2129017
+pointer deepth = 3  ; count = 505060
+pointer deepth = 4  ; count = 26221
+pointer deepth = 5  ; count = 151
+pointer deepth = 8  ; count = 2
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:15922275
+refresh count: 619902051
+refresh round: 36
+cell lifetime: 1000
+deepth of the deepest point: 8
+access count: 1904053218
+total write count: 6199020513
+wear-out count: 5033165
+exceeded write count: 0
+normal space : backup space = 11744051 : 5033165 backup space percent:0.30
+
+wear-out percent: 0.3000
+pointer deepth = 0  ; count = 42290653
+pointer deepth = 1  ; count = 5349517
+pointer deepth = 2  ; count = 3359110
+pointer deepth = 3  ; count = 957675
+pointer deepth = 4  ; count = 52115
+pointer deepth = 5  ; count = 301
+pointer deepth = 8  ; count = 3
+==============================================================================
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 13473964
+pointer deepth = 1  ; count = 1547134
+pointer deepth = 2  ; count = 78293
+pointer deepth = 3  ; count = 94
+pointer deepth = 4  ; count = 3
+pointer deepth = 5  ; count = 4
+pointer deepth = 6  ; count = 3
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:8707876
+refresh count: 327474980
+refresh round: 19
+cell lifetime: 1000
+deepth of the deepest point: 6
+access count: 3274749806
+total write count: 3274749805
+wear-out count: 1677722
+exceeded write count: 0
+normal space : backup space = 15099494 : 1677722 backup space percent:0.10
+
+wear-out percent: 0.1000
+pointer deepth = 0  ; count = 26947928
+pointer deepth = 1  ; count = 3094268
+pointer deepth = 2  ; count = 156586
+pointer deepth = 3  ; count = 188
+pointer deepth = 4  ; count = 6
+pointer deepth = 5  ; count = 8
+pointer deepth = 6  ; count = 6
+==============================================================================
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 13478413
+pointer deepth = 1  ; count = 1558056
+pointer deepth = 2  ; count = 62890
+pointer deepth = 3  ; count = 134
+pointer deepth = 4  ; count = 1
+pointer deepth = 5  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 24478833
+pointer deepth = 1  ; count = 3096528
+pointer deepth = 2  ; count = 889052
+pointer deepth = 3  ; count = 56658
+pointer deepth = 4  ; count = 196
+pointer deepth = 5  ; count = 1
+pointer deepth = 7  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 33400964
+pointer deepth = 1  ; count = 4204105
+pointer deepth = 2  ; count = 2117745
+pointer deepth = 3  ; count = 514936
+pointer deepth = 4  ; count = 27491
+pointer deepth = 5  ; count = 79
+pointer deepth = 7  ; count = 1
+pointer deepth = 8  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 40299177
+pointer deepth = 1  ; count = 5032162
+pointer deepth = 2  ; count = 3416411
+pointer deepth = 3  ; count = 1394095
+pointer deepth = 4  ; count = 184086
+pointer deepth = 5  ; count = 5699
+pointer deepth = 6  ; count = 21
+pointer deepth = 7  ; count = 1
+pointer deepth = 8  ; count = 2
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:10329535
+refresh count: 765304255
+refresh round: 45
+cell lifetime: 1000
+deepth of the deepest point: 8
+access count: 3358075261
+total write count: 7653042556
+wear-out count: 6710887
+exceeded write count: 0
+normal space : backup space = 10066329 : 6710887 backup space percent:0.40
+
+wear-out percent: 0.4000
+pointer deepth = 0  ; count = 47197388
+pointer deepth = 1  ; count = 5860219
+pointer deepth = 2  ; count = 4715076
+pointer deepth = 3  ; count = 2273255
+pointer deepth = 4  ; count = 340680
+pointer deepth = 5  ; count = 11320
+pointer deepth = 6  ; count = 42
+pointer deepth = 7  ; count = 1
+pointer deepth = 8  ; count = 3
+==============================================================================
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 13486252
+pointer deepth = 1  ; count = 1548798
+pointer deepth = 2  ; count = 64340
+pointer deepth = 3  ; count = 103
+pointer deepth = 5  ; count = 2
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 24493050
+pointer deepth = 1  ; count = 3086209
+pointer deepth = 2  ; count = 879650
+pointer deepth = 3  ; count = 62172
+pointer deepth = 4  ; count = 184
+pointer deepth = 5  ; count = 4
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 33420335
+pointer deepth = 1  ; count = 4213989
+pointer deepth = 2  ; count = 2074060
+pointer deepth = 3  ; count = 530395
+pointer deepth = 4  ; count = 26483
+pointer deepth = 5  ; count = 59
+pointer deepth = 7  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 40325101
+pointer deepth = 1  ; count = 5054528
+pointer deepth = 2  ; count = 3344656
+pointer deepth = 3  ; count = 1409094
+pointer deepth = 4  ; count = 192028
+pointer deepth = 5  ; count = 6216
+pointer deepth = 6  ; count = 29
+pointer deepth = 7  ; count = 1
+pointer deepth = 8  ; count = 1
+
+wear-out percent: 0.5
+pointer deepth = 0  ; count = 45494075
+pointer deepth = 1  ; count = 5530586
+pointer deepth = 2  ; count = 4266205
+pointer deepth = 3  ; count = 2676037
+pointer deepth = 4  ; count = 699508
+pointer deepth = 5  ; count = 53096
+pointer deepth = 6  ; count = 752
+pointer deepth = 7  ; count = 5
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:13510429
+refresh count: 902702877
+refresh round: 53
+cell lifetime: 1000
+deepth of the deepest point: 7
+access count: 437094182
+total write count: 9027028773
+wear-out count: 8388608
+exceeded write count: 0
+normal space : backup space = 8388608 : 8388608 backup space percent:0.50
+
+wear-out percent: 0.5000
+pointer deepth = 0  ; count = 50663047
+pointer deepth = 1  ; count = 6006654
+pointer deepth = 2  ; count = 5187731
+pointer deepth = 3  ; count = 3942994
+pointer deepth = 4  ; count = 1206987
+pointer deepth = 5  ; count = 99976
+pointer deepth = 6  ; count = 1475
+pointer deepth = 7  ; count = 9
+==============================================================================
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 13469526
+pointer deepth = 1  ; count = 1557161
+pointer deepth = 2  ; count = 72723
+pointer deepth = 3  ; count = 79
+pointer deepth = 4  ; count = 3
+pointer deepth = 5  ; count = 3
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 24450694
+pointer deepth = 1  ; count = 3119365
+pointer deepth = 2  ; count = 881010
+pointer deepth = 3  ; count = 69672
+pointer deepth = 4  ; count = 522
+pointer deepth = 5  ; count = 6
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 33349232
+pointer deepth = 1  ; count = 4251200
+pointer deepth = 2  ; count = 2103305
+pointer deepth = 3  ; count = 529626
+pointer deepth = 4  ; count = 31689
+pointer deepth = 5  ; count = 269
+pointer deepth = 6  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 40227784
+pointer deepth = 1  ; count = 5116298
+pointer deepth = 2  ; count = 3385841
+pointer deepth = 3  ; count = 1390306
+pointer deepth = 4  ; count = 203949
+pointer deepth = 5  ; count = 7441
+pointer deepth = 6  ; count = 34
+pointer deepth = 7  ; count = 1
+
+wear-out percent: 0.5
+pointer deepth = 0  ; count = 45370544
+pointer deepth = 1  ; count = 5609513
+pointer deepth = 2  ; count = 4321167
+pointer deepth = 3  ; count = 2660505
+pointer deepth = 4  ; count = 700085
+pointer deepth = 5  ; count = 57277
+pointer deepth = 6  ; count = 1166
+pointer deepth = 7  ; count = 8
+
+wear-out percent: 0.6
+pointer deepth = 0  ; count = 48784551
+pointer deepth = 1  ; count = 5857106
+pointer deepth = 2  ; count = 5011874
+pointer deepth = 3  ; count = 3859045
+pointer deepth = 4  ; count = 1643045
+pointer deepth = 5  ; count = 263693
+pointer deepth = 6  ; count = 11678
+pointer deepth = 7  ; count = 162
+pointer deepth = 8  ; count = 1
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:7662666
+refresh count: 1031072843
+refresh round: 61
+cell lifetime: 1000
+deepth of the deepest point: 8
+access count: 1720793838
+total write count: 10310728430
+wear-out count: 10066330
+exceeded write count: 0
+normal space : backup space = 6710886 : 10066330 backup space percent:0.60
+
+wear-out percent: 0.6000
+pointer deepth = 0  ; count = 52198555
+pointer deepth = 1  ; count = 6104698
+pointer deepth = 2  ; count = 5702581
+pointer deepth = 3  ; count = 5057586
+pointer deepth = 4  ; count = 2586005
+pointer deepth = 5  ; count = 470108
+pointer deepth = 6  ; count = 22191
+pointer deepth = 7  ; count = 316
+pointer deepth = 8  ; count = 2
+==============================================================================
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 13471389
+pointer deepth = 1  ; count = 1560493
+pointer deepth = 2  ; count = 67356
+pointer deepth = 3  ; count = 255
+pointer deepth = 4  ; count = 1
+pointer deepth = 6  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 24458490
+pointer deepth = 1  ; count = 3094989
+pointer deepth = 2  ; count = 919933
+pointer deepth = 3  ; count = 47369
+pointer deepth = 4  ; count = 486
+pointer deepth = 6  ; count = 2
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 33367122
+pointer deepth = 1  ; count = 4175993
+pointer deepth = 2  ; count = 2209674
+pointer deepth = 3  ; count = 493085
+pointer deepth = 4  ; count = 19321
+pointer deepth = 5  ; count = 123
+pointer deepth = 6  ; count = 4
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 40252228
+pointer deepth = 1  ; count = 5012487
+pointer deepth = 2  ; count = 3507086
+pointer deepth = 3  ; count = 1388216
+pointer deepth = 4  ; count = 166347
+pointer deepth = 5  ; count = 5250
+pointer deepth = 6  ; count = 40
+
+wear-out percent: 0.5
+pointer deepth = 0  ; count = 45401547
+pointer deepth = 1  ; count = 5483529
+pointer deepth = 2  ; count = 4439702
+pointer deepth = 3  ; count = 2695541
+pointer deepth = 4  ; count = 658568
+pointer deepth = 5  ; count = 40509
+pointer deepth = 6  ; count = 861
+pointer deepth = 7  ; count = 8
+
+wear-out percent: 0.6
+pointer deepth = 0  ; count = 48822108
+pointer deepth = 1  ; count = 5715894
+pointer deepth = 2  ; count = 5134768
+pointer deepth = 3  ; count = 3908838
+pointer deepth = 4  ; count = 1593540
+pointer deepth = 5  ; count = 244604
+pointer deepth = 6  ; count = 11265
+pointer deepth = 7  ; count = 138
+
+wear-out percent: 0.7
+pointer deepth = 0  ; count = 50535428
+pointer deepth = 1  ; count = 5831228
+pointer deepth = 2  ; count = 5589099
+pointer deepth = 3  ; count = 4860934
+pointer deepth = 4  ; count = 2775572
+pointer deepth = 5  ; count = 788128
+pointer deepth = 6  ; count = 81180
+pointer deepth = 7  ; count = 2727
+pointer deepth = 8  ; count = 28
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:16274239
+refresh count: 1157124927
+refresh round: 68
+cell lifetime: 1000
+deepth of the deepest point: 8
+access count: 2981314679
+total write count: 11571249270
+wear-out count: 11744052
+exceeded write count: 0
+normal space : backup space = 5033164 : 11744052 backup space percent:0.70
+
+wear-out percent: 0.7000
+pointer deepth = 0  ; count = 52248744
+pointer deepth = 1  ; count = 5946562
+pointer deepth = 2  ; count = 6043430
+pointer deepth = 3  ; count = 5813029
+pointer deepth = 4  ; count = 3957603
+pointer deepth = 5  ; count = 1331653
+pointer deepth = 6  ; count = 151096
+pointer deepth = 7  ; count = 5316
+pointer deepth = 8  ; count = 56
+==============================================================================
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 13491865
+pointer deepth = 1  ; count = 1526331
+pointer deepth = 2  ; count = 80603
+pointer deepth = 3  ; count = 694
+pointer deepth = 4  ; count = 1
+pointer deepth = 7  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 24485596
+pointer deepth = 1  ; count = 3074081
+pointer deepth = 2  ; count = 902206
+pointer deepth = 3  ; count = 58427
+pointer deepth = 4  ; count = 956
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 2
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 33397995
+pointer deepth = 1  ; count = 4197990
+pointer deepth = 2  ; count = 2131011
+pointer deepth = 3  ; count = 510968
+pointer deepth = 4  ; count = 27046
+pointer deepth = 5  ; count = 308
+pointer deepth = 6  ; count = 1
+pointer deepth = 7  ; count = 2
+pointer deepth = 8  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 40296082
+pointer deepth = 1  ; count = 5062311
+pointer deepth = 2  ; count = 3379176
+pointer deepth = 3  ; count = 1393471
+pointer deepth = 4  ; count = 192577
+pointer deepth = 5  ; count = 7920
+pointer deepth = 6  ; count = 113
+pointer deepth = 7  ; count = 3
+
+wear-out percent: 0.5
+pointer deepth = 0  ; count = 45451978
+pointer deepth = 1  ; count = 5547723
+pointer deepth = 2  ; count = 4311180
+pointer deepth = 3  ; count = 2654147
+pointer deepth = 4  ; count = 696896
+pointer deepth = 5  ; count = 56741
+pointer deepth = 6  ; count = 1589
+pointer deepth = 7  ; count = 10
+
+wear-out percent: 0.6
+pointer deepth = 0  ; count = 48879092
+pointer deepth = 1  ; count = 5785365
+pointer deepth = 2  ; count = 5012724
+pointer deepth = 3  ; count = 3835449
+pointer deepth = 4  ; count = 1631593
+pointer deepth = 5  ; count = 272358
+pointer deepth = 6  ; count = 14364
+pointer deepth = 7  ; count = 208
+pointer deepth = 8  ; count = 2
+
+wear-out percent: 0.7
+pointer deepth = 0  ; count = 50602882
+pointer deepth = 1  ; count = 5900605
+pointer deepth = 2  ; count = 5472930
+pointer deepth = 3  ; count = 4773288
+pointer deepth = 4  ; count = 2801690
+pointer deepth = 5  ; count = 820331
+pointer deepth = 6  ; count = 88956
+pointer deepth = 7  ; count = 3580
+pointer deepth = 8  ; count = 62
+
+wear-out percent: 0.8
+pointer deepth = 0  ; count = 50635978
+pointer deepth = 1  ; count = 5939975
+pointer deepth = 2  ; count = 5722949
+pointer deepth = 3  ; count = 5473919
+pointer deepth = 4  ; count = 3952150
+pointer deepth = 5  ; count = 1739806
+pointer deepth = 6  ; count = 331821
+pointer deepth = 7  ; count = 22623
+pointer deepth = 8  ; count = 546
+pointer deepth = 9  ; count = 5
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:4126529
+refresh count: 1279194946
+refresh round: 76
+cell lifetime: 1000
+deepth of the deepest point: 9
+access count: 4202014868
+total write count: 12791949460
+wear-out count: 13421773
+exceeded write count: 0
+normal space : backup space = 3355443 : 13421773 backup space percent:0.80
+
+wear-out percent: 0.8000
+pointer deepth = 0  ; count = 50669070
+pointer deepth = 1  ; count = 5979345
+pointer deepth = 2  ; count = 5972967
+pointer deepth = 3  ; count = 6174549
+pointer deepth = 4  ; count = 5102611
+pointer deepth = 5  ; count = 2659282
+pointer deepth = 6  ; count = 574686
+pointer deepth = 7  ; count = 41666
+pointer deepth = 8  ; count = 1030
+pointer deepth = 9  ; count = 10
+==============================================================================
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 13829437
+pointer deepth = 1  ; count = 897076
+pointer deepth = 2  ; count = 333989
+pointer deepth = 3  ; count = 37094
+pointer deepth = 4  ; count = 1859
+pointer deepth = 5  ; count = 32
+pointer deepth = 6  ; count = 2
+pointer deepth = 7  ; count = 4
+pointer deepth = 9  ; count = 1
+pointer deepth = 13  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 25640831
+pointer deepth = 1  ; count = 1363611
+pointer deepth = 2  ; count = 984332
+pointer deepth = 3  ; count = 432883
+pointer deepth = 4  ; count = 89601
+pointer deepth = 5  ; count = 9332
+pointer deepth = 6  ; count = 647
+pointer deepth = 7  ; count = 28
+pointer deepth = 8  ; count = 1
+pointer deepth = 9  ; count = 1
+pointer deepth = 13  ; count = 1
+pointer deepth = 14  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 35736338
+pointer deepth = 1  ; count = 1596159
+pointer deepth = 2  ; count = 1330781
+pointer deepth = 3  ; count = 893550
+pointer deepth = 4  ; count = 477895
+pointer deepth = 5  ; count = 183215
+pointer deepth = 6  ; count = 41266
+pointer deepth = 7  ; count = 5613
+pointer deepth = 8  ; count = 474
+pointer deepth = 9  ; count = 29
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 44128272
+pointer deepth = 1  ; count = 1660081
+pointer deepth = 2  ; count = 1521786
+pointer deepth = 3  ; count = 1240541
+pointer deepth = 4  ; count = 928207
+pointer deepth = 5  ; count = 559788
+pointer deepth = 6  ; count = 224960
+pointer deepth = 7  ; count = 57463
+pointer deepth = 8  ; count = 9462
+pointer deepth = 9  ; count = 1008
+pointer deepth = 10  ; count = 79
+pointer deepth = 11  ; count = 4
+pointer deepth = 13  ; count = 1
+pointer deepth = 14  ; count = 2
+
+wear-out percent: 0.5
+pointer deepth = 0  ; count = 50839161
+pointer deepth = 1  ; count = 1674254
+pointer deepth = 2  ; count = 1598653
+pointer deepth = 3  ; count = 1432175
+pointer deepth = 4  ; count = 1262457
+pointer deepth = 5  ; count = 982063
+pointer deepth = 6  ; count = 588064
+pointer deepth = 7  ; count = 252782
+pointer deepth = 8  ; count = 74131
+pointer deepth = 9  ; count = 14476
+pointer deepth = 10  ; count = 1882
+pointer deepth = 11  ; count = 154
+pointer deepth = 12  ; count = 10
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14777002
+pointer deepth = 1  ; count = 1257
+pointer deepth = 2  ; count = 1308
+pointer deepth = 3  ; count = 1289
+pointer deepth = 4  ; count = 1319
+pointer deepth = 5  ; count = 239943
+pointer deepth = 6  ; count = 77287
+pointer deepth = 7  ; count = 2
+pointer deepth = 8  ; count = 1
+pointer deepth = 9  ; count = 1
+pointer deepth = 10  ; count = 1
+pointer deepth = 11  ; count = 71
+pointer deepth = 12  ; count = 4
+pointer deepth = 13  ; count = 1
+pointer deepth = 16  ; count = 1
+pointer deepth = 18  ; count = 1
+pointer deepth = 27  ; count = 1
+pointer deepth = 37  ; count = 1
+pointer deepth = 43  ; count = 4
+pointer deepth = 127  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27875991
+pointer deepth = 1  ; count = 1578
+pointer deepth = 2  ; count = 1617
+pointer deepth = 3  ; count = 1623
+pointer deepth = 4  ; count = 1815
+pointer deepth = 5  ; count = 241576
+pointer deepth = 6  ; count = 78300
+pointer deepth = 7  ; count = 706
+pointer deepth = 8  ; count = 640
+pointer deepth = 9  ; count = 1737
+pointer deepth = 10  ; count = 161097
+pointer deepth = 11  ; count = 154415
+pointer deepth = 12  ; count = 45
+pointer deepth = 13  ; count = 16
+pointer deepth = 14  ; count = 4
+pointer deepth = 16  ; count = 36
+pointer deepth = 17  ; count = 33
+pointer deepth = 18  ; count = 8
+pointer deepth = 19  ; count = 2
+pointer deepth = 21  ; count = 3
+pointer deepth = 23  ; count = 2
+pointer deepth = 24  ; count = 1
+pointer deepth = 27  ; count = 1
+pointer deepth = 28  ; count = 1
+pointer deepth = 32  ; count = 2
+pointer deepth = 33  ; count = 1
+pointer deepth = 34  ; count = 1
+pointer deepth = 35  ; count = 1
+pointer deepth = 36  ; count = 2
+pointer deepth = 37  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 43  ; count = 4
+pointer deepth = 47  ; count = 2
+pointer deepth = 50  ; count = 2
+pointer deepth = 53  ; count = 4
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 39297259
+pointer deepth = 1  ; count = 1899
+pointer deepth = 2  ; count = 1903
+pointer deepth = 3  ; count = 1842
+pointer deepth = 4  ; count = 2015
+pointer deepth = 5  ; count = 241893
+pointer deepth = 6  ; count = 78500
+pointer deepth = 7  ; count = 935
+pointer deepth = 8  ; count = 839
+pointer deepth = 9  ; count = 2346
+pointer deepth = 10  ; count = 162188
+pointer deepth = 11  ; count = 155089
+pointer deepth = 12  ; count = 618
+pointer deepth = 13  ; count = 881
+pointer deepth = 14  ; count = 3264
+pointer deepth = 15  ; count = 84114
+pointer deepth = 16  ; count = 229310
+pointer deepth = 17  ; count = 231
+pointer deepth = 18  ; count = 32
+pointer deepth = 19  ; count = 8
+pointer deepth = 20  ; count = 10
+pointer deepth = 21  ; count = 33
+pointer deepth = 22  ; count = 39
+pointer deepth = 23  ; count = 14
+pointer deepth = 24  ; count = 6
+pointer deepth = 25  ; count = 4
+pointer deepth = 27  ; count = 2
+pointer deepth = 28  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 31  ; count = 1
+pointer deepth = 32  ; count = 3
+pointer deepth = 33  ; count = 1
+pointer deepth = 34  ; count = 2
+pointer deepth = 35  ; count = 1
+pointer deepth = 36  ; count = 2
+pointer deepth = 37  ; count = 2
+pointer deepth = 38  ; count = 1
+pointer deepth = 39  ; count = 2
+pointer deepth = 40  ; count = 1
+pointer deepth = 41  ; count = 1
+pointer deepth = 42  ; count = 2
+pointer deepth = 43  ; count = 5
+pointer deepth = 45  ; count = 1
+pointer deepth = 47  ; count = 2
+pointer deepth = 48  ; count = 1
+pointer deepth = 49  ; count = 1
+pointer deepth = 50  ; count = 2
+pointer deepth = 53  ; count = 5
+pointer deepth = 54  ; count = 1
+pointer deepth = 55  ; count = 1
+pointer deepth = 60  ; count = 4
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 49040806
+pointer deepth = 1  ; count = 2220
+pointer deepth = 2  ; count = 2189
+pointer deepth = 3  ; count = 2061
+pointer deepth = 4  ; count = 2156
+pointer deepth = 5  ; count = 242035
+pointer deepth = 6  ; count = 78512
+pointer deepth = 7  ; count = 949
+pointer deepth = 8  ; count = 882
+pointer deepth = 9  ; count = 2565
+pointer deepth = 10  ; count = 162357
+pointer deepth = 11  ; count = 155243
+pointer deepth = 12  ; count = 762
+pointer deepth = 13  ; count = 1137
+pointer deepth = 14  ; count = 3775
+pointer deepth = 15  ; count = 85156
+pointer deepth = 16  ; count = 229978
+pointer deepth = 17  ; count = 872
+pointer deepth = 18  ; count = 821
+pointer deepth = 19  ; count = 3252
+pointer deepth = 20  ; count = 14427
+pointer deepth = 21  ; count = 298648
+pointer deepth = 22  ; count = 564
+pointer deepth = 23  ; count = 56
+pointer deepth = 24  ; count = 21
+pointer deepth = 25  ; count = 18
+pointer deepth = 26  ; count = 29
+pointer deepth = 27  ; count = 45
+pointer deepth = 28  ; count = 23
+pointer deepth = 29  ; count = 15
+pointer deepth = 30  ; count = 6
+pointer deepth = 31  ; count = 4
+pointer deepth = 32  ; count = 3
+pointer deepth = 33  ; count = 2
+pointer deepth = 34  ; count = 3
+pointer deepth = 35  ; count = 1
+pointer deepth = 36  ; count = 4
+pointer deepth = 37  ; count = 2
+pointer deepth = 38  ; count = 4
+pointer deepth = 39  ; count = 2
+pointer deepth = 40  ; count = 2
+pointer deepth = 41  ; count = 1
+pointer deepth = 42  ; count = 2
+pointer deepth = 43  ; count = 6
+pointer deepth = 44  ; count = 2
+pointer deepth = 45  ; count = 2
+pointer deepth = 46  ; count = 3
+pointer deepth = 47  ; count = 4
+pointer deepth = 48  ; count = 1
+pointer deepth = 49  ; count = 2
+pointer deepth = 50  ; count = 3
+pointer deepth = 53  ; count = 5
+pointer deepth = 54  ; count = 1
+pointer deepth = 55  ; count = 1
+pointer deepth = 57  ; count = 2
+pointer deepth = 59  ; count = 2
+pointer deepth = 60  ; count = 4
+pointer deepth = 62  ; count = 1
+pointer deepth = 65  ; count = 2
+pointer deepth = 66  ; count = 2
+
+wear-out percent: 0.5
+pointer deepth = 0  ; count = 57106632
+pointer deepth = 1  ; count = 2541
+pointer deepth = 2  ; count = 2475
+pointer deepth = 3  ; count = 2280
+pointer deepth = 4  ; count = 2297
+pointer deepth = 5  ; count = 242177
+pointer deepth = 6  ; count = 78523
+pointer deepth = 7  ; count = 951
+pointer deepth = 8  ; count = 884
+pointer deepth = 9  ; count = 2567
+pointer deepth = 10  ; count = 162362
+pointer deepth = 11  ; count = 155248
+pointer deepth = 12  ; count = 772
+pointer deepth = 13  ; count = 1180
+pointer deepth = 14  ; count = 3934
+pointer deepth = 15  ; count = 85326
+pointer deepth = 16  ; count = 230158
+pointer deepth = 17  ; count = 1037
+pointer deepth = 18  ; count = 980
+pointer deepth = 19  ; count = 3569
+pointer deepth = 20  ; count = 15331
+pointer deepth = 21  ; count = 299472
+pointer deepth = 22  ; count = 1214
+pointer deepth = 23  ; count = 739
+pointer deepth = 24  ; count = 1394
+pointer deepth = 25  ; count = 13754
+pointer deepth = 26  ; count = 239927
+pointer deepth = 27  ; count = 61755
+pointer deepth = 28  ; count = 462
+pointer deepth = 29  ; count = 44
+pointer deepth = 30  ; count = 23
+pointer deepth = 31  ; count = 26
+pointer deepth = 32  ; count = 47
+pointer deepth = 33  ; count = 42
+pointer deepth = 34  ; count = 26
+pointer deepth = 35  ; count = 15
+pointer deepth = 36  ; count = 8
+pointer deepth = 37  ; count = 6
+pointer deepth = 38  ; count = 4
+pointer deepth = 39  ; count = 3
+pointer deepth = 40  ; count = 4
+pointer deepth = 41  ; count = 2
+pointer deepth = 42  ; count = 3
+pointer deepth = 43  ; count = 7
+pointer deepth = 44  ; count = 3
+pointer deepth = 45  ; count = 5
+pointer deepth = 46  ; count = 4
+pointer deepth = 47  ; count = 4
+pointer deepth = 48  ; count = 2
+pointer deepth = 49  ; count = 5
+pointer deepth = 50  ; count = 3
+pointer deepth = 51  ; count = 1
+pointer deepth = 52  ; count = 3
+pointer deepth = 53  ; count = 5
+pointer deepth = 54  ; count = 3
+pointer deepth = 55  ; count = 1
+pointer deepth = 56  ; count = 1
+pointer deepth = 57  ; count = 2
+pointer deepth = 59  ; count = 2
+pointer deepth = 60  ; count = 4
+pointer deepth = 61  ; count = 1
+pointer deepth = 62  ; count = 1
+pointer deepth = 63  ; count = 2
+pointer deepth = 65  ; count = 4
+pointer deepth = 66  ; count = 2
+pointer deepth = 67  ; count = 1
+pointer deepth = 71  ; count = 3
+pointer deepth = 72  ; count = 1
+
+wear-out percent: 0.6
+pointer deepth = 0  ; count = 63494737
+pointer deepth = 1  ; count = 2862
+pointer deepth = 2  ; count = 2761
+pointer deepth = 3  ; count = 2499
+pointer deepth = 4  ; count = 2438
+pointer deepth = 5  ; count = 242319
+pointer deepth = 6  ; count = 78534
+pointer deepth = 7  ; count = 953
+pointer deepth = 8  ; count = 884
+pointer deepth = 9  ; count = 2567
+pointer deepth = 10  ; count = 162362
+pointer deepth = 11  ; count = 155249
+pointer deepth = 12  ; count = 773
+pointer deepth = 13  ; count = 1182
+pointer deepth = 14  ; count = 3936
+pointer deepth = 15  ; count = 85330
+pointer deepth = 16  ; count = 230164
+pointer deepth = 17  ; count = 1046
+pointer deepth = 18  ; count = 1027
+pointer deepth = 19  ; count = 3720
+pointer deepth = 20  ; count = 15504
+pointer deepth = 21  ; count = 299642
+pointer deepth = 22  ; count = 1361
+pointer deepth = 23  ; count = 899
+pointer deepth = 24  ; count = 1707
+pointer deepth = 25  ; count = 14602
+pointer deepth = 26  ; count = 240778
+pointer deepth = 27  ; count = 62437
+pointer deepth = 28  ; count = 1136
+pointer deepth = 29  ; count = 1598
+pointer deepth = 30  ; count = 15360
+pointer deepth = 31  ; count = 167826
+pointer deepth = 32  ; count = 131721
+pointer deepth = 33  ; count = 817
+pointer deepth = 34  ; count = 64
+pointer deepth = 35  ; count = 29
+pointer deepth = 36  ; count = 37
+pointer deepth = 37  ; count = 49
+pointer deepth = 38  ; count = 63
+pointer deepth = 39  ; count = 34
+pointer deepth = 40  ; count = 19
+pointer deepth = 41  ; count = 12
+pointer deepth = 42  ; count = 12
+pointer deepth = 43  ; count = 8
+pointer deepth = 44  ; count = 4
+pointer deepth = 45  ; count = 7
+pointer deepth = 46  ; count = 5
+pointer deepth = 47  ; count = 6
+pointer deepth = 48  ; count = 2
+pointer deepth = 49  ; count = 8
+pointer deepth = 50  ; count = 6
+pointer deepth = 51  ; count = 2
+pointer deepth = 52  ; count = 3
+pointer deepth = 53  ; count = 6
+pointer deepth = 54  ; count = 5
+pointer deepth = 55  ; count = 1
+pointer deepth = 56  ; count = 1
+pointer deepth = 57  ; count = 4
+pointer deepth = 58  ; count = 1
+pointer deepth = 59  ; count = 4
+pointer deepth = 60  ; count = 4
+pointer deepth = 61  ; count = 2
+pointer deepth = 62  ; count = 1
+pointer deepth = 63  ; count = 2
+pointer deepth = 64  ; count = 1
+pointer deepth = 65  ; count = 4
+pointer deepth = 66  ; count = 3
+pointer deepth = 67  ; count = 1
+pointer deepth = 68  ; count = 1
+pointer deepth = 69  ; count = 1
+pointer deepth = 70  ; count = 2
+pointer deepth = 71  ; count = 3
+pointer deepth = 72  ; count = 2
+pointer deepth = 76  ; count = 3
+pointer deepth = 77  ; count = 1
+
+wear-out percent: 0.7
+pointer deepth = 0  ; count = 68205121
+pointer deepth = 1  ; count = 3183
+pointer deepth = 2  ; count = 3047
+pointer deepth = 3  ; count = 2718
+pointer deepth = 4  ; count = 2579
+pointer deepth = 5  ; count = 242461
+pointer deepth = 6  ; count = 78545
+pointer deepth = 7  ; count = 955
+pointer deepth = 8  ; count = 884
+pointer deepth = 9  ; count = 2567
+pointer deepth = 10  ; count = 162362
+pointer deepth = 11  ; count = 155249
+pointer deepth = 12  ; count = 773
+pointer deepth = 13  ; count = 1182
+pointer deepth = 14  ; count = 3936
+pointer deepth = 15  ; count = 85330
+pointer deepth = 16  ; count = 230166
+pointer deepth = 17  ; count = 1047
+pointer deepth = 18  ; count = 1029
+pointer deepth = 19  ; count = 3721
+pointer deepth = 20  ; count = 15510
+pointer deepth = 21  ; count = 299649
+pointer deepth = 22  ; count = 1368
+pointer deepth = 23  ; count = 951
+pointer deepth = 24  ; count = 1853
+pointer deepth = 25  ; count = 14775
+pointer deepth = 26  ; count = 240935
+pointer deepth = 27  ; count = 62578
+pointer deepth = 28  ; count = 1308
+pointer deepth = 29  ; count = 1934
+pointer deepth = 30  ; count = 16103
+pointer deepth = 31  ; count = 168706
+pointer deepth = 32  ; count = 132403
+pointer deepth = 33  ; count = 1525
+pointer deepth = 34  ; count = 1801
+pointer deepth = 35  ; count = 14739
+pointer deepth = 36  ; count = 100177
+pointer deepth = 37  ; count = 199402
+pointer deepth = 38  ; count = 1221
+pointer deepth = 39  ; count = 99
+pointer deepth = 40  ; count = 37
+pointer deepth = 41  ; count = 42
+pointer deepth = 42  ; count = 59
+pointer deepth = 43  ; count = 72
+pointer deepth = 44  ; count = 41
+pointer deepth = 45  ; count = 28
+pointer deepth = 46  ; count = 23
+pointer deepth = 47  ; count = 16
+pointer deepth = 48  ; count = 4
+pointer deepth = 49  ; count = 11
+pointer deepth = 50  ; count = 8
+pointer deepth = 51  ; count = 2
+pointer deepth = 52  ; count = 6
+pointer deepth = 53  ; count = 7
+pointer deepth = 54  ; count = 7
+pointer deepth = 55  ; count = 3
+pointer deepth = 56  ; count = 4
+pointer deepth = 57  ; count = 4
+pointer deepth = 58  ; count = 1
+pointer deepth = 59  ; count = 7
+pointer deepth = 60  ; count = 5
+pointer deepth = 61  ; count = 2
+pointer deepth = 62  ; count = 3
+pointer deepth = 63  ; count = 3
+pointer deepth = 64  ; count = 4
+pointer deepth = 65  ; count = 4
+pointer deepth = 66  ; count = 4
+pointer deepth = 67  ; count = 1
+pointer deepth = 68  ; count = 1
+pointer deepth = 69  ; count = 2
+pointer deepth = 70  ; count = 2
+pointer deepth = 71  ; count = 3
+pointer deepth = 72  ; count = 2
+pointer deepth = 73  ; count = 1
+pointer deepth = 74  ; count = 1
+pointer deepth = 75  ; count = 2
+pointer deepth = 76  ; count = 3
+pointer deepth = 77  ; count = 1
+pointer deepth = 78  ; count = 1
+pointer deepth = 81  ; count = 2
+pointer deepth = 82  ; count = 2
+
+wear-out percent: 0.8
+pointer deepth = 0  ; count = 71237784
+pointer deepth = 1  ; count = 3504
+pointer deepth = 2  ; count = 3333
+pointer deepth = 3  ; count = 2937
+pointer deepth = 4  ; count = 2720
+pointer deepth = 5  ; count = 242603
+pointer deepth = 6  ; count = 78556
+pointer deepth = 7  ; count = 957
+pointer deepth = 8  ; count = 884
+pointer deepth = 9  ; count = 2567
+pointer deepth = 10  ; count = 162362
+pointer deepth = 11  ; count = 155249
+pointer deepth = 12  ; count = 773
+pointer deepth = 13  ; count = 1182
+pointer deepth = 14  ; count = 3936
+pointer deepth = 15  ; count = 85330
+pointer deepth = 16  ; count = 230166
+pointer deepth = 17  ; count = 1047
+pointer deepth = 18  ; count = 1029
+pointer deepth = 19  ; count = 3721
+pointer deepth = 20  ; count = 15510
+pointer deepth = 21  ; count = 299651
+pointer deepth = 22  ; count = 1369
+pointer deepth = 23  ; count = 953
+pointer deepth = 24  ; count = 1854
+pointer deepth = 25  ; count = 14781
+pointer deepth = 26  ; count = 240941
+pointer deepth = 27  ; count = 62585
+pointer deepth = 28  ; count = 1360
+pointer deepth = 29  ; count = 2064
+pointer deepth = 30  ; count = 16266
+pointer deepth = 31  ; count = 168866
+pointer deepth = 32  ; count = 132541
+pointer deepth = 33  ; count = 1694
+pointer deepth = 34  ; count = 2125
+pointer deepth = 35  ; count = 15338
+pointer deepth = 36  ; count = 101123
+pointer deepth = 37  ; count = 200083
+pointer deepth = 38  ; count = 1958
+pointer deepth = 39  ; count = 1718
+pointer deepth = 40  ; count = 9104
+pointer deepth = 41  ; count = 44886
+pointer deepth = 42  ; count = 259459
+pointer deepth = 43  ; count = 2187
+pointer deepth = 44  ; count = 204
+pointer deepth = 45  ; count = 51
+pointer deepth = 46  ; count = 58
+pointer deepth = 47  ; count = 67
+pointer deepth = 48  ; count = 57
+pointer deepth = 49  ; count = 68
+pointer deepth = 50  ; count = 43
+pointer deepth = 51  ; count = 19
+pointer deepth = 52  ; count = 15
+pointer deepth = 53  ; count = 16
+pointer deepth = 54  ; count = 10
+pointer deepth = 55  ; count = 8
+pointer deepth = 56  ; count = 5
+pointer deepth = 57  ; count = 6
+pointer deepth = 58  ; count = 2
+pointer deepth = 59  ; count = 8
+pointer deepth = 60  ; count = 8
+pointer deepth = 61  ; count = 4
+pointer deepth = 62  ; count = 4
+pointer deepth = 63  ; count = 4
+pointer deepth = 64  ; count = 7
+pointer deepth = 65  ; count = 6
+pointer deepth = 66  ; count = 5
+pointer deepth = 67  ; count = 3
+pointer deepth = 68  ; count = 3
+pointer deepth = 69  ; count = 4
+pointer deepth = 70  ; count = 2
+pointer deepth = 71  ; count = 3
+pointer deepth = 72  ; count = 3
+pointer deepth = 73  ; count = 1
+pointer deepth = 74  ; count = 1
+pointer deepth = 75  ; count = 2
+pointer deepth = 76  ; count = 3
+pointer deepth = 77  ; count = 1
+pointer deepth = 78  ; count = 2
+pointer deepth = 79  ; count = 1
+pointer deepth = 80  ; count = 2
+pointer deepth = 81  ; count = 2
+pointer deepth = 82  ; count = 2
+pointer deepth = 83  ; count = 1
+pointer deepth = 86  ; count = 1
+pointer deepth = 87  ; count = 3
+
+wear-out percent: 0.9
+pointer deepth = 0  ; count = 72592726
+pointer deepth = 1  ; count = 3825
+pointer deepth = 2  ; count = 3619
+pointer deepth = 3  ; count = 3156
+pointer deepth = 4  ; count = 2861
+pointer deepth = 5  ; count = 242745
+pointer deepth = 6  ; count = 78567
+pointer deepth = 7  ; count = 959
+pointer deepth = 8  ; count = 884
+pointer deepth = 9  ; count = 2567
+pointer deepth = 10  ; count = 162362
+pointer deepth = 11  ; count = 155249
+pointer deepth = 12  ; count = 773
+pointer deepth = 13  ; count = 1182
+pointer deepth = 14  ; count = 3936
+pointer deepth = 15  ; count = 85330
+pointer deepth = 16  ; count = 230166
+pointer deepth = 17  ; count = 1047
+pointer deepth = 18  ; count = 1029
+pointer deepth = 19  ; count = 3721
+pointer deepth = 20  ; count = 15510
+pointer deepth = 21  ; count = 299651
+pointer deepth = 22  ; count = 1369
+pointer deepth = 23  ; count = 953
+pointer deepth = 24  ; count = 1854
+pointer deepth = 25  ; count = 14781
+pointer deepth = 26  ; count = 240943
+pointer deepth = 27  ; count = 62585
+pointer deepth = 28  ; count = 1362
+pointer deepth = 29  ; count = 2067
+pointer deepth = 30  ; count = 16269
+pointer deepth = 31  ; count = 168874
+pointer deepth = 32  ; count = 132550
+pointer deepth = 33  ; count = 1735
+pointer deepth = 34  ; count = 2185
+pointer deepth = 35  ; count = 15487
+pointer deepth = 36  ; count = 101303
+pointer deepth = 37  ; count = 200243
+pointer deepth = 38  ; count = 2135
+pointer deepth = 39  ; count = 1944
+pointer deepth = 40  ; count = 9484
+pointer deepth = 41  ; count = 45782
+pointer deepth = 42  ; count = 260268
+pointer deepth = 43  ; count = 2919
+pointer deepth = 44  ; count = 1376
+pointer deepth = 45  ; count = 4424
+pointer deepth = 46  ; count = 35761
+pointer deepth = 47  ; count = 228224
+pointer deepth = 48  ; count = 47319
+pointer deepth = 49  ; count = 830
+pointer deepth = 50  ; count = 87
+pointer deepth = 51  ; count = 55
+pointer deepth = 52  ; count = 62
+pointer deepth = 53  ; count = 68
+pointer deepth = 54  ; count = 76
+pointer deepth = 55  ; count = 61
+pointer deepth = 56  ; count = 32
+pointer deepth = 57  ; count = 16
+pointer deepth = 58  ; count = 15
+pointer deepth = 59  ; count = 13
+pointer deepth = 60  ; count = 12
+pointer deepth = 61  ; count = 7
+pointer deepth = 62  ; count = 6
+pointer deepth = 63  ; count = 5
+pointer deepth = 64  ; count = 8
+pointer deepth = 65  ; count = 9
+pointer deepth = 66  ; count = 9
+pointer deepth = 67  ; count = 6
+pointer deepth = 68  ; count = 4
+pointer deepth = 69  ; count = 5
+pointer deepth = 70  ; count = 5
+pointer deepth = 71  ; count = 3
+pointer deepth = 72  ; count = 6
+pointer deepth = 73  ; count = 4
+pointer deepth = 74  ; count = 3
+pointer deepth = 75  ; count = 2
+pointer deepth = 76  ; count = 3
+pointer deepth = 77  ; count = 2
+pointer deepth = 78  ; count = 2
+pointer deepth = 79  ; count = 1
+pointer deepth = 80  ; count = 2
+pointer deepth = 81  ; count = 2
+pointer deepth = 82  ; count = 2
+pointer deepth = 83  ; count = 1
+pointer deepth = 84  ; count = 1
+pointer deepth = 85  ; count = 1
+pointer deepth = 86  ; count = 3
+pointer deepth = 87  ; count = 3
+pointer deepth = 88  ; count = 1
+pointer deepth = 92  ; count = 3
+pointer deepth = 93  ; count = 1
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:12965290
+refresh count: 12965290
+refresh round: 0
+cell lifetime: 10
+deepth of the deepest point: 93
+access count: 248690690
+total write count: 129652906
+wear-out count: 15099495
+exceeded write count: 119037783
+normal space : backup space = 1677721 : 15099495 backup space percent:0.90
+
+wear-out percent: 0.9000
+pointer deepth = 0  ; count = 73947663
+pointer deepth = 1  ; count = 4146
+pointer deepth = 2  ; count = 3905
+pointer deepth = 3  ; count = 3375
+pointer deepth = 4  ; count = 3002
+pointer deepth = 5  ; count = 242887
+pointer deepth = 6  ; count = 78578
+pointer deepth = 7  ; count = 961
+pointer deepth = 8  ; count = 884
+pointer deepth = 9  ; count = 2567
+pointer deepth = 10  ; count = 162362
+pointer deepth = 11  ; count = 155249
+pointer deepth = 12  ; count = 773
+pointer deepth = 13  ; count = 1182
+pointer deepth = 14  ; count = 3936
+pointer deepth = 15  ; count = 85330
+pointer deepth = 16  ; count = 230166
+pointer deepth = 17  ; count = 1047
+pointer deepth = 18  ; count = 1029
+pointer deepth = 19  ; count = 3721
+pointer deepth = 20  ; count = 15510
+pointer deepth = 21  ; count = 299651
+pointer deepth = 22  ; count = 1369
+pointer deepth = 23  ; count = 953
+pointer deepth = 24  ; count = 1854
+pointer deepth = 25  ; count = 14781
+pointer deepth = 26  ; count = 240945
+pointer deepth = 27  ; count = 62585
+pointer deepth = 28  ; count = 1364
+pointer deepth = 29  ; count = 2070
+pointer deepth = 30  ; count = 16272
+pointer deepth = 31  ; count = 168882
+pointer deepth = 32  ; count = 132559
+pointer deepth = 33  ; count = 1776
+pointer deepth = 34  ; count = 2245
+pointer deepth = 35  ; count = 15636
+pointer deepth = 36  ; count = 101483
+pointer deepth = 37  ; count = 200403
+pointer deepth = 38  ; count = 2312
+pointer deepth = 39  ; count = 2170
+pointer deepth = 40  ; count = 9864
+pointer deepth = 41  ; count = 46678
+pointer deepth = 42  ; count = 261077
+pointer deepth = 43  ; count = 3651
+pointer deepth = 44  ; count = 2548
+pointer deepth = 45  ; count = 8796
+pointer deepth = 46  ; count = 71463
+pointer deepth = 47  ; count = 456381
+pointer deepth = 48  ; count = 94583
+pointer deepth = 49  ; count = 1592
+pointer deepth = 50  ; count = 131
+pointer deepth = 51  ; count = 91
+pointer deepth = 52  ; count = 109
+pointer deepth = 53  ; count = 120
+pointer deepth = 54  ; count = 142
+pointer deepth = 55  ; count = 114
+pointer deepth = 56  ; count = 59
+pointer deepth = 57  ; count = 26
+pointer deepth = 58  ; count = 28
+pointer deepth = 59  ; count = 18
+pointer deepth = 60  ; count = 16
+pointer deepth = 61  ; count = 10
+pointer deepth = 62  ; count = 8
+pointer deepth = 63  ; count = 6
+pointer deepth = 64  ; count = 9
+pointer deepth = 65  ; count = 12
+pointer deepth = 66  ; count = 13
+pointer deepth = 67  ; count = 9
+pointer deepth = 68  ; count = 5
+pointer deepth = 69  ; count = 6
+pointer deepth = 70  ; count = 8
+pointer deepth = 71  ; count = 3
+pointer deepth = 72  ; count = 9
+pointer deepth = 73  ; count = 7
+pointer deepth = 74  ; count = 5
+pointer deepth = 75  ; count = 2
+pointer deepth = 76  ; count = 3
+pointer deepth = 77  ; count = 3
+pointer deepth = 78  ; count = 2
+pointer deepth = 79  ; count = 1
+pointer deepth = 80  ; count = 2
+pointer deepth = 81  ; count = 2
+pointer deepth = 82  ; count = 2
+pointer deepth = 83  ; count = 1
+pointer deepth = 84  ; count = 2
+pointer deepth = 85  ; count = 2
+pointer deepth = 86  ; count = 5
+pointer deepth = 87  ; count = 3
+pointer deepth = 88  ; count = 2
+pointer deepth = 92  ; count = 6
+pointer deepth = 93  ; count = 2
+==============================================================================
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14484049
+pointer deepth = 1  ; count = 2452
+pointer deepth = 2  ; count = 164136
+pointer deepth = 3  ; count = 448773
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:1865724
+refresh count: 1865724
+refresh round: 0
+cell lifetime: 10
+deepth of the deepest point: 78
+access count: 18657248
+total write count: 18657247
+wear-out count: 1677722
+exceeded write count: 0
+normal space : backup space = 15099494 : 1677722 backup space percent:0.10
+
+wear-out percent: 0.1000
+pointer deepth = 0  ; count = 28968098
+pointer deepth = 1  ; count = 4904
+pointer deepth = 2  ; count = 328272
+pointer deepth = 3  ; count = 897546
+pointer deepth = 6  ; count = 156
+pointer deepth = 15  ; count = 2
+pointer deepth = 21  ; count = 2
+pointer deepth = 24  ; count = 8
+pointer deepth = 78  ; count = 2
+==============================================================================
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14484049
+pointer deepth = 1  ; count = 2452
+pointer deepth = 2  ; count = 164136
+pointer deepth = 3  ; count = 448773
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27287017
+pointer deepth = 1  ; count = 4896
+pointer deepth = 2  ; count = 166537
+pointer deepth = 3  ; count = 451173
+pointer deepth = 4  ; count = 2432
+pointer deepth = 5  ; count = 324257
+pointer deepth = 6  ; count = 284865
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:3589477
+refresh count: 3589477
+refresh round: 0
+cell lifetime: 10
+deepth of the deepest point: 150
+access count: 35894774
+total write count: 35894773
+wear-out count: 3355444
+exceeded write count: 0
+normal space : backup space = 13421772 : 3355444 backup space percent:0.20
+
+wear-out percent: 0.2000
+pointer deepth = 0  ; count = 40089984
+pointer deepth = 1  ; count = 7340
+pointer deepth = 2  ; count = 168938
+pointer deepth = 3  ; count = 453573
+pointer deepth = 4  ; count = 4864
+pointer deepth = 5  ; count = 648513
+pointer deepth = 6  ; count = 569653
+pointer deepth = 11  ; count = 156
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 2
+pointer deepth = 40  ; count = 2
+pointer deepth = 46  ; count = 8
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 2
+==============================================================================
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14484049
+pointer deepth = 1  ; count = 2452
+pointer deepth = 2  ; count = 164136
+pointer deepth = 3  ; count = 448773
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27287017
+pointer deepth = 1  ; count = 4896
+pointer deepth = 2  ; count = 166537
+pointer deepth = 3  ; count = 451173
+pointer deepth = 4  ; count = 2432
+pointer deepth = 5  ; count = 324257
+pointer deepth = 6  ; count = 284865
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 38411736
+pointer deepth = 1  ; count = 6140
+pointer deepth = 2  ; count = 167738
+pointer deepth = 3  ; count = 452901
+pointer deepth = 4  ; count = 4832
+pointer deepth = 5  ; count = 326153
+pointer deepth = 6  ; count = 286065
+pointer deepth = 7  ; count = 1232
+pointer deepth = 8  ; count = 487642
+pointer deepth = 9  ; count = 120706
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:5414702
+refresh count: 5414702
+refresh round: 0
+cell lifetime: 10
+deepth of the deepest point: 228
+access count: 54147025
+total write count: 54147024
+wear-out count: 5033165
+exceeded write count: 0
+normal space : backup space = 11744051 : 5033165 backup space percent:0.30
+
+wear-out percent: 0.3000
+pointer deepth = 0  ; count = 49536454
+pointer deepth = 1  ; count = 7384
+pointer deepth = 2  ; count = 168939
+pointer deepth = 3  ; count = 454629
+pointer deepth = 4  ; count = 7232
+pointer deepth = 5  ; count = 328049
+pointer deepth = 6  ; count = 287265
+pointer deepth = 7  ; count = 2464
+pointer deepth = 8  ; count = 975283
+pointer deepth = 9  ; count = 241413
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 156
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 2
+pointer deepth = 46  ; count = 4
+pointer deepth = 61  ; count = 2
+pointer deepth = 70  ; count = 8
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 2
+==============================================================================
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14484049
+pointer deepth = 1  ; count = 2452
+pointer deepth = 2  ; count = 164136
+pointer deepth = 3  ; count = 448773
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27287017
+pointer deepth = 1  ; count = 4896
+pointer deepth = 2  ; count = 166537
+pointer deepth = 3  ; count = 451173
+pointer deepth = 4  ; count = 2432
+pointer deepth = 5  ; count = 324257
+pointer deepth = 6  ; count = 284865
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 38411736
+pointer deepth = 1  ; count = 6140
+pointer deepth = 2  ; count = 167738
+pointer deepth = 3  ; count = 452901
+pointer deepth = 4  ; count = 4832
+pointer deepth = 5  ; count = 326153
+pointer deepth = 6  ; count = 286065
+pointer deepth = 7  ; count = 1232
+pointer deepth = 8  ; count = 487642
+pointer deepth = 9  ; count = 120706
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 47858734
+pointer deepth = 1  ; count = 7384
+pointer deepth = 2  ; count = 168939
+pointer deepth = 3  ; count = 454101
+pointer deepth = 4  ; count = 6032
+pointer deepth = 5  ; count = 327377
+pointer deepth = 6  ; count = 287265
+pointer deepth = 7  ; count = 2432
+pointer deepth = 8  ; count = 488842
+pointer deepth = 9  ; count = 121938
+pointer deepth = 10  ; count = 37789
+pointer deepth = 11  ; count = 570637
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 79
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 54  ; count = 1
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 75  ; count = 1
+pointer deepth = 78  ; count = 1
+pointer deepth = 86  ; count = 4
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+pointer deepth = 280  ; count = 1
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:6687991
+refresh count: 6687991
+refresh round: 0
+cell lifetime: 10
+deepth of the deepest point: 280
+access count: 66879918
+total write count: 66879917
+wear-out count: 6710887
+exceeded write count: 0
+normal space : backup space = 10066329 : 6710887 backup space percent:0.40
+
+wear-out percent: 0.4000
+pointer deepth = 0  ; count = 57305730
+pointer deepth = 1  ; count = 8628
+pointer deepth = 2  ; count = 170140
+pointer deepth = 3  ; count = 455301
+pointer deepth = 4  ; count = 7232
+pointer deepth = 5  ; count = 328601
+pointer deepth = 6  ; count = 288465
+pointer deepth = 7  ; count = 3632
+pointer deepth = 8  ; count = 490042
+pointer deepth = 9  ; count = 123170
+pointer deepth = 10  ; count = 75576
+pointer deepth = 11  ; count = 1141198
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 157
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 54  ; count = 2
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 75  ; count = 2
+pointer deepth = 78  ; count = 1
+pointer deepth = 86  ; count = 8
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+pointer deepth = 280  ; count = 2
+==============================================================================
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14484049
+pointer deepth = 1  ; count = 2452
+pointer deepth = 2  ; count = 164136
+pointer deepth = 3  ; count = 448773
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27287017
+pointer deepth = 1  ; count = 4896
+pointer deepth = 2  ; count = 166537
+pointer deepth = 3  ; count = 451173
+pointer deepth = 4  ; count = 2432
+pointer deepth = 5  ; count = 324257
+pointer deepth = 6  ; count = 284865
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 38411736
+pointer deepth = 1  ; count = 6140
+pointer deepth = 2  ; count = 167738
+pointer deepth = 3  ; count = 452901
+pointer deepth = 4  ; count = 4832
+pointer deepth = 5  ; count = 326153
+pointer deepth = 6  ; count = 286065
+pointer deepth = 7  ; count = 1232
+pointer deepth = 8  ; count = 487642
+pointer deepth = 9  ; count = 120706
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 47858734
+pointer deepth = 1  ; count = 7384
+pointer deepth = 2  ; count = 168939
+pointer deepth = 3  ; count = 454101
+pointer deepth = 4  ; count = 6032
+pointer deepth = 5  ; count = 327377
+pointer deepth = 6  ; count = 287265
+pointer deepth = 7  ; count = 2432
+pointer deepth = 8  ; count = 488842
+pointer deepth = 9  ; count = 121938
+pointer deepth = 10  ; count = 37789
+pointer deepth = 11  ; count = 570637
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 79
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 54  ; count = 1
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 75  ; count = 1
+pointer deepth = 78  ; count = 1
+pointer deepth = 86  ; count = 4
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+pointer deepth = 280  ; count = 1
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14484049
+pointer deepth = 1  ; count = 2452
+pointer deepth = 2  ; count = 164136
+pointer deepth = 3  ; count = 448773
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27287017
+pointer deepth = 1  ; count = 4896
+pointer deepth = 2  ; count = 166537
+pointer deepth = 3  ; count = 451173
+pointer deepth = 4  ; count = 2432
+pointer deepth = 5  ; count = 324257
+pointer deepth = 6  ; count = 284865
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 38411736
+pointer deepth = 1  ; count = 6140
+pointer deepth = 2  ; count = 167738
+pointer deepth = 3  ; count = 452901
+pointer deepth = 4  ; count = 4832
+pointer deepth = 5  ; count = 326153
+pointer deepth = 6  ; count = 286065
+pointer deepth = 7  ; count = 1232
+pointer deepth = 8  ; count = 487642
+pointer deepth = 9  ; count = 120706
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 47858734
+pointer deepth = 1  ; count = 7384
+pointer deepth = 2  ; count = 168939
+pointer deepth = 3  ; count = 454101
+pointer deepth = 4  ; count = 6032
+pointer deepth = 5  ; count = 327377
+pointer deepth = 6  ; count = 287265
+pointer deepth = 7  ; count = 2432
+pointer deepth = 8  ; count = 488842
+pointer deepth = 9  ; count = 121938
+pointer deepth = 10  ; count = 37789
+pointer deepth = 11  ; count = 570637
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 79
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 54  ; count = 1
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 75  ; count = 1
+pointer deepth = 78  ; count = 1
+pointer deepth = 86  ; count = 4
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+pointer deepth = 280  ; count = 1
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14484049
+pointer deepth = 1  ; count = 2452
+pointer deepth = 2  ; count = 164136
+pointer deepth = 3  ; count = 448773
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27287017
+pointer deepth = 1  ; count = 4896
+pointer deepth = 2  ; count = 166537
+pointer deepth = 3  ; count = 451173
+pointer deepth = 4  ; count = 2432
+pointer deepth = 5  ; count = 324257
+pointer deepth = 6  ; count = 284865
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 38411736
+pointer deepth = 1  ; count = 6140
+pointer deepth = 2  ; count = 167738
+pointer deepth = 3  ; count = 452901
+pointer deepth = 4  ; count = 4832
+pointer deepth = 5  ; count = 326153
+pointer deepth = 6  ; count = 286065
+pointer deepth = 7  ; count = 1232
+pointer deepth = 8  ; count = 487642
+pointer deepth = 9  ; count = 120706
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 47858734
+pointer deepth = 1  ; count = 7384
+pointer deepth = 2  ; count = 168939
+pointer deepth = 3  ; count = 454101
+pointer deepth = 4  ; count = 6032
+pointer deepth = 5  ; count = 327377
+pointer deepth = 6  ; count = 287265
+pointer deepth = 7  ; count = 2432
+pointer deepth = 8  ; count = 488842
+pointer deepth = 9  ; count = 121938
+pointer deepth = 10  ; count = 37789
+pointer deepth = 11  ; count = 570637
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 79
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 54  ; count = 1
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 75  ; count = 1
+pointer deepth = 78  ; count = 1
+pointer deepth = 86  ; count = 4
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+pointer deepth = 280  ; count = 1
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14484049
+pointer deepth = 1  ; count = 2452
+pointer deepth = 2  ; count = 164136
+pointer deepth = 3  ; count = 448773
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27287017
+pointer deepth = 1  ; count = 4896
+pointer deepth = 2  ; count = 166537
+pointer deepth = 3  ; count = 451173
+pointer deepth = 4  ; count = 2432
+pointer deepth = 5  ; count = 324257
+pointer deepth = 6  ; count = 284865
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 38411736
+pointer deepth = 1  ; count = 6140
+pointer deepth = 2  ; count = 167738
+pointer deepth = 3  ; count = 452901
+pointer deepth = 4  ; count = 4832
+pointer deepth = 5  ; count = 326153
+pointer deepth = 6  ; count = 286065
+pointer deepth = 7  ; count = 1232
+pointer deepth = 8  ; count = 487642
+pointer deepth = 9  ; count = 120706
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 47858734
+pointer deepth = 1  ; count = 7384
+pointer deepth = 2  ; count = 168939
+pointer deepth = 3  ; count = 454101
+pointer deepth = 4  ; count = 6032
+pointer deepth = 5  ; count = 327377
+pointer deepth = 6  ; count = 287265
+pointer deepth = 7  ; count = 2432
+pointer deepth = 8  ; count = 488842
+pointer deepth = 9  ; count = 121938
+pointer deepth = 10  ; count = 37789
+pointer deepth = 11  ; count = 570637
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 79
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 54  ; count = 1
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 75  ; count = 1
+pointer deepth = 78  ; count = 1
+pointer deepth = 86  ; count = 4
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+pointer deepth = 280  ; count = 1
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14484049
+pointer deepth = 1  ; count = 2452
+pointer deepth = 2  ; count = 164136
+pointer deepth = 3  ; count = 448773
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27287017
+pointer deepth = 1  ; count = 4896
+pointer deepth = 2  ; count = 166537
+pointer deepth = 3  ; count = 451173
+pointer deepth = 4  ; count = 2432
+pointer deepth = 5  ; count = 324257
+pointer deepth = 6  ; count = 284865
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 38411736
+pointer deepth = 1  ; count = 6140
+pointer deepth = 2  ; count = 167738
+pointer deepth = 3  ; count = 452901
+pointer deepth = 4  ; count = 4832
+pointer deepth = 5  ; count = 326153
+pointer deepth = 6  ; count = 286065
+pointer deepth = 7  ; count = 1232
+pointer deepth = 8  ; count = 487642
+pointer deepth = 9  ; count = 120706
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 47858734
+pointer deepth = 1  ; count = 7384
+pointer deepth = 2  ; count = 168939
+pointer deepth = 3  ; count = 454101
+pointer deepth = 4  ; count = 6032
+pointer deepth = 5  ; count = 327377
+pointer deepth = 6  ; count = 287265
+pointer deepth = 7  ; count = 2432
+pointer deepth = 8  ; count = 488842
+pointer deepth = 9  ; count = 121938
+pointer deepth = 10  ; count = 37789
+pointer deepth = 11  ; count = 570637
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 79
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 54  ; count = 1
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 75  ; count = 1
+pointer deepth = 78  ; count = 1
+pointer deepth = 86  ; count = 4
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+pointer deepth = 280  ; count = 1
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14484049
+pointer deepth = 1  ; count = 2452
+pointer deepth = 2  ; count = 164136
+pointer deepth = 3  ; count = 448773
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27287017
+pointer deepth = 1  ; count = 4896
+pointer deepth = 2  ; count = 166537
+pointer deepth = 3  ; count = 451173
+pointer deepth = 4  ; count = 2432
+pointer deepth = 5  ; count = 324257
+pointer deepth = 6  ; count = 284865
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 38411736
+pointer deepth = 1  ; count = 6140
+pointer deepth = 2  ; count = 167738
+pointer deepth = 3  ; count = 452901
+pointer deepth = 4  ; count = 4832
+pointer deepth = 5  ; count = 326153
+pointer deepth = 6  ; count = 286065
+pointer deepth = 7  ; count = 1232
+pointer deepth = 8  ; count = 487642
+pointer deepth = 9  ; count = 120706
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 47858734
+pointer deepth = 1  ; count = 7384
+pointer deepth = 2  ; count = 168939
+pointer deepth = 3  ; count = 454101
+pointer deepth = 4  ; count = 6032
+pointer deepth = 5  ; count = 327377
+pointer deepth = 6  ; count = 287265
+pointer deepth = 7  ; count = 2432
+pointer deepth = 8  ; count = 488842
+pointer deepth = 9  ; count = 121938
+pointer deepth = 10  ; count = 37789
+pointer deepth = 11  ; count = 570637
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 79
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 54  ; count = 1
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 75  ; count = 1
+pointer deepth = 78  ; count = 1
+pointer deepth = 86  ; count = 4
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+pointer deepth = 280  ; count = 1
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14484049
+pointer deepth = 1  ; count = 2452
+pointer deepth = 2  ; count = 164136
+pointer deepth = 3  ; count = 448773
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27287017
+pointer deepth = 1  ; count = 4896
+pointer deepth = 2  ; count = 166537
+pointer deepth = 3  ; count = 451173
+pointer deepth = 4  ; count = 2432
+pointer deepth = 5  ; count = 324257
+pointer deepth = 6  ; count = 284865
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 38411736
+pointer deepth = 1  ; count = 6140
+pointer deepth = 2  ; count = 167738
+pointer deepth = 3  ; count = 452901
+pointer deepth = 4  ; count = 4832
+pointer deepth = 5  ; count = 326153
+pointer deepth = 6  ; count = 286065
+pointer deepth = 7  ; count = 1232
+pointer deepth = 8  ; count = 487642
+pointer deepth = 9  ; count = 120706
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 47858734
+pointer deepth = 1  ; count = 7384
+pointer deepth = 2  ; count = 168939
+pointer deepth = 3  ; count = 454101
+pointer deepth = 4  ; count = 6032
+pointer deepth = 5  ; count = 327377
+pointer deepth = 6  ; count = 287265
+pointer deepth = 7  ; count = 2432
+pointer deepth = 8  ; count = 488842
+pointer deepth = 9  ; count = 121938
+pointer deepth = 10  ; count = 37789
+pointer deepth = 11  ; count = 570637
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 79
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 54  ; count = 1
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 75  ; count = 1
+pointer deepth = 78  ; count = 1
+pointer deepth = 86  ; count = 4
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+pointer deepth = 280  ; count = 1
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14484049
+pointer deepth = 1  ; count = 2452
+pointer deepth = 2  ; count = 164136
+pointer deepth = 3  ; count = 448773
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27287017
+pointer deepth = 1  ; count = 4896
+pointer deepth = 2  ; count = 166537
+pointer deepth = 3  ; count = 451173
+pointer deepth = 4  ; count = 2432
+pointer deepth = 5  ; count = 324257
+pointer deepth = 6  ; count = 284865
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 38411736
+pointer deepth = 1  ; count = 6140
+pointer deepth = 2  ; count = 167738
+pointer deepth = 3  ; count = 452901
+pointer deepth = 4  ; count = 4832
+pointer deepth = 5  ; count = 326153
+pointer deepth = 6  ; count = 286065
+pointer deepth = 7  ; count = 1232
+pointer deepth = 8  ; count = 487642
+pointer deepth = 9  ; count = 120706
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 47858734
+pointer deepth = 1  ; count = 7384
+pointer deepth = 2  ; count = 168939
+pointer deepth = 3  ; count = 454101
+pointer deepth = 4  ; count = 6032
+pointer deepth = 5  ; count = 327377
+pointer deepth = 6  ; count = 287265
+pointer deepth = 7  ; count = 2432
+pointer deepth = 8  ; count = 488842
+pointer deepth = 9  ; count = 121938
+pointer deepth = 10  ; count = 37789
+pointer deepth = 11  ; count = 570637
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 79
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 54  ; count = 1
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 75  ; count = 1
+pointer deepth = 78  ; count = 1
+pointer deepth = 86  ; count = 4
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+pointer deepth = 280  ; count = 1
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14484049
+pointer deepth = 1  ; count = 2452
+pointer deepth = 2  ; count = 164136
+pointer deepth = 3  ; count = 448773
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27287017
+pointer deepth = 1  ; count = 4896
+pointer deepth = 2  ; count = 166537
+pointer deepth = 3  ; count = 451173
+pointer deepth = 4  ; count = 2432
+pointer deepth = 5  ; count = 324257
+pointer deepth = 6  ; count = 284865
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 38411736
+pointer deepth = 1  ; count = 6140
+pointer deepth = 2  ; count = 167738
+pointer deepth = 3  ; count = 452901
+pointer deepth = 4  ; count = 4832
+pointer deepth = 5  ; count = 326153
+pointer deepth = 6  ; count = 286065
+pointer deepth = 7  ; count = 1232
+pointer deepth = 8  ; count = 487642
+pointer deepth = 9  ; count = 120706
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 47858734
+pointer deepth = 1  ; count = 7384
+pointer deepth = 2  ; count = 168939
+pointer deepth = 3  ; count = 454101
+pointer deepth = 4  ; count = 6032
+pointer deepth = 5  ; count = 327377
+pointer deepth = 6  ; count = 287265
+pointer deepth = 7  ; count = 2432
+pointer deepth = 8  ; count = 488842
+pointer deepth = 9  ; count = 121938
+pointer deepth = 10  ; count = 37789
+pointer deepth = 11  ; count = 570637
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 79
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 54  ; count = 1
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 75  ; count = 1
+pointer deepth = 78  ; count = 1
+pointer deepth = 86  ; count = 4
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+pointer deepth = 280  ; count = 1
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14484049
+pointer deepth = 1  ; count = 2452
+pointer deepth = 2  ; count = 164136
+pointer deepth = 3  ; count = 448773
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27287017
+pointer deepth = 1  ; count = 4896
+pointer deepth = 2  ; count = 166537
+pointer deepth = 3  ; count = 451173
+pointer deepth = 4  ; count = 2432
+pointer deepth = 5  ; count = 324257
+pointer deepth = 6  ; count = 284865
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 38411736
+pointer deepth = 1  ; count = 6140
+pointer deepth = 2  ; count = 167738
+pointer deepth = 3  ; count = 452901
+pointer deepth = 4  ; count = 4832
+pointer deepth = 5  ; count = 326153
+pointer deepth = 6  ; count = 286065
+pointer deepth = 7  ; count = 1232
+pointer deepth = 8  ; count = 487642
+pointer deepth = 9  ; count = 120706
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 47858734
+pointer deepth = 1  ; count = 7384
+pointer deepth = 2  ; count = 168939
+pointer deepth = 3  ; count = 454101
+pointer deepth = 4  ; count = 6032
+pointer deepth = 5  ; count = 327377
+pointer deepth = 6  ; count = 287265
+pointer deepth = 7  ; count = 2432
+pointer deepth = 8  ; count = 488842
+pointer deepth = 9  ; count = 121938
+pointer deepth = 10  ; count = 37789
+pointer deepth = 11  ; count = 570637
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 79
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 54  ; count = 1
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 75  ; count = 1
+pointer deepth = 78  ; count = 1
+pointer deepth = 86  ; count = 4
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+pointer deepth = 280  ; count = 1
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14484049
+pointer deepth = 1  ; count = 2452
+pointer deepth = 2  ; count = 164136
+pointer deepth = 3  ; count = 448773
+pointer deepth = 6  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 78  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27287017
+pointer deepth = 1  ; count = 4896
+pointer deepth = 2  ; count = 166537
+pointer deepth = 3  ; count = 451173
+pointer deepth = 4  ; count = 2432
+pointer deepth = 5  ; count = 324257
+pointer deepth = 6  ; count = 284865
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 38411736
+pointer deepth = 1  ; count = 6140
+pointer deepth = 2  ; count = 167738
+pointer deepth = 3  ; count = 452901
+pointer deepth = 4  ; count = 4832
+pointer deepth = 5  ; count = 326153
+pointer deepth = 6  ; count = 286065
+pointer deepth = 7  ; count = 1232
+pointer deepth = 8  ; count = 487642
+pointer deepth = 9  ; count = 120706
+pointer deepth = 11  ; count = 78
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 1
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 78  ; count = 1
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 47858734
+pointer deepth = 1  ; count = 7384
+pointer deepth = 2  ; count = 168939
+pointer deepth = 3  ; count = 454101
+pointer deepth = 4  ; count = 6032
+pointer deepth = 5  ; count = 327377
+pointer deepth = 6  ; count = 287265
+pointer deepth = 7  ; count = 2432
+pointer deepth = 8  ; count = 488842
+pointer deepth = 9  ; count = 121938
+pointer deepth = 10  ; count = 37789
+pointer deepth = 11  ; count = 570637
+pointer deepth = 15  ; count = 1
+pointer deepth = 17  ; count = 78
+pointer deepth = 21  ; count = 79
+pointer deepth = 24  ; count = 4
+pointer deepth = 29  ; count = 1
+pointer deepth = 40  ; count = 1
+pointer deepth = 44  ; count = 1
+pointer deepth = 46  ; count = 4
+pointer deepth = 54  ; count = 1
+pointer deepth = 61  ; count = 1
+pointer deepth = 70  ; count = 4
+pointer deepth = 75  ; count = 1
+pointer deepth = 78  ; count = 1
+pointer deepth = 86  ; count = 4
+pointer deepth = 150  ; count = 1
+pointer deepth = 228  ; count = 1
+pointer deepth = 280  ; count = 1
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14538010
+pointer deepth = 1  ; count = 40705
+pointer deepth = 2  ; count = 218364
+pointer deepth = 3  ; count = 274700
+pointer deepth = 4  ; count = 27661
+pointer deepth = 5  ; count = 13
+pointer deepth = 6  ; count = 31
+pointer deepth = 7  ; count = 4
+pointer deepth = 8  ; count = 2
+pointer deepth = 9  ; count = 1
+pointer deepth = 10  ; count = 1
+pointer deepth = 11  ; count = 1
+pointer deepth = 13  ; count = 2
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27397111
+pointer deepth = 1  ; count = 89947
+pointer deepth = 2  ; count = 253608
+pointer deepth = 3  ; count = 298553
+pointer deepth = 4  ; count = 78413
+pointer deepth = 5  ; count = 217977
+pointer deepth = 6  ; count = 172061
+pointer deepth = 7  ; count = 13545
+pointer deepth = 8  ; count = 10
+pointer deepth = 9  ; count = 12
+pointer deepth = 10  ; count = 10
+pointer deepth = 11  ; count = 6
+pointer deepth = 12  ; count = 8
+pointer deepth = 13  ; count = 2
+pointer deepth = 14  ; count = 1
+pointer deepth = 16  ; count = 1
+pointer deepth = 18  ; count = 1
+pointer deepth = 19  ; count = 1
+pointer deepth = 28  ; count = 1
+pointer deepth = 30  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 38559340
+pointer deepth = 1  ; count = 127992
+pointer deepth = 2  ; count = 294989
+pointer deepth = 3  ; count = 344963
+pointer deepth = 4  ; count = 115161
+pointer deepth = 5  ; count = 245419
+pointer deepth = 6  ; count = 193675
+pointer deepth = 7  ; count = 100756
+pointer deepth = 8  ; count = 177507
+pointer deepth = 9  ; count = 93575
+pointer deepth = 10  ; count = 11870
+pointer deepth = 11  ; count = 13
+pointer deepth = 12  ; count = 19
+pointer deepth = 13  ; count = 11
+pointer deepth = 14  ; count = 5
+pointer deepth = 15  ; count = 7
+pointer deepth = 16  ; count = 5
+pointer deepth = 17  ; count = 3
+pointer deepth = 18  ; count = 3
+pointer deepth = 19  ; count = 3
+pointer deepth = 28  ; count = 1
+pointer deepth = 30  ; count = 2
+pointer deepth = 48  ; count = 1
+pointer deepth = 49  ; count = 1
+pointer deepth = 52  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 48040035
+pointer deepth = 1  ; count = 159736
+pointer deepth = 2  ; count = 326377
+pointer deepth = 3  ; count = 376671
+pointer deepth = 4  ; count = 148540
+pointer deepth = 5  ; count = 285079
+pointer deepth = 6  ; count = 229057
+pointer deepth = 7  ; count = 130273
+pointer deepth = 8  ; count = 200407
+pointer deepth = 9  ; count = 141213
+pointer deepth = 10  ; count = 95249
+pointer deepth = 11  ; count = 127115
+pointer deepth = 12  ; count = 60275
+pointer deepth = 13  ; count = 11538
+pointer deepth = 14  ; count = 14
+pointer deepth = 15  ; count = 22
+pointer deepth = 16  ; count = 10
+pointer deepth = 17  ; count = 5
+pointer deepth = 18  ; count = 8
+pointer deepth = 19  ; count = 9
+pointer deepth = 20  ; count = 2
+pointer deepth = 21  ; count = 5
+pointer deepth = 22  ; count = 2
+pointer deepth = 23  ; count = 2
+pointer deepth = 28  ; count = 1
+pointer deepth = 30  ; count = 2
+pointer deepth = 36  ; count = 1
+pointer deepth = 42  ; count = 1
+pointer deepth = 48  ; count = 1
+pointer deepth = 49  ; count = 1
+pointer deepth = 52  ; count = 1
+pointer deepth = 67  ; count = 1
+pointer deepth = 68  ; count = 1
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 14538010
+pointer deepth = 1  ; count = 40705
+pointer deepth = 2  ; count = 218364
+pointer deepth = 3  ; count = 274700
+pointer deepth = 4  ; count = 27661
+pointer deepth = 5  ; count = 13
+pointer deepth = 6  ; count = 31
+pointer deepth = 7  ; count = 4
+pointer deepth = 8  ; count = 2
+pointer deepth = 9  ; count = 1
+pointer deepth = 10  ; count = 1
+pointer deepth = 11  ; count = 1
+pointer deepth = 13  ; count = 2
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 27397111
+pointer deepth = 1  ; count = 89947
+pointer deepth = 2  ; count = 253608
+pointer deepth = 3  ; count = 298553
+pointer deepth = 4  ; count = 78413
+pointer deepth = 5  ; count = 217977
+pointer deepth = 6  ; count = 172061
+pointer deepth = 7  ; count = 13545
+pointer deepth = 8  ; count = 10
+pointer deepth = 9  ; count = 12
+pointer deepth = 10  ; count = 10
+pointer deepth = 11  ; count = 6
+pointer deepth = 12  ; count = 8
+pointer deepth = 13  ; count = 2
+pointer deepth = 14  ; count = 1
+pointer deepth = 16  ; count = 1
+pointer deepth = 18  ; count = 1
+pointer deepth = 19  ; count = 1
+pointer deepth = 28  ; count = 1
+pointer deepth = 30  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 38559340
+pointer deepth = 1  ; count = 127992
+pointer deepth = 2  ; count = 294989
+pointer deepth = 3  ; count = 344963
+pointer deepth = 4  ; count = 115161
+pointer deepth = 5  ; count = 245419
+pointer deepth = 6  ; count = 193675
+pointer deepth = 7  ; count = 100756
+pointer deepth = 8  ; count = 177507
+pointer deepth = 9  ; count = 93575
+pointer deepth = 10  ; count = 11870
+pointer deepth = 11  ; count = 13
+pointer deepth = 12  ; count = 19
+pointer deepth = 13  ; count = 11
+pointer deepth = 14  ; count = 5
+pointer deepth = 15  ; count = 7
+pointer deepth = 16  ; count = 5
+pointer deepth = 17  ; count = 3
+pointer deepth = 18  ; count = 3
+pointer deepth = 19  ; count = 3
+pointer deepth = 28  ; count = 1
+pointer deepth = 30  ; count = 2
+pointer deepth = 48  ; count = 1
+pointer deepth = 49  ; count = 1
+pointer deepth = 52  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 48040035
+pointer deepth = 1  ; count = 159736
+pointer deepth = 2  ; count = 326377
+pointer deepth = 3  ; count = 376671
+pointer deepth = 4  ; count = 148540
+pointer deepth = 5  ; count = 285079
+pointer deepth = 6  ; count = 229057
+pointer deepth = 7  ; count = 130273
+pointer deepth = 8  ; count = 200407
+pointer deepth = 9  ; count = 141213
+pointer deepth = 10  ; count = 95249
+pointer deepth = 11  ; count = 127115
+pointer deepth = 12  ; count = 60275
+pointer deepth = 13  ; count = 11538
+pointer deepth = 14  ; count = 14
+pointer deepth = 15  ; count = 22
+pointer deepth = 16  ; count = 10
+pointer deepth = 17  ; count = 5
+pointer deepth = 18  ; count = 8
+pointer deepth = 19  ; count = 9
+pointer deepth = 20  ; count = 2
+pointer deepth = 21  ; count = 5
+pointer deepth = 22  ; count = 2
+pointer deepth = 23  ; count = 2
+pointer deepth = 28  ; count = 1
+pointer deepth = 30  ; count = 2
+pointer deepth = 36  ; count = 1
+pointer deepth = 42  ; count = 1
+pointer deepth = 48  ; count = 1
+pointer deepth = 49  ; count = 1
+pointer deepth = 52  ; count = 1
+pointer deepth = 67  ; count = 1
+pointer deepth = 68  ; count = 1
+
+wear-out percent: 0.5
+pointer deepth = 0  ; count = 55857921
+pointer deepth = 1  ; count = 179114
+pointer deepth = 2  ; count = 345868
+pointer deepth = 3  ; count = 396170
+pointer deepth = 4  ; count = 167739
+pointer deepth = 5  ; count = 303919
+pointer deepth = 6  ; count = 248136
+pointer deepth = 7  ; count = 152684
+pointer deepth = 8  ; count = 223637
+pointer deepth = 9  ; count = 161086
+pointer deepth = 10  ; count = 111879
+pointer deepth = 11  ; count = 149196
+pointer deepth = 12  ; count = 111211
+pointer deepth = 13  ; count = 74804
+pointer deepth = 14  ; count = 60176
+pointer deepth = 15  ; count = 116928
+pointer deepth = 16  ; count = 59477
+pointer deepth = 17  ; count = 188
+pointer deepth = 18  ; count = 30
+pointer deepth = 19  ; count = 19
+pointer deepth = 20  ; count = 20
+pointer deepth = 21  ; count = 9
+pointer deepth = 22  ; count = 7
+pointer deepth = 23  ; count = 10
+pointer deepth = 24  ; count = 3
+pointer deepth = 25  ; count = 5
+pointer deepth = 26  ; count = 7
+pointer deepth = 27  ; count = 2
+pointer deepth = 28  ; count = 1
+pointer deepth = 29  ; count = 1
+pointer deepth = 30  ; count = 2
+pointer deepth = 31  ; count = 3
+pointer deepth = 32  ; count = 1
+pointer deepth = 33  ; count = 2
+pointer deepth = 34  ; count = 1
+pointer deepth = 36  ; count = 1
+pointer deepth = 42  ; count = 1
+pointer deepth = 48  ; count = 1
+pointer deepth = 49  ; count = 2
+pointer deepth = 52  ; count = 1
+pointer deepth = 67  ; count = 1
+pointer deepth = 68  ; count = 1
+pointer deepth = 71  ; count = 1
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):16777216
+refresh interval:10
+last crp:8568006
+refresh count: 8568006
+refresh round: 0
+cell lifetime: 10
+deepth of the deepest point: 109
+access count: 85680067
+total write count: 85680066
+wear-out count: 8388608
+exceeded write count: 0
+normal space : backup space = 8388608 : 8388608 backup space percent:0.50
+
+wear-out percent: 0.5000
+pointer deepth = 0  ; count = 63675805
+pointer deepth = 1  ; count = 198492
+pointer deepth = 2  ; count = 365359
+pointer deepth = 3  ; count = 415669
+pointer deepth = 4  ; count = 186938
+pointer deepth = 5  ; count = 322759
+pointer deepth = 6  ; count = 267215
+pointer deepth = 7  ; count = 175095
+pointer deepth = 8  ; count = 246867
+pointer deepth = 9  ; count = 180959
+pointer deepth = 10  ; count = 128509
+pointer deepth = 11  ; count = 171277
+pointer deepth = 12  ; count = 162145
+pointer deepth = 13  ; count = 138070
+pointer deepth = 14  ; count = 120337
+pointer deepth = 15  ; count = 233836
+pointer deepth = 16  ; count = 118945
+pointer deepth = 17  ; count = 371
+pointer deepth = 18  ; count = 52
+pointer deepth = 19  ; count = 29
+pointer deepth = 20  ; count = 38
+pointer deepth = 21  ; count = 13
+pointer deepth = 22  ; count = 12
+pointer deepth = 23  ; count = 18
+pointer deepth = 24  ; count = 6
+pointer deepth = 25  ; count = 10
+pointer deepth = 26  ; count = 14
+pointer deepth = 27  ; count = 4
+pointer deepth = 28  ; count = 1
+pointer deepth = 29  ; count = 2
+pointer deepth = 30  ; count = 2
+pointer deepth = 31  ; count = 6
+pointer deepth = 32  ; count = 2
+pointer deepth = 33  ; count = 4
+pointer deepth = 34  ; count = 2
+pointer deepth = 36  ; count = 1
+pointer deepth = 42  ; count = 1
+pointer deepth = 48  ; count = 1
+pointer deepth = 49  ; count = 3
+pointer deepth = 52  ; count = 1
+pointer deepth = 67  ; count = 1
+pointer deepth = 68  ; count = 1
+pointer deepth = 71  ; count = 2
+==============================================================================
+
