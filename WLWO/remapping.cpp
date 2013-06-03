@@ -50,6 +50,7 @@ bool allocate_address(unsigned int physical_address,unsigned int * remapped_addr
 
 void perform_access_pcm(unsigned int line_address)
 {
+    //pcm.lines[line_address].write_count+=(pcm.lines[line_address].lifetime>1);
     pcm.lines[line_address].write_count++;
 #ifdef PRE_WL
     //total_write_count++;

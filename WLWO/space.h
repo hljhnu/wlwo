@@ -34,7 +34,7 @@ class line
         prev_address=0;
         remap_address=0;
         write_count=0;
-        lifetime=10;
+        lifetime=1000;
         point_deep=0;
     };
     //failure_bits[8*line_size];

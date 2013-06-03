@@ -20,6 +20,6 @@ extern unsigned int refresh_round;
 extern unsigned int xor_map(unsigned int byte_address,unsigned int end, unsigned int start, unsigned int key);
 extern unsigned int security_refresh_map(unsigned int line_address,bool update);
 extern bool security_refresh();
-extern bool exchange_access_line(unsigned int line_address,int deepth);
+extern bool exchange_access_line(unsigned int line_address,unsigned int start_line_address,int deepth);
 
 #endif // _SECURITYREFRESH_H_

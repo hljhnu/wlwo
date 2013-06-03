@@ -28,32 +28,20 @@ unsigned int a_access_count=0;
  * \return bool: A return "true" indicates the success of the access.
  *
  */
-bool access_line(unsigned int line_address,bool update,int deepth)//update:whether to update pointer deepth
+bool access_line(unsigned int line_address,unsigned int start_line_address,bool is_start,bool update,int deepth)//update:whether to update pointer deepth
 {
-
-    //we do not need to consider read access.
-#ifdef DEBUG
-    if(line_address==13421788)
+    if((line_address==start_line_address)&&(false==is_start))
     {
-        a_access_count++;
+        return true;
     }
-#endif
+    is_start=false;
+    //we do not need to consider read access.
     if((strcmp(wl_method,"start_gap")==0))
     {
         line_address=random_map[line_address];
     }
     unsigned int mapped_address = wear_leveling_map(line_address,wl_method,false);
-#ifdef DEBUG
-    if(deepth==10000-20)
-    {
-        int i=0;
-        i++;
-    }
-    if((line_address>0)&&(line_address==pcm.lines[mapped_address].remap_address))
-    {
-        cout<<"line address = "<<line_address<<endl;
-    }
-#endif
+
     if(update)
     {
         pcm.lines[mapped_address].point_deep=deepth+1;
@@ -67,7 +55,7 @@ bool access_line(unsigned int line_address,bool update,int deepth)//update:wheth
             bool success=remapping(mapped_address,&re_mapped_address);//A failure block is remapped to a logical address
             if(success)
             {
-                return access_line(re_mapped_address,update,deepth+1);
+                return access_line(re_mapped_address,start_line_address,is_start,update,deepth+1);
                 //perform_access_pcm(re_mapped_address);
                 //wear_leveling("start_gap");
             }
@@ -91,12 +79,12 @@ bool access_line(unsigned int line_address,bool update,int deepth)//update:wheth
     }
     else// dp == false , it is a pointer in that line.
     {
-         return access_line(pcm.lines[mapped_address].remap_address,update,deepth+1);
+         return access_line(pcm.lines[mapped_address].remap_address,start_line_address,is_start,update,deepth+1);
     }
 }
 bool access_address(unsigned int memory_address,bool update,int deepth)
 {
-    return access_line(memory_address/line_size,update,deepth);
+    return access_line(memory_address/line_size,memory_address/line_size,true,update,deepth);
 }
 
 unsigned int write_count_sum[pcm_size];
@@ -213,35 +201,20 @@ unsigned int access_from_file(char * filename)
                 cout<<"The device is wear out!"<<endl;
                 break;
             }
-/*
-            if(crp==outer_up_limitation)
-            {
-                cout<<"******************************"<<endl;
-                //overlay();
-            }
-*/
+
             total_write_count++;
-#ifdef DEBUG
-            if(total_write_count>=83886200)
+
+/*            if(total_write_count>=83886190)
             {
-                cout<<"total write count = "<<total_write_count<<endl;
                 int i=0;
                 i++;
             }
-#endif
+*/
             if(wear_leveling(wl_method)==false)
             {
                 cout<<"The device is wear out!"<<endl;
                 break;
             }
-#ifdef DEBUG
-            if(total_write_count>=83886200)
-            {
-                cout<<"total write count = "<<total_write_count<<endl;
-                int i=0;
-                i++;
-            }
-#endif
         }
     return access_count;
 }

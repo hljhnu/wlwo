@@ -53,8 +53,8 @@ unsigned int security_refresh_map(unsigned int line_address,bool refreshing)
     exchanged_address=xor_map(byte_address,29,6,kc);
     exchanged_address=xor_map(exchanged_address,29,6,kp);
     bool use_kc=(byte_address<crp)||(exchanged_address<crp);// line_address has been refreshed
-    use_kc=use_kc||((refreshing==true)&&((crp==(line_address<<line_bit_number))||(crp==exchanged_address)));//access the two address to be refreshed
-    use_kc=use_kc||((refreshing==false)&&((total_write_count%refresh_requency)==0));//crp is in the path of the address matched to crp;
+    //use_kc=use_kc||((refreshing==true)&&((crp==(line_address<<line_bit_number))||(crp==exchanged_address)));//access the two address to be refreshed
+    //use_kc=use_kc||((refreshing==false)&&((total_write_count%refresh_requency)==0));//crp is in the path of the address matched to crp;
     if(use_kc)// when refreshing, we need kc
     {
         mapped_byte_address=xor_map(byte_address,29,6,kc);
@@ -105,6 +105,18 @@ bool security_refresh()
 #ifdef PRE_WL
     if(total_write_count%refresh_requency==0)
     {
+        if(crp==outer_up_limitation)
+        {
+            refresh_round++;
+            crp=outer_down_limitation;
+            kp=kc;
+            kc=(rand()%pcm_size)<<line_bit_number;
+            return true;
+        }
+        else
+        {
+            crp=crp+line_size;
+        }
         refresh_count++;
         unsigned int exchange_address;
         //We do not need to real data migration as we are simulating the process.
@@ -116,34 +128,14 @@ bool security_refresh()
         unsigned int mapped_address2=security_refresh_map(crp>>line_bit_number,true);
         int point_deepth1=pcm.lines[mapped_address1].point_deep-1;
         int point_deepth2=pcm.lines[mapped_address2].point_deep-1;
-/*        if(exchange_address!=crp)
-        {
-            cout<<"not equal"<<endl;
-        }
-        if((point_deepth1>=0)||(point_deepth2>=0))
-        {
-            cout<<"address "<<exchange_address<<" "<<crp<<endl;
-            cout<<"mapped_address "<<mapped_address1<<" "<<mapped_address2<<endl;
-            cout<<"point_deepth "<<point_deepth1<<" "<<point_deepth2<<endl;
-        }*/
 
         //exchange data
-        if(!exchange_access_line(crp>>line_bit_number,point_deepth1))return false;
-        if(!exchange_access_line(exchange_address>>line_bit_number,point_deepth2))return false;
-
-        //pcm.lines[temp_address>>line_bit_number].write_count++;
-        //pcm.lines[cp].write_count++;
-        if(crp==outer_up_limitation)
-        {
-            refresh_round++;
-            crp=outer_down_limitation;
-            kp=kc;
-            kc=(rand()%pcm_size)<<line_bit_number;
-        }
-        else
-        {
-            crp=crp+line_size;
-        }
+        unsigned int crp_line=crp>>line_bit_number;
+        unsigned int exchange_line_address=exchange_address>>line_bit_number;
+        access_depth=0;
+        if(!exchange_access_line(crp_line,crp_line,point_deepth1))return false;
+        access_depth=0;
+        if(!exchange_access_line(exchange_line_address,exchange_line_address,point_deepth2))return false;
     }
 #else
 
@@ -159,11 +151,10 @@ bool security_refresh()
     return true;
 }
 
-bool exchange_access_line(unsigned int line_address,int deepth)//update:whether to update pointer deepth
+bool exchange_access_line(unsigned int line_address,unsigned int start_line_address,int deepth)//update:whether to update pointer deepth
 {
 
     //we do not need to consider read access.
-
     unsigned int mapped_address = wear_leveling_map(line_address,wl_method,true);
     pcm.lines[mapped_address].point_deep=deepth+1;
     if(pcm.lines[mapped_address].dpflag)//if dpflag == true , it is data in that cacheline.
@@ -175,7 +166,7 @@ bool exchange_access_line(unsigned int line_address,int deepth)//update:whether 
             bool success=remapping(mapped_address,&re_mapped_address);//A failure block is remapped to a logical address
             if(success)
             {
-                return access_line(re_mapped_address,true,deepth+1);
+                return access_line(re_mapped_address,start_line_address,false,true,deepth+1);
                 //perform_access_pcm(re_mapped_address);
                 //wear_leveling("start_gap");
             }
@@ -199,6 +190,6 @@ bool exchange_access_line(unsigned int line_address,int deepth)//update:whether 
     }
     else// dp == false , it is a pointer in that line.
     {
-         return access_line(pcm.lines[mapped_address].remap_address,true,deepth+1);
+         return access_line(pcm.lines[mapped_address].remap_address,start_line_address,false,true,deepth+1);
     }
 }

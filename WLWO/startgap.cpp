@@ -33,12 +33,12 @@ bool start_gap()
         if(gap1==0)
         {
             start1=(start1+1)%(pcm_size-1);
-            access_line(gap1,true,0);//[gap]=[n]    //real read and write occur! implemented in main.cpp
+            access_line(gap1,gap1,true,true,0);//[gap]=[n]    //real read and write occur! implemented in main.cpp
             gap1=pcm_size-1;
         }
         else
         {
-            access_line(gap1,true,0); //[gap]=[gap-1]  //real read and write occur!
+            access_line(gap1,gap1,true,true,0); //[gap]=[gap-1]  //real read and write occur!
             gap1--;
         }
     }
@@ -49,12 +49,12 @@ bool start_gap()
         if(gap1==0)
         {
             start1=(start1+1)%pivot;
-            if(!access_line(gap1,true,0))return false;//[gap]=[n]    //real read and write occur! implemented in main.cpp
+            if(!access_line(gap1,gap1,true,true,0))return false;//[gap]=[n]    //real read and write occur! implemented in main.cpp
             gap1=pivot;
         }
         else
         {
-            if(!access_line(gap1,true,0))return false; //[gap]=[gap-1]  //real read and write occur!
+            if(!access_line(gap1,gap1,true,true,0))return false; //[gap]=[gap-1]  //real read and write occur!
             gap1--;
         }
     }
@@ -65,12 +65,12 @@ bool start_gap()
         if(gap2==pivot+1)//[pivot] is used for normal space rather than back space
         {
             start2=(start2-pivot+1)%(pcm_size-1-pivot-1)+pivot;
-            access_line(gap2,true,0); //[gap]=[n]
+            access_line(gap2,gap2,true,true,0); //[gap]=[n]
             gap2=pcm_size-1;
         }
         else
         {
-            access_line(gap2,true,0); //[gap]=[gap-1]
+            access_line(gap2,gap2,true,true,0); //[gap]=[gap-1]
             gap2--;
         }
     }
