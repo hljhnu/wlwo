@@ -13,7 +13,6 @@ the whole work.
 #include "securityrefresh.h"
 using namespace std;
 
-
 ofstream outfile(result_path,ofstream::out|ofstream::app);
 #ifdef DEBUG
 unsigned int a_access_count=0;
@@ -30,6 +29,7 @@ unsigned int a_access_count=0;
  */
 bool access_line(unsigned int line_address,unsigned int start_line_address,bool is_start,bool update,int deepth)//update:whether to update pointer deepth
 {
+    total_access_delay+=50;
     if((line_address==start_line_address)&&(false==is_start))
     {
         return true;
@@ -41,20 +41,36 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
         line_address=random_map[line_address];
     }
     unsigned int mapped_address = wear_leveling_map(line_address,wl_method,false);
-
+    unsigned int start_mapped_address = wear_leveling_map(start_line_address,wl_method,false);
     if(update)
     {
+        //pointer_cache.invalid(mapped_address);
         pcm.lines[mapped_address].point_deep=deepth+1;
     }
     if(pcm.lines[mapped_address].dpflag)//if dpflag == true , it is data in that cacheline.
     {
         if(pcm.lines[mapped_address].write_count>=pcm.lines[mapped_address].lifetime)
         {
+            if(0==first_broken_write_count)
+            {
+                first_broken_write_count=total_write_count;
+            }
             wear_out_count++;
             unsigned int re_mapped_address;
             bool success=remapping(mapped_address,&re_mapped_address);//A failure block is remapped to a logical address
+            unsigned int target_address = wear_leveling_map(re_mapped_address,wl_method,update);
             if(success)
             {
+#ifdef POINTER_CACHE
+                bool in_cache=false;
+                //in_cache=Reverse_pointer_cache.lookup(target_address);
+
+                if((false==update)&&(start_line_address<=pivot))
+                {
+                    pointer_cache.insert_entry(start_line_address,target_address);
+                    reverse_pointer_cache.insert_entry(start_line_address,target_address);
+                }
+#endif
                 return access_line(re_mapped_address,start_line_address,is_start,update,deepth+1);
                 //perform_access_pcm(re_mapped_address);
                 //wear_leveling("start_gap");
@@ -66,6 +82,12 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
         }
         else
         {
+#ifdef POINTER_CACHE
+            if((false==update)&&(start_line_address<=pivot))
+            {
+                //pointer_cache.insert_entry(start_mapped_address,pcm.lines[mapped_address].remap_address);
+            }
+#endif
             perform_access_pcm(mapped_address);
             int percent=wear_out_count/(pcm_size*0.1);
             if((pointer_printed[percent]==false)&&(wear_out_count>0)&&((wear_out_count%(pcm_size/10)==0)))
@@ -79,7 +101,32 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
     }
     else// dp == false , it is a pointer in that line.
     {
-         return access_line(pcm.lines[mapped_address].remap_address,start_line_address,is_start,update,deepth+1);
+        unsigned int remapped_address;
+#ifdef POINTER_CACHE
+        if((false==update)&&(start_line_address<=pivot))
+        {
+            unsigned int target_address;
+            bool found=false;
+            found=pointer_cache.lookup(start_mapped_address,&target_address);
+            if(found)
+            {
+               //remapped_address = target_address;
+               perform_access_pcm(target_address);
+               return true;
+            }
+            else
+            {
+                remapped_address=pcm.lines[mapped_address].remap_address;
+            }
+        }
+        else
+        {
+            remapped_address=pcm.lines[mapped_address].remap_address;
+        }
+#else
+            remapped_address=pcm.lines[mapped_address].remap_address;
+#endif
+        return access_line(remapped_address,start_line_address,is_start,update,deepth+1);
     }
 }
 bool access_address(unsigned int memory_address,bool update,int deepth)
@@ -98,8 +145,8 @@ unsigned int overlay()//in order to reduce runing time, we overlay write count b
          {
             unsigned int xor_address;
             unsigned int match_address;
-            xor_address=xor_map(i<<line_bit_number,39,6,kc);
-            xor_address=xor_map(xor_address,39,6,kp);
+            xor_address=xor_map(i<<line_bit_number,OUT_LEFT,OUT_RIGHT,kc);
+            xor_address=xor_map(xor_address,OUT_LEFT,OUT_RIGHT,kp);
             match_address=xor_address>>line_bit_number;
             write_count_sum[i]+=pcm.lines[match_address].write_count;
             cout<<write_count_sum[i]<<endl;
@@ -193,6 +240,10 @@ unsigned int access_from_file(char * filename)
                 //address=address%pivot;
                 continue;
             }
+            if((address>>line_bit_number)==9535)
+            {
+                continue;
+            }
             successful=access_address(address,false,0);
             //if(total_write_count%1000==0)
                 //cout<<" total write count: "<<total_write_count<<endl;
@@ -204,12 +255,12 @@ unsigned int access_from_file(char * filename)
 
             total_write_count++;
 
-/*            if(total_write_count>=83886190)
+            if(total_write_count>=398476804)
             {
                 int i=0;
                 i++;
             }
-*/
+
             if(wear_leveling(wl_method)==false)
             {
                 cout<<"The device is wear out!"<<endl;
@@ -254,8 +305,12 @@ void output_result()
     cout<<"deepth of the deepest point: " << deepest_point<<endl;
     cout<<"access count: "<<access_count<<endl;
     cout<<"total write count: "<<total_write_count<<endl;
+    cout<<"total write count(without remapping): "<<first_broken_write_count<<endl;
+    cout<<"percent(without/with remapping): "<<fixed<<setprecision(4)<<((float)first_broken_write_count/(float)total_write_count)<<endl;
     cout<<"wear-out count: "<<wear_out_count<<endl;
     cout<<"exceeded write count: "<<exceed_write_count<<endl;
+    //cout<<"total access delay: "<<total_access_delay<<" ns"<<endl;
+    cout<<"average access delay: "<<(total_access_delay/total_write_count)<<" ns"<<endl;
     cout<<"normal space : backup space = "<<pivot<<" : "<< (pcm_size-pivot)<<" backup space percent:"<<setprecision(2)<<(float)(pcm_size-pivot)/(float)pcm_size<<endl;
     cout<<"\nwear-out percent: "<<fixed<<setprecision(4)<<((float)wear_out_count/(float)pcm_size)<<endl;
 
@@ -268,6 +323,12 @@ void output_result()
     }
     if(outfile.is_open())
     {
+        outfile<<"***********"<<"filter unnormal writes"<<"***********"<<endl;
+#ifdef POINTER_CACHE
+        outfile<<"***********"<<"with pointer cache"<<"***********"<<endl;
+#else
+        outfile<<"***********"<<"without pointer cache"<<"********"<<endl;
+#endif // POINETR_CACHE
         outfile<<"method:"<<wl_method<<endl;
         outfile<<"trace file: "<<trace<<endl;
         outfile<<"pcm size(line):"<<pcm_size<<endl;
@@ -282,8 +343,12 @@ void output_result()
         outfile<<"deepth of the deepest point: " << deepest_point<<endl;
         outfile<<"access count: "<<access_count<<endl;
         outfile<<"total write count: "<<total_write_count<<endl;
+        outfile<<"total write count(without remapping): "<<first_broken_write_count<<endl;
+        outfile<<"percent(without/with remapping): "<<fixed<<setprecision(4)<<((float)first_broken_write_count/(float)total_write_count)<<endl;
         outfile<<"wear-out count: "<<wear_out_count<<endl;
         outfile<<"exceeded write count: "<<exceed_write_count<<endl;
+        //outfile<<"total access delay: "<<total_access_delay<<" ns"<<endl;
+        outfile<<"average access delay: "<<(total_access_delay/total_write_count)<<" ns"<<endl;
         outfile<<"normal space : backup space = "<<pivot<<" : "<< (pcm_size-pivot)<<" backup space percent:"<<setprecision(2)<<(float)(pcm_size-pivot)/(float)pcm_size<<endl;
         outfile<<"\nwear-out percent: "<<fixed<<setprecision(4)<<((float)wear_out_count/(float)pcm_size)<<endl;
         for(i=0;i<=deepest_point;i++)
