@@ -2,7 +2,7 @@
 char wl_method[20]="security_refresh";//
 //unsigned int line_size=64;
 //#define  pcm_size 1048576;//unit:cacheline
-unsigned int pivot=pcm_size*0.9;//pivot is the limitation between pcm space and back space;
+unsigned int pivot=pcm_size*0.5;//pivot is the limitation between pcm space and back space;
 unsigned long long total_write_count=0;
 unsigned int first_broken_write_count=0;
 unsigned int total_write_count2=0;//requested write access count, exclude write on refreshing
@@ -13,9 +13,10 @@ unsigned int trace_data[10000000];
 unsigned int trace_len=0;
 unsigned int pointer_deepth[pcm_size];
 unsigned long long total_access_delay=0;
+unsigned int access_hops[pcm_size];//recording access hops of every request.
 
-unsigned int access_path[1000]; //in case that access path forms a cycly.
-unsigned int access_depth=0;
+unsigned int access_path[1000]; //in case that access path forms a cycle.
+unsigned int access_depth=0;//used for testing cycle in access path.
 
 char trace[100] = "D:\\programs\\WLWO\\WLWO\\trace-LU.out";
 char random[100] = "D:\\programs\\WLWO\\WLWO\\24bits_randomized_addr.dat";

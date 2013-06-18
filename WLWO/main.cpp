@@ -89,6 +89,10 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
             }
 #endif
             perform_access_pcm(mapped_address);
+            if(false==update)
+            {
+                access_hops[deepth]++;
+            }
             int percent=wear_out_count/(pcm_size*0.1);
             if((pointer_printed[percent]==false)&&(wear_out_count>0)&&((wear_out_count%(pcm_size/10)==0)))
             {
@@ -158,6 +162,24 @@ unsigned int overlay()//in order to reduce runing time, we overlay write count b
         kp=kc;
         kc=rand()%0xffffffff;
     }
+}
+void print_hops()//print number of different hops of access
+{
+    unsigned int i;
+    cout<<endl;
+    cout<<"access hops:"<<endl;
+    outfile<<endl;
+    outfile<<"access hops:"<<endl;
+    for(i=0;i<pcm_size;i++)
+    {
+        if(access_hops[i]>0)
+        {
+            cout<<"hops: "<<i<<" ; count: "<<access_hops[i]<<endl;
+            outfile<<"hops: "<<i<<" ; count: "<<access_hops[i]<<endl;
+        }
+    }
+    cout<<endl;
+    outfile<<endl;
 }
 void print_pointer()
 {
@@ -393,6 +415,7 @@ int main()
 
     access_from_file(trace);
     output_result();
+    print_hops();
     if(outfile.is_open())
     {
         outfile.close();

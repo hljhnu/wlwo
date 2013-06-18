@@ -24,6 +24,7 @@ extern char random[] ;
 extern char result_path[];
 extern bool pointer_printed[];
 extern unsigned long long total_access_delay;
+extern unsigned int access_hops[];
 
 extern unsigned int access_path[];
 extern unsigned int access_depth;
