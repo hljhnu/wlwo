@@ -1,6 +1,8 @@
 #ifndef _SECURITYREFRESH_H_
 #define _SECURITYREFRESH_H_
 #include "global.h"
+#include <stdlib.h>
+using namespace std;
 //extern pcm_size;//unit:cacheline
 #define OUT_LEFT 26
 #define OUT_RIGHT 6
@@ -59,6 +61,7 @@ public:
             if(source_address==source[target_base+i])
             {
                 target[target_base+i]=target_address;
+                valid[target_base+i]=true;
                 return true;
             }
         }
@@ -73,7 +76,12 @@ public:
                 return true;
             }
         }
-        return false;
+        unsigned int evicted_num=0;
+        evicted_num=rand()%4;
+        source[target_base+evicted_num]=source_address;
+        target[target_base+evicted_num]=target_address;
+        return true;
+        //return false;
     }
 
     bool lookup(unsigned int source_address,unsigned int *target_address)
@@ -144,6 +152,7 @@ public:
             if(target_address==target[source_base+i])
             {
                 source[source_base+i]=source_address;
+                valid[source_base+i]=true;
                 return true;
             }
         }
@@ -158,7 +167,12 @@ public:
                 return true;
             }
         }
-        return false;
+        unsigned int evicted_num=0;
+        evicted_num=rand()%4;
+        source[source_base+evicted_num]=source_address;
+        target[source_base+evicted_num]=target_address;
+        return true;
+        //return false;
     }
 
     bool lookup(unsigned int *source_address,unsigned int target_address)

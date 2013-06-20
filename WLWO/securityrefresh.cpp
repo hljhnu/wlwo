@@ -56,12 +56,13 @@ unsigned int lookup_target(unsigned int line_address)//update:whether to update 
     }
 }
 
-bool check_pointer_cycle(unsigned int line_address, unsigned int start_line_address)//update:whether to update pointer deepth
+bool check_pointer_cycle(unsigned int line_address, unsigned int start_line_address,unsigned int depth)//update:whether to update pointer deepth
 {
-    if(line_address==start_line_address)
+    if((depth!=0)&&(line_address==start_line_address))
     {
         return true;
     }
+    depth++;
     unsigned int mapped_address = wear_leveling_map(line_address,wl_method,false);
     if(pcm.lines[mapped_address].dpflag)//if dpflag == true , it is data in that cacheline.
     {
@@ -70,7 +71,7 @@ bool check_pointer_cycle(unsigned int line_address, unsigned int start_line_addr
     else// dp == false , it is a pointer in that line.
     {
         unsigned int remapped_address=pcm.lines[mapped_address].remap_address;
-        return check_pointer_cycle(remapped_address,start_line_address);
+        return check_pointer_cycle(remapped_address,start_line_address,depth);
     }
 }
 
@@ -137,6 +138,35 @@ bool security_refresh()
 #ifdef PRE_WL
     if(total_write_count%refresh_requency==0)
     {
+        unsigned int old_target1,old_target2;
+        unsigned int new_target1,new_target2;
+        bool old_cycle1,old_cycle2;
+        bool new_cycle1,new_cycle2;
+        unsigned int exchange_address;
+
+        //We do not need to real data migration as we are simulating the process.
+        //We only update the write count;
+        exchange_address = xor_map(crp,OUT_LEFT,OUT_RIGHT,kc);
+        exchange_address = xor_map(exchange_address,OUT_LEFT,OUT_RIGHT,kp);
+
+        unsigned int mapped_address1=security_refresh_map(exchange_address>>line_bit_number,true);
+        unsigned int mapped_address2=security_refresh_map(crp>>line_bit_number,true);
+        int point_deepth1=pcm.lines[mapped_address1].point_deep-1;
+        int point_deepth2=pcm.lines[mapped_address2].point_deep-1;
+        old_cycle1=check_pointer_cycle(exchange_address>>line_bit_number,exchange_address>>line_bit_number,0);
+        old_cycle2=check_pointer_cycle(crp>>line_bit_number,crp>>line_bit_number,0);
+        if(!old_cycle1)
+        {
+            old_target1=lookup_target(exchange_address>>line_bit_number);
+        }
+        if(!old_cycle2)
+        {
+            old_target2=lookup_target(crp>>line_bit_number);
+        }
+
+        refresh_count++;
+
+
         if(crp==outer_up_limitation)
         {
             refresh_round++;
@@ -149,46 +179,23 @@ bool security_refresh()
         {
             crp=crp+line_size;
         }
+        new_cycle1=check_pointer_cycle(exchange_address>>line_bit_number,exchange_address>>line_bit_number,0);
+        new_cycle2=check_pointer_cycle(crp>>line_bit_number,crp>>line_bit_number,0);
+        new_target1=old_target2;
+        new_target2=old_target1;
 
-        refresh_count++;
-        unsigned int exchange_address;
-        //We do not need to real data migration as we are simulating the process.
-        //We only update the write count;
-        exchange_address = xor_map(crp,OUT_LEFT,OUT_RIGHT,kc);
-        exchange_address = xor_map(exchange_address,OUT_LEFT,OUT_RIGHT,kp);
-
-        unsigned int mapped_address1=security_refresh_map(exchange_address>>line_bit_number,true);
-        unsigned int mapped_address2=security_refresh_map(crp>>line_bit_number,true);
-        int point_deepth1=pcm.lines[mapped_address1].point_deep-1;
-        int point_deepth2=pcm.lines[mapped_address2].point_deep-1;
-
-        bool cycle1=check_pointer_cycle(exchange_address>>line_bit_number,exchange_address>>line_bit_number);
-        bool cycle2=check_pointer_cycle(crp>>line_bit_number,crp>>line_bit_number);
-
-#ifdef POINETR_CACHE
-        //update pointer
-        unsigned int target_address1;
-        if(!cycle1)
-        {
-            target_address1=lookup_target(exchange_address>>line_bit_number);
-        }
-        unsigned int target_address2;
-        if(!cycle2)
-        {
-            target_address2=lookup_target(crp>>line_bit_number);
-        }
-
+#ifdef POINTER_CACHE
         unsigned int source_address1;
         unsigned int source_address2;
-        if(reverse_pointer_cache.lookup(&source_address1,target_address1)&&(!cycle1))
+        if(reverse_pointer_cache.lookup(&source_address1,new_target1)&&(!new_cycle1))
         {
-            pointer_cache.insert_entry(source_address1,target_address1);
-            reverse_pointer_cache.insert_entry(source_address1,target_address1);
+            pointer_cache.insert_entry(source_address1,new_target1);
+            reverse_pointer_cache.insert_entry(source_address1,new_target1);
         }
-        if(reverse_pointer_cache.lookup(&source_address2,target_address2)&&(!cycle2))
+        if(reverse_pointer_cache.lookup(&source_address2,new_target2)&&(!new_cycle2))
         {
-            pointer_cache.insert_entry(source_address2,target_address2);
-            reverse_pointer_cache.insert_entry(source_address2,target_address2);
+            pointer_cache.insert_entry(source_address2,new_target2);
+            reverse_pointer_cache.insert_entry(source_address2,new_target2);
         }
 #endif
         //exchange data
@@ -218,7 +225,7 @@ bool exchange_access_line(unsigned int line_address,unsigned int start_line_addr
     total_access_delay+=50;
     //we do not need to consider read access.
     unsigned int mapped_address = wear_leveling_map(line_address,wl_method,true);
-    pointer_cache.invalid(mapped_address);
+    //pointer_cache.invalid(mapped_address);
     pcm.lines[mapped_address].point_deep=deepth+1;
     if(pcm.lines[mapped_address].dpflag)//if dpflag == true , it is data in that cacheline.
     {

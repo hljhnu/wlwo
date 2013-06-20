@@ -22,6 +22,8 @@ unsigned int a_access_count=0;
 /** \brief access_line: This function is the main framwork of the whole work.
  *
  * \param  line_address: The address of a line from the last level cache to the memory.
+ * \param  start_line_address:the head of an access path
+ * \param  is_start: whether param line_address is the head of the access path
  * \param  update: access happens when perfrom security refreshing
  * \param  deepth: the deepth of pointer which points to line_address
  * \return bool: A return "true" indicates the success of the access.
@@ -62,7 +64,7 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
             if(success)
             {
 #ifdef POINTER_CACHE
-                bool in_cache=false;
+                //bool in_cache=false;
                 //in_cache=Reverse_pointer_cache.lookup(target_address);
 
                 if((false==update)&&(start_line_address<=pivot))
@@ -83,10 +85,12 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
         else
         {
 #ifdef POINTER_CACHE
+        /*
             if((false==update)&&(start_line_address<=pivot))
             {
-                //pointer_cache.insert_entry(start_mapped_address,pcm.lines[mapped_address].remap_address);
+                pointer_cache.insert_entry(start_mapped_address,pcm.lines[mapped_address].remap_address);
             }
+        */
 #endif
             perform_access_pcm(mapped_address);
             if(false==update)
@@ -111,7 +115,7 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
         {
             unsigned int target_address;
             bool found=false;
-            found=pointer_cache.lookup(start_mapped_address,&target_address);
+            found=pointer_cache.lookup(start_line_address,&target_address);
             if(found)
             {
                //remapped_address = target_address;
@@ -262,10 +266,12 @@ unsigned int access_from_file(char * filename)
                 //address=address%pivot;
                 continue;
             }
+            /*
             if((address>>line_bit_number)==9535)
             {
                 continue;
             }
+            */
             successful=access_address(address,false,0);
             //if(total_write_count%1000==0)
                 //cout<<" total write count: "<<total_write_count<<endl;
@@ -276,12 +282,6 @@ unsigned int access_from_file(char * filename)
             }
 
             total_write_count++;
-
-            if(total_write_count>=398476804)
-            {
-                int i=0;
-                i++;
-            }
 
             if(wear_leveling(wl_method)==false)
             {
@@ -351,6 +351,7 @@ void output_result()
 #else
         outfile<<"***********"<<"without pointer cache"<<"********"<<endl;
 #endif // POINETR_CACHE
+        outfile<<"************random replacement sheme for pointer cache*******"<<endl;
         outfile<<"method:"<<wl_method<<endl;
         outfile<<"trace file: "<<trace<<endl;
         outfile<<"pcm size(line):"<<pcm_size<<endl;
@@ -380,7 +381,6 @@ void output_result()
                 outfile<<"pointer deepth = "<<i<<"  ; count = "<<pointer_deepth[i]<<endl;
             }
         }
-        outfile<<"=============================================================================="<<endl;
         outfile<<endl;
     }
 }
@@ -416,6 +416,7 @@ int main()
     access_from_file(trace);
     output_result();
     print_hops();
+    outfile<<"=============================================================================="<<endl;
     if(outfile.is_open())
     {
         outfile.close();

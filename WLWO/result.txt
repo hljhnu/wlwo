@@ -10150,3 +10150,2155 @@ hops: 2 ; count: 58885399
 hops: 3 ; count: 645900
 hops: 4 ; count: 46
 
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1670702
+pointer deepth = 1  ; count = 213543
+pointer deepth = 2  ; count = 3192
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:488681
+refresh count: 115831986
+refresh round: 55
+cell lifetime: 1000
+deepth of the deepest point: 2
+access count: 1987110964
+total write count: 1158320414
+total write count(without remapping): 385255770
+percent(without/with remapping): 0.3326
+wear-out count: 209716
+exceeded write count: 828706387
+average access delay: 61 ns
+normal space : backup space = 1887436 : 209716 backup space percent:0.10
+
+wear-out percent: 0.1000
+pointer deepth = 0  ; count = 3341404
+pointer deepth = 1  ; count = 427086
+pointer deepth = 2  ; count = 6384
+==============================================================================
+
+
+access hops:
+hops: 0 ; count: 1125777591
+hops: 1 ; count: 32332794
+hops: 2 ; count: 138632
+
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1670702
+pointer deepth = 1  ; count = 213543
+pointer deepth = 2  ; count = 3192
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:488681
+refresh count: 115831986
+refresh round: 55
+cell lifetime: 1000
+deepth of the deepest point: 2
+access count: 1987110964
+total write count: 1158320414
+total write count(without remapping): 385255770
+percent(without/with remapping): 0.3326
+wear-out count: 209716
+exceeded write count: 828706387
+average access delay: 61 ns
+normal space : backup space = 1887436 : 209716 backup space percent:0.10
+
+wear-out percent: 0.1000
+pointer deepth = 0  ; count = 3341404
+pointer deepth = 1  ; count = 427086
+pointer deepth = 2  ; count = 6384
+
+
+access hops:
+hops: 0 ; count: 1125777591
+hops: 1 ; count: 32332794
+hops: 2 ; count: 138632
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1678093
+pointer deepth = 1  ; count = 203514
+pointer deepth = 2  ; count = 5800
+pointer deepth = 3  ; count = 30
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2951036
+pointer deepth = 1  ; count = 590388
+pointer deepth = 2  ; count = 23693
+pointer deepth = 3  ; count = 42
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1332468
+refresh count: 114578622
+refresh round: 54
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 2198013912
+total write count: 1145786762
+total write count(without remapping): 268513064
+percent(without/with remapping): 0.2343
+wear-out count: 419431
+exceeded write count: 1052134043
+average access delay: 63 ns
+normal space : backup space = 1677721 : 419431 backup space percent:0.20
+
+wear-out percent: 0.2000
+pointer deepth = 0  ; count = 4223979
+pointer deepth = 1  ; count = 977262
+pointer deepth = 2  ; count = 41586
+pointer deepth = 3  ; count = 54
+
+
+access hops:
+hops: 0 ; count: 1072580126
+hops: 1 ; count: 70145814
+hops: 2 ; count: 2201035
+hops: 3 ; count: 2540
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1656847
+pointer deepth = 1  ; count = 225250
+pointer deepth = 2  ; count = 5340
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2904832
+pointer deepth = 1  ; count = 641839
+pointer deepth = 2  ; count = 18488
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3740235
+pointer deepth = 1  ; count = 1265095
+pointer deepth = 2  ; count = 27835
+pointer deepth = 3  ; count = 1
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1197294
+refresh count: 114443448
+refresh round: 54
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 2505587785
+total write count: 1144435028
+total write count(without remapping): 231067938
+percent(without/with remapping): 0.2019
+wear-out count: 629146
+exceeded write count: 1361046624
+average access delay: 64 ns
+normal space : backup space = 1468006 : 629146 backup space percent:0.30
+
+wear-out percent: 0.3000
+pointer deepth = 0  ; count = 4575638
+pointer deepth = 1  ; count = 1888351
+pointer deepth = 2  ; count = 37182
+pointer deepth = 3  ; count = 2
+
+
+access hops:
+hops: 0 ; count: 1053589581
+hops: 1 ; count: 88448541
+hops: 2 ; count: 1445699
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1669565
+pointer deepth = 1  ; count = 217872
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2915221
+pointer deepth = 1  ; count = 649444
+pointer deepth = 2  ; count = 494
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3749399
+pointer deepth = 1  ; count = 1273850
+pointer deepth = 2  ; count = 9917
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4228682
+pointer deepth = 1  ; count = 1982471
+pointer deepth = 2  ; count = 80305
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:430235
+refresh count: 132550748
+refresh round: 63
+cell lifetime: 1000
+deepth of the deepest point: 2
+access count: 3382719921
+total write count: 1325508110
+total write count(without remapping): 132655280
+percent(without/with remapping): 0.1001
+wear-out count: 838861
+exceeded write count: 2057068551
+average access delay: 73 ns
+normal space : backup space = 1258291 : 838861 backup space percent:0.40
+
+wear-out percent: 0.4000
+pointer deepth = 0  ; count = 4707965
+pointer deepth = 1  ; count = 2691092
+pointer deepth = 2  ; count = 150693
+
+
+access hops:
+hops: 0 ; count: 1003774882
+hops: 1 ; count: 308286583
+hops: 2 ; count: 12107518
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1680041
+pointer deepth = 1  ; count = 206725
+pointer deepth = 2  ; count = 671
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2947468
+pointer deepth = 1  ; count = 607887
+pointer deepth = 2  ; count = 9803
+pointer deepth = 3  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3818680
+pointer deepth = 1  ; count = 1172333
+pointer deepth = 2  ; count = 42149
+pointer deepth = 3  ; count = 4
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4331638
+pointer deepth = 1  ; count = 1824384
+pointer deepth = 2  ; count = 135187
+pointer deepth = 3  ; count = 249
+
+wear-out percent: 0.5
+pointer deepth = 0  ; count = 4564548
+pointer deepth = 1  ; count = 2412233
+pointer deepth = 2  ; count = 357915
+pointer deepth = 3  ; count = 5339
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1037280
+refresh count: 141546397
+refresh round: 67
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 4286521993
+total write count: 1415464644
+total write count(without remapping): 96500664
+percent(without/with remapping): 0.0682
+wear-out count: 1048576
+exceeded write count: 2870875790
+average access delay: 82 ns
+normal space : backup space = 1048576 : 1048576 backup space percent:0.50
+
+wear-out percent: 0.5000
+pointer deepth = 0  ; count = 4797458
+pointer deepth = 1  ; count = 3000082
+pointer deepth = 2  ; count = 580643
+pointer deepth = 3  ; count = 10429
+
+
+access hops:
+hops: 0 ; count: 908896263
+hops: 1 ; count: 432997299
+hops: 2 ; count: 70353390
+hops: 3 ; count: 562737
+hops: 4 ; count: 65
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1658268
+pointer deepth = 1  ; count = 229012
+pointer deepth = 2  ; count = 157
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1127031
+refresh count: 114373185
+refresh round: 54
+cell lifetime: 1000
+deepth of the deepest point: 2
+access count: 1962087006
+total write count: 1143732398
+total write count(without remapping): 385255770
+percent(without/with remapping): 0.3368
+wear-out count: 209716
+exceeded write count: 818271511
+average access delay: 61 ns
+normal space : backup space = 1887436 : 209716 backup space percent:0.10
+
+wear-out percent: 0.1000
+pointer deepth = 0  ; count = 3316536
+pointer deepth = 1  ; count = 458024
+pointer deepth = 2  ; count = 314
+
+
+access hops:
+hops: 0 ; count: 1115363704
+hops: 1 ; count: 28363809
+hops: 2 ; count: 4885
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1677309
+pointer deepth = 1  ; count = 206748
+pointer deepth = 2  ; count = 3380
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2947065
+pointer deepth = 1  ; count = 591919
+pointer deepth = 2  ; count = 26175
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:210397
+refresh count: 117650853
+refresh round: 56
+cell lifetime: 1000
+deepth of the deepest point: 2
+access count: 2256950214
+total write count: 1176509096
+total write count(without remapping): 268513064
+percent(without/with remapping): 0.2282
+wear-out count: 419431
+exceeded write count: 1080345515
+average access delay: 63 ns
+normal space : backup space = 1677721 : 419431 backup space percent:0.20
+
+wear-out percent: 0.2000
+pointer deepth = 0  ; count = 4216821
+pointer deepth = 1  ; count = 977090
+pointer deepth = 2  ; count = 48970
+
+
+access hops:
+hops: 0 ; count: 1105904551
+hops: 1 ; count: 68813709
+hops: 2 ; count: 1790836
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1655442
+pointer deepth = 1  ; count = 228060
+pointer deepth = 2  ; count = 3935
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2901382
+pointer deepth = 1  ; count = 655133
+pointer deepth = 2  ; count = 8644
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3743603
+pointer deepth = 1  ; count = 1251205
+pointer deepth = 2  ; count = 38358
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:164335
+refresh count: 119701942
+refresh round: 57
+cell lifetime: 1000
+deepth of the deepest point: 2
+access count: 2620722893
+total write count: 1197019998
+total write count(without remapping): 231067938
+percent(without/with remapping): 0.1930
+wear-out count: 629146
+exceeded write count: 1423591900
+average access delay: 66 ns
+normal space : backup space = 1468006 : 629146 backup space percent:0.30
+
+wear-out percent: 0.3000
+pointer deepth = 0  ; count = 4585824
+pointer deepth = 1  ; count = 1847277
+pointer deepth = 2  ; count = 68072
+
+
+access hops:
+hops: 0 ; count: 1064630526
+hops: 1 ; count: 131109945
+hops: 2 ; count: 1279527
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1664626
+pointer deepth = 1  ; count = 222799
+pointer deepth = 2  ; count = 12
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2910742
+pointer deepth = 1  ; count = 653473
+pointer deepth = 2  ; count = 944
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3748462
+pointer deepth = 1  ; count = 1269601
+pointer deepth = 2  ; count = 15103
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4209549
+pointer deepth = 1  ; count = 2015116
+pointer deepth = 2  ; count = 66789
+pointer deepth = 3  ; count = 4
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:687061
+refresh count: 132807574
+refresh round: 63
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 3389268491
+total write count: 1328076370
+total write count(without remapping): 132655280
+percent(without/with remapping): 0.0999
+wear-out count: 838861
+exceeded write count: 2061048575
+average access delay: 73 ns
+normal space : backup space = 1258291 : 838861 backup space percent:0.40
+
+wear-out percent: 0.4000
+pointer deepth = 0  ; count = 4670636
+pointer deepth = 1  ; count = 2760631
+pointer deepth = 2  ; count = 118475
+pointer deepth = 3  ; count = 8
+
+
+access hops:
+hops: 0 ; count: 1014075678
+hops: 1 ; count: 308341788
+hops: 2 ; count: 5658793
+hops: 3 ; count: 111
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1679828
+pointer deepth = 1  ; count = 207569
+pointer deepth = 2  ; count = 40
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2952194
+pointer deepth = 1  ; count = 607032
+pointer deepth = 2  ; count = 5933
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3832027
+pointer deepth = 1  ; count = 1158785
+pointer deepth = 2  ; count = 42353
+pointer deepth = 3  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4347419
+pointer deepth = 1  ; count = 1803094
+pointer deepth = 2  ; count = 140805
+pointer deepth = 3  ; count = 140
+
+wear-out percent: 0.5
+pointer deepth = 0  ; count = 4574192
+pointer deepth = 1  ; count = 2402363
+pointer deepth = 2  ; count = 359103
+pointer deepth = 3  ; count = 4377
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1394232
+refresh count: 141903349
+refresh round: 67
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 2376760
+total write count: 1419034165
+total write count(without remapping): 96500664
+percent(without/with remapping): 0.0680
+wear-out count: 1048576
+exceeded write count: 2878127890
+average access delay: 81 ns
+normal space : backup space = 1048576 : 1048576 backup space percent:0.50
+
+wear-out percent: 0.5000
+pointer deepth = 0  ; count = 4800965
+pointer deepth = 1  ; count = 3001632
+pointer deepth = 2  ; count = 577401
+pointer deepth = 3  ; count = 8614
+
+
+access hops:
+hops: 0 ; count: 909002730
+hops: 1 ; count: 449258476
+hops: 2 ; count: 60157356
+hops: 3 ; count: 615603
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1662916
+pointer deepth = 1  ; count = 223395
+pointer deepth = 2  ; count = 1125
+pointer deepth = 3  ; count = 1
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:292217
+refresh count: 107246918
+refresh round: 51
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 1839833728
+total write count: 1072469698
+total write count(without remapping): 385255770
+percent(without/with remapping): 0.3592
+wear-out count: 209716
+exceeded write count: 767286107
+average access delay: 61 ns
+normal space : backup space = 1887436 : 209716 backup space percent:0.10
+
+wear-out percent: 0.1000
+pointer deepth = 0  ; count = 3325832
+pointer deepth = 1  ; count = 446790
+pointer deepth = 2  ; count = 2250
+pointer deepth = 3  ; count = 2
+
+
+access hops:
+hops: 0 ; count: 1040049422
+hops: 1 ; count: 27294891
+hops: 2 ; count: 54687
+hops: 3 ; count: 20
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1679273
+pointer deepth = 1  ; count = 200821
+pointer deepth = 2  ; count = 6923
+pointer deepth = 3  ; count = 409
+pointer deepth = 4  ; count = 11
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2947242
+pointer deepth = 1  ; count = 593077
+pointer deepth = 2  ; count = 23950
+pointer deepth = 3  ; count = 862
+pointer deepth = 4  ; count = 26
+pointer deepth = 5  ; count = 2
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1159523
+refresh count: 118599979
+refresh round: 56
+cell lifetime: 1000
+deepth of the deepest point: 5
+access count: 2275164664
+total write count: 1186000356
+total write count(without remapping): 268513064
+percent(without/with remapping): 0.2264
+wear-out count: 419431
+exceeded write count: 1089067951
+average access delay: 62 ns
+normal space : backup space = 1677721 : 419431 backup space percent:0.20
+
+wear-out percent: 0.2000
+pointer deepth = 0  ; count = 4215211
+pointer deepth = 1  ; count = 985333
+pointer deepth = 2  ; count = 40977
+pointer deepth = 3  ; count = 1315
+pointer deepth = 4  ; count = 41
+pointer deepth = 5  ; count = 4
+
+
+access hops:
+hops: 0 ; count: 1135689141
+hops: 1 ; count: 39231440
+hops: 2 ; count: 2126738
+hops: 3 ; count: 42588
+hops: 4 ; count: 1618
+hops: 5 ; count: 391
+hops: 6 ; count: 96
+hops: 7 ; count: 13
+hops: 8 ; count: 13
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1660625
+pointer deepth = 1  ; count = 221703
+pointer deepth = 2  ; count = 5099
+pointer deepth = 3  ; count = 10
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2909817
+pointer deepth = 1  ; count = 643717
+pointer deepth = 2  ; count = 11604
+pointer deepth = 3  ; count = 21
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3748499
+pointer deepth = 1  ; count = 1247172
+pointer deepth = 2  ; count = 37289
+pointer deepth = 3  ; count = 205
+pointer deepth = 4  ; count = 1
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1793592
+refresh count: 119234048
+refresh round: 56
+cell lifetime: 1000
+deepth of the deepest point: 4
+access count: 2610472049
+total write count: 1192341047
+total write count(without remapping): 231067938
+percent(without/with remapping): 0.1938
+wear-out count: 629146
+exceeded write count: 1418020423
+average access delay: 65 ns
+normal space : backup space = 1468006 : 629146 backup space percent:0.30
+
+wear-out percent: 0.3000
+pointer deepth = 0  ; count = 4587181
+pointer deepth = 1  ; count = 1850627
+pointer deepth = 2  ; count = 62974
+pointer deepth = 3  ; count = 389
+pointer deepth = 4  ; count = 2
+
+
+access hops:
+hops: 0 ; count: 1057167862
+hops: 1 ; count: 121341475
+hops: 2 ; count: 1532039
+hops: 3 ; count: 4208
+hops: 4 ; count: 23
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1669089
+pointer deepth = 1  ; count = 217526
+pointer deepth = 2  ; count = 822
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2916504
+pointer deepth = 1  ; count = 646283
+pointer deepth = 2  ; count = 2372
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3749022
+pointer deepth = 1  ; count = 1275004
+pointer deepth = 2  ; count = 9135
+pointer deepth = 3  ; count = 5
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4189891
+pointer deepth = 1  ; count = 2059064
+pointer deepth = 2  ; count = 42480
+pointer deepth = 3  ; count = 23
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:648785
+refresh count: 130672147
+refresh round: 62
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 3334776085
+total write count: 1306722090
+total write count(without remapping): 132655280
+percent(without/with remapping): 0.1015
+wear-out count: 838861
+exceeded write count: 2027912763
+average access delay: 72 ns
+normal space : backup space = 1258291 : 838861 backup space percent:0.40
+
+wear-out percent: 0.4000
+pointer deepth = 0  ; count = 4630760
+pointer deepth = 1  ; count = 2843124
+pointer deepth = 2  ; count = 75825
+pointer deepth = 3  ; count = 41
+
+
+access hops:
+hops: 0 ; count: 1004907703
+hops: 1 ; count: 278066742
+hops: 2 ; count: 4535599
+hops: 3 ; count: 2096
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1681185
+pointer deepth = 1  ; count = 202791
+pointer deepth = 2  ; count = 3458
+pointer deepth = 3  ; count = 3
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2955153
+pointer deepth = 1  ; count = 592808
+pointer deepth = 2  ; count = 17087
+pointer deepth = 3  ; count = 107
+pointer deepth = 4  ; count = 4
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3821031
+pointer deepth = 1  ; count = 1168071
+pointer deepth = 2  ; count = 43785
+pointer deepth = 3  ; count = 275
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4331352
+pointer deepth = 1  ; count = 1826919
+pointer deepth = 2  ; count = 131139
+pointer deepth = 3  ; count = 2031
+pointer deepth = 4  ; count = 17
+
+wear-out percent: 0.5
+pointer deepth = 0  ; count = 4577196
+pointer deepth = 1  ; count = 2389990
+pointer deepth = 2  ; count = 364630
+pointer deepth = 3  ; count = 8181
+pointer deepth = 4  ; count = 38
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1723015
+refresh count: 142232132
+refresh round: 67
+cell lifetime: 1000
+deepth of the deepest point: 4
+access count: 12338498
+total write count: 1422321994
+total write count(without remapping): 96500664
+percent(without/with remapping): 0.0678
+wear-out count: 1048576
+exceeded write count: 2884801383
+average access delay: 80 ns
+normal space : backup space = 1048576 : 1048576 backup space percent:0.50
+
+wear-out percent: 0.5000
+pointer deepth = 0  ; count = 4823040
+pointer deepth = 1  ; count = 2953061
+pointer deepth = 2  ; count = 598121
+pointer deepth = 3  ; count = 14331
+pointer deepth = 4  ; count = 59
+
+
+access hops:
+hops: 0 ; count: 908944829
+hops: 1 ; count: 422411382
+hops: 2 ; count: 57875036
+hops: 3 ; count: 1546407
+hops: 4 ; count: 8493
+hops: 5 ; count: 174
+hops: 6 ; count: 38
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1658268
+pointer deepth = 1  ; count = 229012
+pointer deepth = 2  ; count = 157
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1127031
+refresh count: 114373185
+refresh round: 54
+cell lifetime: 1000
+deepth of the deepest point: 2
+access count: 1962087006
+total write count: 1143732398
+total write count(without remapping): 385255770
+percent(without/with remapping): 0.3368
+wear-out count: 209716
+exceeded write count: 818271511
+average access delay: 61 ns
+normal space : backup space = 1887436 : 209716 backup space percent:0.10
+
+wear-out percent: 0.1000
+pointer deepth = 0  ; count = 3316536
+pointer deepth = 1  ; count = 458024
+pointer deepth = 2  ; count = 314
+
+
+access hops:
+hops: 0 ; count: 1115363704
+hops: 1 ; count: 28363809
+hops: 2 ; count: 4885
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1677309
+pointer deepth = 1  ; count = 206748
+pointer deepth = 2  ; count = 3380
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2947065
+pointer deepth = 1  ; count = 591919
+pointer deepth = 2  ; count = 26175
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:210397
+refresh count: 117650853
+refresh round: 56
+cell lifetime: 1000
+deepth of the deepest point: 2
+access count: 2256950214
+total write count: 1176509096
+total write count(without remapping): 268513064
+percent(without/with remapping): 0.2282
+wear-out count: 419431
+exceeded write count: 1080345515
+average access delay: 63 ns
+normal space : backup space = 1677721 : 419431 backup space percent:0.20
+
+wear-out percent: 0.2000
+pointer deepth = 0  ; count = 4216821
+pointer deepth = 1  ; count = 977090
+pointer deepth = 2  ; count = 48970
+
+
+access hops:
+hops: 0 ; count: 1105904551
+hops: 1 ; count: 68813709
+hops: 2 ; count: 1790836
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1655442
+pointer deepth = 1  ; count = 228060
+pointer deepth = 2  ; count = 3935
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2901382
+pointer deepth = 1  ; count = 655133
+pointer deepth = 2  ; count = 8644
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3743603
+pointer deepth = 1  ; count = 1251205
+pointer deepth = 2  ; count = 38358
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:164335
+refresh count: 119701942
+refresh round: 57
+cell lifetime: 1000
+deepth of the deepest point: 2
+access count: 2620722893
+total write count: 1197019998
+total write count(without remapping): 231067938
+percent(without/with remapping): 0.1930
+wear-out count: 629146
+exceeded write count: 1423591900
+average access delay: 66 ns
+normal space : backup space = 1468006 : 629146 backup space percent:0.30
+
+wear-out percent: 0.3000
+pointer deepth = 0  ; count = 4585824
+pointer deepth = 1  ; count = 1847277
+pointer deepth = 2  ; count = 68072
+
+
+access hops:
+hops: 0 ; count: 1064630526
+hops: 1 ; count: 131109945
+hops: 2 ; count: 1279527
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1664626
+pointer deepth = 1  ; count = 222799
+pointer deepth = 2  ; count = 12
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2910742
+pointer deepth = 1  ; count = 653473
+pointer deepth = 2  ; count = 944
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3748462
+pointer deepth = 1  ; count = 1269601
+pointer deepth = 2  ; count = 15103
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4209549
+pointer deepth = 1  ; count = 2015116
+pointer deepth = 2  ; count = 66789
+pointer deepth = 3  ; count = 4
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:687061
+refresh count: 132807574
+refresh round: 63
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 3389268491
+total write count: 1328076370
+total write count(without remapping): 132655280
+percent(without/with remapping): 0.0999
+wear-out count: 838861
+exceeded write count: 2061048575
+average access delay: 73 ns
+normal space : backup space = 1258291 : 838861 backup space percent:0.40
+
+wear-out percent: 0.4000
+pointer deepth = 0  ; count = 4670636
+pointer deepth = 1  ; count = 2760631
+pointer deepth = 2  ; count = 118475
+pointer deepth = 3  ; count = 8
+
+
+access hops:
+hops: 0 ; count: 1014075678
+hops: 1 ; count: 308341788
+hops: 2 ; count: 5658793
+hops: 3 ; count: 111
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1679828
+pointer deepth = 1  ; count = 207569
+pointer deepth = 2  ; count = 40
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2952194
+pointer deepth = 1  ; count = 607032
+pointer deepth = 2  ; count = 5933
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3832027
+pointer deepth = 1  ; count = 1158785
+pointer deepth = 2  ; count = 42353
+pointer deepth = 3  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4347419
+pointer deepth = 1  ; count = 1803094
+pointer deepth = 2  ; count = 140805
+pointer deepth = 3  ; count = 140
+
+wear-out percent: 0.5
+pointer deepth = 0  ; count = 4574192
+pointer deepth = 1  ; count = 2402363
+pointer deepth = 2  ; count = 359103
+pointer deepth = 3  ; count = 4377
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1394232
+refresh count: 141903349
+refresh round: 67
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 2376760
+total write count: 1419034165
+total write count(without remapping): 96500664
+percent(without/with remapping): 0.0680
+wear-out count: 1048576
+exceeded write count: 2878127890
+average access delay: 81 ns
+normal space : backup space = 1048576 : 1048576 backup space percent:0.50
+
+wear-out percent: 0.5000
+pointer deepth = 0  ; count = 4800965
+pointer deepth = 1  ; count = 3001632
+pointer deepth = 2  ; count = 577401
+pointer deepth = 3  ; count = 8614
+
+
+access hops:
+hops: 0 ; count: 909002730
+hops: 1 ; count: 449258476
+hops: 2 ; count: 60157356
+hops: 3 ; count: 615603
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1658983
+pointer deepth = 1  ; count = 227765
+pointer deepth = 2  ; count = 689
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:731228
+refresh count: 107685929
+refresh round: 51
+cell lifetime: 1000
+deepth of the deepest point: 2
+access count: 1847231283
+total write count: 1076859800
+total write count(without remapping): 13967494
+percent(without/with remapping): 0.0130
+wear-out count: 209716
+exceeded write count: 770371483
+average access delay: 61 ns
+normal space : backup space = 1887436 : 209716 backup space percent:0.10
+
+wear-out percent: 0.1000
+pointer deepth = 0  ; count = 3317966
+pointer deepth = 1  ; count = 455530
+pointer deepth = 2  ; count = 1378
+
+
+access hops:
+hops: 0 ; count: 1046630936
+hops: 1 ; count: 25661865
+hops: 2 ; count: 31769
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1680982
+pointer deepth = 1  ; count = 197923
+pointer deepth = 2  ; count = 7722
+pointer deepth = 3  ; count = 788
+pointer deepth = 4  ; count = 20
+pointer deepth = 5  ; count = 1
+pointer deepth = 6  ; count = 1
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2954321
+pointer deepth = 1  ; count = 581899
+pointer deepth = 2  ; count = 26803
+pointer deepth = 3  ; count = 2087
+pointer deepth = 4  ; count = 47
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:163609
+refresh count: 115506914
+refresh round: 55
+cell lifetime: 1000
+deepth of the deepest point: 4
+access count: 2215649501
+total write count: 1155069697
+total write count(without remapping): 12491734
+percent(without/with remapping): 0.0108
+wear-out count: 419431
+exceeded write count: 1060579803
+average access delay: 62 ns
+normal space : backup space = 1677721 : 419431 backup space percent:0.20
+
+wear-out percent: 0.2000
+pointer deepth = 0  ; count = 4227660
+pointer deepth = 1  ; count = 965875
+pointer deepth = 2  ; count = 45884
+pointer deepth = 3  ; count = 3386
+pointer deepth = 4  ; count = 74
+
+
+access hops:
+hops: 0 ; count: 1094370544
+hops: 1 ; count: 50198846
+hops: 2 ; count: 1953850
+hops: 3 ; count: 99155
+hops: 4 ; count: 5826
+hops: 5 ; count: 1057
+hops: 6 ; count: 130
+hops: 7 ; count: 51
+hops: 10 ; count: 61
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1657169
+pointer deepth = 1  ; count = 225981
+pointer deepth = 2  ; count = 4275
+pointer deepth = 3  ; count = 12
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2906720
+pointer deepth = 1  ; count = 636138
+pointer deepth = 2  ; count = 22162
+pointer deepth = 3  ; count = 139
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3745814
+pointer deepth = 1  ; count = 1238701
+pointer deepth = 2  ; count = 48281
+pointer deepth = 3  ; count = 370
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1803657
+refresh count: 117146962
+refresh round: 55
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 2564540611
+total write count: 1171470170
+total write count(without remapping): 10946671
+percent(without/with remapping): 0.0093
+wear-out count: 629146
+exceeded write count: 1393070440
+average access delay: 64 ns
+normal space : backup space = 1468006 : 629146 backup space percent:0.30
+
+wear-out percent: 0.3000
+pointer deepth = 0  ; count = 4584908
+pointer deepth = 1  ; count = 1841264
+pointer deepth = 2  ; count = 74400
+pointer deepth = 3  ; count = 601
+
+
+access hops:
+hops: 0 ; count: 1057689052
+hops: 1 ; count: 100703386
+hops: 2 ; count: 1921877
+hops: 3 ; count: 7108
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1662098
+pointer deepth = 1  ; count = 223706
+pointer deepth = 2  ; count = 1602
+pointer deepth = 3  ; count = 31
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2911918
+pointer deepth = 1  ; count = 649057
+pointer deepth = 2  ; count = 4145
+pointer deepth = 3  ; count = 39
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3744895
+pointer deepth = 1  ; count = 1276334
+pointer deepth = 2  ; count = 11866
+pointer deepth = 3  ; count = 71
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4191138
+pointer deepth = 1  ; count = 2045214
+pointer deepth = 2  ; count = 54801
+pointer deepth = 3  ; count = 305
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:502917
+refresh count: 132623430
+refresh round: 63
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 3384199049
+total write count: 1326234930
+total write count(without remapping): 9392638
+percent(without/with remapping): 0.0071
+wear-out count: 838861
+exceeded write count: 2057964119
+average access delay: 72 ns
+normal space : backup space = 1258291 : 838861 backup space percent:0.40
+
+wear-out percent: 0.4000
+pointer deepth = 0  ; count = 4637381
+pointer deepth = 1  ; count = 2814094
+pointer deepth = 2  ; count = 97736
+pointer deepth = 3  ; count = 539
+
+
+access hops:
+hops: 0 ; count: 1014349619
+hops: 1 ; count: 283993170
+hops: 2 ; count: 5749326
+hops: 3 ; count: 38143
+hops: 4 ; count: 1
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1681121
+pointer deepth = 1  ; count = 202610
+pointer deepth = 2  ; count = 3706
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2949122
+pointer deepth = 1  ; count = 602601
+pointer deepth = 2  ; count = 13426
+pointer deepth = 3  ; count = 10
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3813427
+pointer deepth = 1  ; count = 1180875
+pointer deepth = 2  ; count = 38800
+pointer deepth = 3  ; count = 63
+pointer deepth = 4  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4329120
+pointer deepth = 1  ; count = 1829432
+pointer deepth = 2  ; count = 130597
+pointer deepth = 3  ; count = 2305
+pointer deepth = 4  ; count = 4
+
+wear-out percent: 0.5
+pointer deepth = 0  ; count = 4566246
+pointer deepth = 1  ; count = 2386418
+pointer deepth = 2  ; count = 372595
+pointer deepth = 3  ; count = 14750
+pointer deepth = 4  ; count = 25
+pointer deepth = 5  ; count = 1
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:92253
+refresh count: 140601370
+refresh round: 67
+cell lifetime: 1000
+deepth of the deepest point: 5
+access count: 4257366771
+total write count: 1406014377
+total write count(without remapping): 7916878
+percent(without/with remapping): 0.0056
+wear-out count: 1048576
+exceeded write count: 2851352393
+average access delay: 80 ns
+normal space : backup space = 1048576 : 1048576 backup space percent:0.50
+
+wear-out percent: 0.5000
+pointer deepth = 0  ; count = 4803372
+pointer deepth = 1  ; count = 2943404
+pointer deepth = 2  ; count = 614593
+pointer deepth = 3  ; count = 27195
+pointer deepth = 4  ; count = 46
+pointer deepth = 5  ; count = 2
+
+
+access hops:
+hops: 0 ; count: 908342670
+hops: 1 ; count: 410811170
+hops: 2 ; count: 56109431
+hops: 3 ; count: 1302457
+hops: 4 ; count: 2169
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1658417
+pointer deepth = 1  ; count = 228650
+pointer deepth = 2  ; count = 370
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1122718
+refresh count: 114368872
+refresh round: 54
+cell lifetime: 1000
+deepth of the deepest point: 2
+access count: 1961867470
+total write count: 1143689260
+total write count(without remapping): 13967494
+percent(without/with remapping): 0.0122
+wear-out count: 209716
+exceeded write count: 818178209
+average access delay: 61 ns
+normal space : backup space = 1887436 : 209716 backup space percent:0.10
+
+wear-out percent: 0.1000
+pointer deepth = 0  ; count = 3316834
+pointer deepth = 1  ; count = 457300
+pointer deepth = 2  ; count = 740
+
+
+access hops:
+hops: 0 ; count: 1115260187
+hops: 1 ; count: 28395651
+hops: 2 ; count: 33096
+hops: 3 ; count: 326
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1677066
+pointer deepth = 1  ; count = 206792
+pointer deepth = 2  ; count = 3576
+pointer deepth = 3  ; count = 3
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2947294
+pointer deepth = 1  ; count = 590881
+pointer deepth = 2  ; count = 26956
+pointer deepth = 3  ; count = 28
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:218056
+refresh count: 117658512
+refresh round: 56
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 2256913232
+total write count: 1176585688
+total write count(without remapping): 12491734
+percent(without/with remapping): 0.0106
+wear-out count: 419431
+exceeded write count: 1080327543
+average access delay: 63 ns
+normal space : backup space = 1677721 : 419431 backup space percent:0.20
+
+wear-out percent: 0.2000
+pointer deepth = 0  ; count = 4217522
+pointer deepth = 1  ; count = 974970
+pointer deepth = 2  ; count = 50336
+pointer deepth = 3  ; count = 53
+
+
+access hops:
+hops: 0 ; count: 1105904387
+hops: 1 ; count: 68777419
+hops: 2 ; count: 1898244
+hops: 3 ; count: 5638
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1655550
+pointer deepth = 1  ; count = 227738
+pointer deepth = 2  ; count = 4142
+pointer deepth = 3  ; count = 7
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2900829
+pointer deepth = 1  ; count = 654947
+pointer deepth = 2  ; count = 9356
+pointer deepth = 3  ; count = 26
+pointer deepth = 4  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3743950
+pointer deepth = 1  ; count = 1248434
+pointer deepth = 2  ; count = 40665
+pointer deepth = 3  ; count = 114
+pointer deepth = 4  ; count = 3
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:126665
+refresh count: 119664272
+refresh round: 57
+cell lifetime: 1000
+deepth of the deepest point: 4
+access count: 2619657922
+total write count: 1196643290
+total write count(without remapping): 10946671
+percent(without/with remapping): 0.0091
+wear-out count: 629146
+exceeded write count: 1423014631
+average access delay: 66 ns
+normal space : backup space = 1468006 : 629146 backup space percent:0.30
+
+wear-out percent: 0.3000
+pointer deepth = 0  ; count = 4587071
+pointer deepth = 1  ; count = 1841921
+pointer deepth = 2  ; count = 71974
+pointer deepth = 3  ; count = 202
+pointer deepth = 4  ; count = 5
+
+
+access hops:
+hops: 0 ; count: 1064274492
+hops: 1 ; count: 131083321
+hops: 2 ; count: 1281557
+hops: 3 ; count: 3917
+hops: 4 ; count: 3
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1664697
+pointer deepth = 1  ; count = 222640
+pointer deepth = 2  ; count = 100
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2911018
+pointer deepth = 1  ; count = 652863
+pointer deepth = 2  ; count = 1277
+pointer deepth = 3  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3748742
+pointer deepth = 1  ; count = 1269293
+pointer deepth = 2  ; count = 15123
+pointer deepth = 3  ; count = 8
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4211135
+pointer deepth = 1  ; count = 2011024
+pointer deepth = 2  ; count = 69241
+pointer deepth = 3  ; count = 57
+pointer deepth = 4  ; count = 1
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:584165
+refresh count: 132704678
+refresh round: 63
+cell lifetime: 1000
+deepth of the deepest point: 4
+access count: 3386278780
+total write count: 1327047411
+total write count(without remapping): 9392638
+percent(without/with remapping): 0.0071
+wear-out count: 838861
+exceeded write count: 2059231368
+average access delay: 73 ns
+normal space : backup space = 1258291 : 838861 backup space percent:0.40
+
+wear-out percent: 0.4000
+pointer deepth = 0  ; count = 4673528
+pointer deepth = 1  ; count = 2752755
+pointer deepth = 2  ; count = 123359
+pointer deepth = 3  ; count = 106
+pointer deepth = 4  ; count = 2
+
+
+access hops:
+hops: 0 ; count: 1013798936
+hops: 1 ; count: 307426070
+hops: 2 ; count: 5812792
+hops: 3 ; count: 9613
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1680108
+pointer deepth = 1  ; count = 207224
+pointer deepth = 2  ; count = 105
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2952157
+pointer deepth = 1  ; count = 607248
+pointer deepth = 2  ; count = 5745
+pointer deepth = 3  ; count = 9
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3831681
+pointer deepth = 1  ; count = 1161410
+pointer deepth = 2  ; count = 40029
+pointer deepth = 3  ; count = 45
+pointer deepth = 4  ; count = 1
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4347597
+pointer deepth = 1  ; count = 1805681
+pointer deepth = 2  ; count = 137923
+pointer deepth = 3  ; count = 256
+
+wear-out percent: 0.5
+pointer deepth = 0  ; count = 4575796
+pointer deepth = 1  ; count = 2402244
+pointer deepth = 2  ; count = 357338
+pointer deepth = 3  ; count = 4644
+pointer deepth = 4  ; count = 13
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1250328
+refresh count: 141759445
+refresh round: 67
+cell lifetime: 1000
+deepth of the deepest point: 4
+access count: 4292435753
+total write count: 1417595121
+total write count(without remapping): 7916878
+percent(without/with remapping): 0.0056
+wear-out count: 1048576
+exceeded write count: 2874840631
+average access delay: 81 ns
+normal space : backup space = 1048576 : 1048576 backup space percent:0.50
+
+wear-out percent: 0.5000
+pointer deepth = 0  ; count = 4803995
+pointer deepth = 1  ; count = 2998807
+pointer deepth = 2  ; count = 576753
+pointer deepth = 3  ; count = 9032
+pointer deepth = 4  ; count = 25
+
+
+access hops:
+hops: 0 ; count: 908769513
+hops: 1 ; count: 448382536
+hops: 2 ; count: 59758984
+hops: 3 ; count: 682132
+hops: 4 ; count: 1956
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1661723
+pointer deepth = 1  ; count = 225160
+pointer deepth = 2  ; count = 554
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1122742
+refresh count: 112271798
+refresh round: 53
+cell lifetime: 1000
+deepth of the deepest point: 2
+access count: 1925896876
+total write count: 1122717984
+total write count(without remapping): 13967493
+percent(without/with remapping): 0.0124
+wear-out count: 209716
+exceeded write count: 803178891
+average access delay: 61 ns
+normal space : backup space = 1887436 : 209716 backup space percent:0.10
+
+wear-out percent: 0.1000
+pointer deepth = 0  ; count = 3323446
+pointer deepth = 1  ; count = 450320
+pointer deepth = 2  ; count = 1108
+
+
+access hops:
+hops: 0 ; count: 1097694234
+hops: 1 ; count: 19902399
+hops: 2 ; count: 21004
+hops: 3 ; count: 6
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1676677
+pointer deepth = 1  ; count = 206811
+pointer deepth = 2  ; count = 3939
+pointer deepth = 3  ; count = 10
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2943552
+pointer deepth = 1  ; count = 601827
+pointer deepth = 2  ; count = 19708
+pointer deepth = 3  ; count = 72
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:857090
+refresh count: 114103298
+refresh round: 54
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 2188715968
+total write count: 1141032984
+total write count(without remapping): 12491733
+percent(without/with remapping): 0.0109
+wear-out count: 419431
+exceeded write count: 1047682983
+average access delay: 62 ns
+normal space : backup space = 1677721 : 419431 backup space percent:0.20
+
+wear-out percent: 0.2000
+pointer deepth = 0  ; count = 4210427
+pointer deepth = 1  ; count = 996843
+pointer deepth = 2  ; count = 35477
+pointer deepth = 3  ; count = 134
+
+
+access hops:
+hops: 0 ; count: 1079368185
+hops: 1 ; count: 52861824
+hops: 2 ; count: 1372020
+hops: 3 ; count: 4297
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1660624
+pointer deepth = 1  ; count = 222423
+pointer deepth = 2  ; count = 4375
+pointer deepth = 3  ; count = 15
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2909006
+pointer deepth = 1  ; count = 641118
+pointer deepth = 2  ; count = 14951
+pointer deepth = 3  ; count = 83
+pointer deepth = 4  ; count = 1
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3750551
+pointer deepth = 1  ; count = 1246030
+pointer deepth = 2  ; count = 36249
+pointer deepth = 3  ; count = 335
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1289923
+refresh count: 118730435
+refresh round: 56
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 2599209765
+total write count: 1187304355
+total write count(without remapping): 10946670
+percent(without/with remapping): 0.0092
+wear-out count: 629146
+exceeded write count: 1411905409
+average access delay: 65 ns
+normal space : backup space = 1468006 : 629146 backup space percent:0.30
+
+wear-out percent: 0.3000
+pointer deepth = 0  ; count = 4592096
+pointer deepth = 1  ; count = 1850942
+pointer deepth = 2  ; count = 57547
+pointer deepth = 3  ; count = 587
+
+
+access hops:
+hops: 0 ; count: 1067774894
+hops: 1 ; count: 105211635
+hops: 2 ; count: 2946675
+hops: 3 ; count: 61964
+hops: 4 ; count: 533
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1672881
+pointer deepth = 1  ; count = 214281
+pointer deepth = 2  ; count = 275
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2923317
+pointer deepth = 1  ; count = 640427
+pointer deepth = 2  ; count = 1415
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3775268
+pointer deepth = 1  ; count = 1231003
+pointer deepth = 2  ; count = 26879
+pointer deepth = 3  ; count = 16
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4243261
+pointer deepth = 1  ; count = 1959671
+pointer deepth = 2  ; count = 88452
+pointer deepth = 3  ; count = 74
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1067977
+refresh count: 133188553
+refresh round: 63
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 3398626041
+total write count: 1331885530
+total write count(without remapping): 9392637
+percent(without/with remapping): 0.0071
+wear-out count: 838861
+exceeded write count: 2066740511
+average access delay: 72 ns
+normal space : backup space = 1258291 : 838861 backup space percent:0.40
+
+wear-out percent: 0.4000
+pointer deepth = 0  ; count = 4711254
+pointer deepth = 1  ; count = 2688339
+pointer deepth = 2  ; count = 150025
+pointer deepth = 3  ; count = 132
+
+
+access hops:
+hops: 0 ; count: 1008408094
+hops: 1 ; count: 294818912
+hops: 2 ; count: 8678939
+hops: 3 ; count: 4060
+hops: 4 ; count: 2
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1680860
+pointer deepth = 1  ; count = 204817
+pointer deepth = 2  ; count = 1755
+pointer deepth = 3  ; count = 5
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2959325
+pointer deepth = 1  ; count = 594978
+pointer deepth = 2  ; count = 10829
+pointer deepth = 3  ; count = 27
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3837167
+pointer deepth = 1  ; count = 1145519
+pointer deepth = 2  ; count = 50324
+pointer deepth = 3  ; count = 156
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4372142
+pointer deepth = 1  ; count = 1777395
+pointer deepth = 2  ; count = 141124
+pointer deepth = 3  ; count = 797
+
+wear-out percent: 0.5
+pointer deepth = 0  ; count = 4613558
+pointer deepth = 1  ; count = 2350607
+pointer deepth = 2  ; count = 368919
+pointer deepth = 3  ; count = 6939
+pointer deepth = 4  ; count = 12
+***********filter unnormal writes***********
+***********with pointer cache***********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:823659
+refresh count: 137138539
+refresh round: 65
+cell lifetime: 1000
+deepth of the deepest point: 4
+access count: 4152515869
+total write count: 1371385393
+total write count(without remapping): 7916877
+percent(without/with remapping): 0.0058
+wear-out count: 1048576
+exceeded write count: 2781130475
+average access delay: 81 ns
+normal space : backup space = 1048576 : 1048576 backup space percent:0.50
+
+wear-out percent: 0.5000
+pointer deepth = 0  ; count = 4854974
+pointer deepth = 1  ; count = 2923819
+pointer deepth = 2  ; count = 596714
+pointer deepth = 3  ; count = 13081
+pointer deepth = 4  ; count = 24
+
+
+access hops:
+hops: 0 ; count: 884926288
+hops: 1 ; count: 384977435
+hops: 2 ; count: 71742075
+hops: 3 ; count: 1172342
+hops: 4 ; count: 1898
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1682324
+pointer deepth = 1  ; count = 205011
+pointer deepth = 2  ; count = 102
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2951891
+pointer deepth = 1  ; count = 607999
+pointer deepth = 2  ; count = 5264
+pointer deepth = 3  ; count = 5
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3830370
+pointer deepth = 1  ; count = 1161256
+pointer deepth = 2  ; count = 41488
+pointer deepth = 3  ; count = 52
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4349269
+pointer deepth = 1  ; count = 1795391
+pointer deepth = 2  ; count = 146576
+pointer deepth = 3  ; count = 222
+
+wear-out percent: 0.5
+pointer deepth = 0  ; count = 4575789
+pointer deepth = 1  ; count = 2395823
+pointer deepth = 2  ; count = 363485
+pointer deepth = 3  ; count = 4921
+pointer deepth = 4  ; count = 17
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1438798
+refresh count: 141947982
+refresh round: 67
+cell lifetime: 1000
+deepth of the deepest point: 4
+access count: 3181963
+total write count: 1419479822
+total write count(without remapping): 7916877
+percent(without/with remapping): 0.0056
+wear-out count: 1048576
+exceeded write count: 2878669436
+average access delay: 81 ns
+normal space : backup space = 1048576 : 1048576 backup space percent:0.50
+
+wear-out percent: 0.5000
+pointer deepth = 0  ; count = 4802309
+pointer deepth = 1  ; count = 2996257
+pointer deepth = 2  ; count = 580392
+pointer deepth = 3  ; count = 9620
+pointer deepth = 4  ; count = 34
+
+
+access hops:
+hops: 0 ; count: 909029660
+hops: 1 ; count: 451571927
+hops: 2 ; count: 58221367
+hops: 3 ; count: 654988
+hops: 4 ; count: 1880
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1664746
+pointer deepth = 1  ; count = 222572
+pointer deepth = 2  ; count = 119
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2911098
+pointer deepth = 1  ; count = 652732
+pointer deepth = 2  ; count = 1325
+pointer deepth = 3  ; count = 4
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3747606
+pointer deepth = 1  ; count = 1272150
+pointer deepth = 2  ; count = 13394
+pointer deepth = 3  ; count = 16
+
+wear-out percent: 0.4
+pointer deepth = 0  ; count = 4197229
+pointer deepth = 1  ; count = 2038498
+pointer deepth = 2  ; count = 55681
+pointer deepth = 3  ; count = 50
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1028584
+refresh count: 131052008
+refresh round: 62
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 3344103064
+total write count: 1310520083
+total write count(without remapping): 9392637
+percent(without/with remapping): 0.0072
+wear-out count: 838861
+exceeded write count: 2033582980
+average access delay: 72 ns
+normal space : backup space = 1258291 : 838861 backup space percent:0.40
+
+wear-out percent: 0.4000
+pointer deepth = 0  ; count = 4646852
+pointer deepth = 1  ; count = 2804847
+pointer deepth = 2  ; count = 97967
+pointer deepth = 3  ; count = 84
+
+
+access hops:
+hops: 0 ; count: 1009038567
+hops: 1 ; count: 296393418
+hops: 2 ; count: 5078652
+hops: 3 ; count: 9412
+hops: 4 ; count: 34
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1655574
+pointer deepth = 1  ; count = 229406
+pointer deepth = 2  ; count = 2457
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2902954
+pointer deepth = 1  ; count = 644583
+pointer deepth = 2  ; count = 17552
+pointer deepth = 3  ; count = 70
+
+wear-out percent: 0.3
+pointer deepth = 0  ; count = 3743141
+pointer deepth = 1  ; count = 1245685
+pointer deepth = 2  ; count = 44212
+pointer deepth = 3  ; count = 128
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:496019
+refresh count: 120033683
+refresh round: 57
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 2627733911
+total write count: 1200336839
+total write count(without remapping): 10946670
+percent(without/with remapping): 0.0091
+wear-out count: 629146
+exceeded write count: 1427397071
+average access delay: 66 ns
+normal space : backup space = 1468006 : 629146 backup space percent:0.30
+
+wear-out percent: 0.3000
+pointer deepth = 0  ; count = 4583328
+pointer deepth = 1  ; count = 1846787
+pointer deepth = 2  ; count = 70872
+pointer deepth = 3  ; count = 186
+
+
+access hops:
+hops: 0 ; count: 1066520115
+hops: 1 ; count: 132515077
+hops: 2 ; count: 1297345
+hops: 3 ; count: 4302
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1678615
+pointer deepth = 1  ; count = 205536
+pointer deepth = 2  ; count = 3278
+pointer deepth = 3  ; count = 8
+
+wear-out percent: 0.2
+pointer deepth = 0  ; count = 2948632
+pointer deepth = 1  ; count = 592903
+pointer deepth = 2  ; count = 23594
+pointer deepth = 3  ; count = 30
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:127980
+refresh count: 117568492
+refresh round: 56
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 2255187199
+total write count: 1175684927
+total write count(without remapping): 12491733
+percent(without/with remapping): 0.0106
+wear-out count: 419431
+exceeded write count: 1079502271
+average access delay: 63 ns
+normal space : backup space = 1677721 : 419431 backup space percent:0.20
+
+wear-out percent: 0.2000
+pointer deepth = 0  ; count = 4218649
+pointer deepth = 1  ; count = 980270
+pointer deepth = 2  ; count = 43910
+pointer deepth = 3  ; count = 52
+
+
+access hops:
+hops: 0 ; count: 1105181454
+hops: 1 ; count: 68739172
+hops: 2 ; count: 1758992
+hops: 3 ; count: 5309
+
+==============================================================================
+
+wear-out percent: 0.1
+pointer deepth = 0  ; count = 1658447
+pointer deepth = 1  ; count = 228631
+pointer deepth = 2  ; count = 355
+pointer deepth = 3  ; count = 4
+***********filter unnormal writes***********
+***********without pointer cache********
+************random replacement sheme for pointer cache*******
+method:security_refresh
+trace file: D:\programs\WLWO\WLWO\trace-LU.out
+pcm size(line):2097152
+refresh interval:10
+last crp:1147730
+refresh count: 114393938
+refresh round: 54
+cell lifetime: 1000
+deepth of the deepest point: 3
+access count: 1962293898
+total write count: 1143939382
+total write count(without remapping): 13967493
+percent(without/with remapping): 0.0122
+wear-out count: 209716
+exceeded write count: 818354515
+average access delay: 61 ns
+normal space : backup space = 1887436 : 209716 backup space percent:0.10
+
+wear-out percent: 0.1000
+pointer deepth = 0  ; count = 3316894
+pointer deepth = 1  ; count = 457262
+pointer deepth = 2  ; count = 710
+pointer deepth = 3  ; count = 8
+
+
+access hops:
+hops: 0 ; count: 1115341485
+hops: 1 ; count: 28563083
+hops: 2 ; count: 34380
+hops: 3 ; count: 434
+
+==============================================================================

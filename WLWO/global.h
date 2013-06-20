@@ -4,7 +4,7 @@
 #define pcm_size (2097152) //16777216:2^30/64 ; 16384:2^20/64; 1048576:2^20; 2097152:2^27/64
                                     //total space:     16793600
 #define line_size 64
-#define POINTER_CACHE
+//#define POINTER_CACHE
 #define PRE_WL
 #define DEBUG
 extern char wl_method[];
