@@ -183,16 +183,46 @@ bool security_refresh()
         new_cycle2=check_pointer_cycle(crp>>line_bit_number,crp>>line_bit_number,0);
         new_target1=old_target2;
         new_target2=old_target1;
+        if(old_cycle1||old_cycle2||new_cycle1||new_cycle2)
+        {
+            return true;
+        }
+        unsigned int remapped_address1,remapped_address2;
+        bool remap_success1,remap_success2;
+        if(pcm.lines[new_target1].write_count>=pcm.lines[new_target1].lifetime)//the block to be refreshed has worn out
+        {
+            remap_success1=remapping(new_target1,&remapped_address1);
+            if(remap_success1)
+            {
+                new_target1=security_refresh_map(remapped_address1,true);
+            }
+            else
+            {
+                return false;
+            }
+        }
+        if(pcm.lines[new_target2].write_count>=pcm.lines[new_target2].lifetime)//the block to be refreshed has worn out
+        {
+            remap_success2=remapping(new_target2,&remapped_address2);
+            if(remap_success2)
+            {
+                new_target2=security_refresh_map(remapped_address2,true);
+            }
+            else
+            {
+                return false;
+            }
+        }
 
 #ifdef POINTER_CACHE
         unsigned int source_address1;
         unsigned int source_address2;
-        if(reverse_pointer_cache.lookup(&source_address1,new_target1)&&(!new_cycle1))
+        if(reverse_pointer_cache.lookup(&source_address1,new_target1))
         {
             pointer_cache.insert_entry(source_address1,new_target1);
             reverse_pointer_cache.insert_entry(source_address1,new_target1);
         }
-        if(reverse_pointer_cache.lookup(&source_address2,new_target2)&&(!new_cycle2))
+        if(reverse_pointer_cache.lookup(&source_address2,new_target2))
         {
             pointer_cache.insert_entry(source_address2,new_target2);
             reverse_pointer_cache.insert_entry(source_address2,new_target2);
@@ -248,12 +278,14 @@ bool exchange_access_line(unsigned int line_address,unsigned int start_line_addr
         else
         {
             perform_access_pcm(mapped_address);
+#ifdef PRINT_POINTER_DEPTH
             int percent=wear_out_count/(pcm_size*0.1);
             if((pointer_printed[percent]==false)&&(wear_out_count>0)&&((wear_out_count%(pcm_size/10)==0)))
             {
                 pointer_printed[percent]=true;
                 print_pointer();
             }
+#endif
             return true;
             //wear_leveling("start_gap");
         }

@@ -46,12 +46,12 @@
 	"securityrefresh.h"
 	<cstring>
 
-1371738540 source:d:\programs\wlwo\wlwo\global.cpp
+1371797189 source:d:\programs\wlwo\wlwo\global.cpp
 	"global.h"
 
-1371739507 d:\programs\wlwo\wlwo\global.h
+1371804740 d:\programs\wlwo\wlwo\global.h
 
-1371735285 source:d:\programs\wlwo\wlwo\main.cpp
+1371801149 source:d:\programs\wlwo\wlwo\main.cpp
 	<iostream>
 	<fstream>
 	<iomanip>
@@ -77,7 +77,7 @@
 	"space.h"
 	<iostream>
 
-1371735583 source:d:\programs\wlwo\wlwo\securityrefresh.cpp
+1371801192 source:d:\programs\wlwo\wlwo\securityrefresh.cpp
 	"securityrefresh.h"
 	"space.h"
 	<math.h>

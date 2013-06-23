@@ -97,12 +97,14 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
             {
                 access_hops[deepth]++;
             }
+#ifdef PRINT_POINTER_DEPTH
             int percent=wear_out_count/(pcm_size*0.1);
             if((pointer_printed[percent]==false)&&(wear_out_count>0)&&((wear_out_count%(pcm_size/10)==0)))
             {
                 pointer_printed[percent]=true;
                 print_pointer();
             }
+#endif
             return true;
             //wear_leveling("start_gap");
         }
@@ -209,6 +211,7 @@ void print_pointer()
         }
     }
     cout<<"\nwear-out percent: "<<fixed<<setprecision(1)<<((float)wear_out_count/(float)pcm_size)<<endl;
+#ifdef PRINT_POINTER_DEPTH
     for(i=0;i<=deepest_point;i++)
     {
         if(pointer_deepth[i]>0)
@@ -216,6 +219,7 @@ void print_pointer()
                 cout<<"pointer deepth = "<<i<<"  ; count = "<<pointer_deepth[i]<<endl;
         }
     }
+
     if(outfile.is_open())
     {
         outfile<<"\nwear-out percent: "<<fixed<<setprecision(1)<<((float)wear_out_count/(float)pcm_size)<<endl;
@@ -227,6 +231,7 @@ void print_pointer()
             }
         }
     }
+#endif
 }
 unsigned int access_from_file(char * filename)
 {
@@ -266,12 +271,14 @@ unsigned int access_from_file(char * filename)
                 //address=address%pivot;
                 continue;
             }
-            /*
+#define FILTER
+#ifdef FILTER
+            /*filter the abnormal(too many) accesses to a block*/
             if((address>>line_bit_number)==9535)
             {
                 continue;
             }
-            */
+#endif
             successful=access_address(address,false,0);
             //if(total_write_count%1000==0)
                 //cout<<" total write count: "<<total_write_count<<endl;

@@ -5,6 +5,7 @@
                                     //total space:     16793600
 #define line_size 64
 //#define POINTER_CACHE
+//#define PRINT_POINTER_DEPTH
 #define PRE_WL
 #define DEBUG
 extern char wl_method[];

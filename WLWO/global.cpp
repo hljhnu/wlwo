@@ -2,7 +2,7 @@
 char wl_method[20]="security_refresh";//
 //unsigned int line_size=64;
 //#define  pcm_size 1048576;//unit:cacheline
-unsigned int pivot=pcm_size*0.9;//pivot is the limitation between pcm space and back space;
+unsigned int pivot=pcm_size*0.5;//pivot is the limitation between pcm space and back space;
 unsigned long long total_write_count=0;
 unsigned int first_broken_write_count=0;
 unsigned int total_write_count2=0;//requested write access count, exclude write on refreshing
