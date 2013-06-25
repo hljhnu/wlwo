@@ -4,7 +4,6 @@
 #include <iostream>
 using namespace std;
 unsigned int sub_region_bit=7;
-unsigned int line_bit_number=log10(line_size)/log10(2);
 unsigned int outer_map_bits=32-line_bit_number-2;//2^20
 unsigned int inner_map_bits=outer_map_bits-sub_region_bit;//2^13
 unsigned int outer_count[16777216];//(unsigned int)(pow(2.0,outer_map_bits))
@@ -42,38 +41,7 @@ unsigned int xor_map(unsigned int byte_address,unsigned int end, unsigned int st
     return result_address;
 }
 
-unsigned int lookup_target(unsigned int line_address)//update:whether to update pointer deepth
-{
-    unsigned int mapped_address = wear_leveling_map(line_address,wl_method,false);
-    if(pcm.lines[mapped_address].dpflag)//if dpflag == true , it is data in that cacheline.
-    {
-        return mapped_address;
-    }
-    else// dp == false , it is a pointer in that line.
-    {
-        unsigned int remapped_address=pcm.lines[mapped_address].remap_address;
-        return lookup_target(remapped_address);
-    }
-}
 
-bool check_pointer_cycle(unsigned int line_address, unsigned int start_line_address,unsigned int depth)//update:whether to update pointer deepth
-{
-    if((depth!=0)&&(line_address==start_line_address))
-    {
-        return true;
-    }
-    depth++;
-    unsigned int mapped_address = wear_leveling_map(line_address,wl_method,false);
-    if(pcm.lines[mapped_address].dpflag)//if dpflag == true , it is data in that cacheline.
-    {
-        return false;
-    }
-    else// dp == false , it is a pointer in that line.
-    {
-        unsigned int remapped_address=pcm.lines[mapped_address].remap_address;
-        return check_pointer_cycle(remapped_address,start_line_address,depth);
-    }
-}
 
 unsigned int security_refresh_map(unsigned int line_address,bool refreshing)
 {

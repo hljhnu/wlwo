@@ -65,3 +65,36 @@ void perform_access_pcm(unsigned int line_address)
     }
 #endif // PRE_WL
 }
+
+unsigned int lookup_target(unsigned int line_address)//update:whether to update pointer deepth
+{
+    unsigned int mapped_address = wear_leveling_map(line_address,wl_method,false);
+    if(pcm.lines[mapped_address].dpflag)//if dpflag == true , it is data in that cacheline.
+    {
+        return mapped_address;
+    }
+    else// dp == false , it is a pointer in that line.
+    {
+        unsigned int remapped_address=pcm.lines[mapped_address].remap_address;
+        return lookup_target(remapped_address);
+    }
+}
+
+bool check_pointer_cycle(unsigned int line_address, unsigned int start_line_address,unsigned int depth)//update:whether to update pointer deepth
+{
+    if((depth!=0)&&(line_address==start_line_address))
+    {
+        return true;
+    }
+    depth++;
+    unsigned int mapped_address = wear_leveling_map(line_address,wl_method,false);
+    if(pcm.lines[mapped_address].dpflag)//if dpflag == true , it is data in that cacheline.
+    {
+        return false;
+    }
+    else// dp == false , it is a pointer in that line.
+    {
+        unsigned int remapped_address=pcm.lines[mapped_address].remap_address;
+        return check_pointer_cycle(remapped_address,start_line_address,depth);
+    }
+}

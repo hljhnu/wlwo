@@ -8,7 +8,6 @@ using namespace std;
 #define OUT_RIGHT 6
 #define pointer_cache_size (8192)  // 2048-set 4-way
 extern unsigned int sub_region_bit;
-extern unsigned int line_bit_number;
 extern unsigned int cache_line_bit;
 extern unsigned int outer_map_bits;
 extern unsigned int inner_map_bits;

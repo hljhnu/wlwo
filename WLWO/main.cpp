@@ -7,6 +7,7 @@ the whole work.
 #include <iomanip>
 #include <cstdio>
 #include <cstring>
+#include <cmath>
 #include "space.h"
 #include "global.h"
 #include "startgap.h"
@@ -43,7 +44,7 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
         line_address=random_map[line_address];
     }
     unsigned int mapped_address = wear_leveling_map(line_address,wl_method,false);
-    unsigned int start_mapped_address = wear_leveling_map(start_line_address,wl_method,false);
+    //unsigned int start_mapped_address = wear_leveling_map(start_line_address,wl_method,false);
     if(update)
     {
         //pointer_cache.invalid(mapped_address);
@@ -235,6 +236,11 @@ void print_pointer()
 }
 unsigned int access_from_file(char * filename)
 {
+    cout<<"trace file: "<<trace<<endl;
+    if(outfile.is_open())
+    {
+        outfile<<"trace file: "<<trace<<endl;
+    }
     ifstream trace(filename);
     if(trace.is_open()==false)
     {
@@ -284,7 +290,7 @@ unsigned int access_from_file(char * filename)
                 //cout<<" total write count: "<<total_write_count<<endl;
             if(successful==false)
             {
-                cout<<"The device is wear out!"<<endl;
+                cout<<"The device is wear-out!"<<endl;
                 break;
             }
 
@@ -292,13 +298,93 @@ unsigned int access_from_file(char * filename)
 
             if(wear_leveling(wl_method)==false)
             {
-                cout<<"The device is wear out!"<<endl;
+                cout<<"The device is wear-out!"<<endl;
                 break;
             }
         }
     return access_count;
 }
 
+unsigned int repetation_attack()//repetation address attack
+{
+    cout<<"***********"<<"birthday paradox attack"<<"***********"<<endl;
+    if(outfile.is_open())
+    {
+        outfile<<"***********"<<"birthday paradox attack"<<"***********"<<endl;
+    }
+    unsigned int address=rand()%pivot;
+    address=address<<line_bit_number;
+    bool successful=true;
+    while(successful)
+    {
+        access_count++;
+        successful=access_address(address,false,0);
+        //if(total_write_count%1000==0)
+            //cout<<" total write count: "<<total_write_count<<endl;
+        if(successful==false)
+        {
+            cout<<"The device is wear-out!"<<endl;
+            break;
+        }
+
+        total_write_count++;
+
+        if(wear_leveling(wl_method)==false)
+        {
+            cout<<"The device is wear-out!"<<endl;
+            break;
+        }
+    }
+    return access_count;
+}
+
+unsigned int birthday_attack()//birthday paradox attack
+{
+#define PI 3.14
+    cout<<"***********"<<"birthday paradox attack"<<"***********"<<endl;
+    if(outfile.is_open())
+    {
+        outfile<<"***********"<<"birthday paradox attack"<<"***********"<<endl;
+    }
+    unsigned int result_set_count=sqrt((double)((PI/2)*pcm_size))+1;
+    unsigned int temp_count=0;
+    while(temp_count<result_set_count)
+    {
+        unsigned int address=rand()%pivot;
+        unsigned int i=0;
+        for(i=0;i<temp_count;i++)
+        {
+            if(address==birthday_random_address[i])
+            {
+                break;
+            }
+        }
+        birthday_random_address[temp_count]=address;
+        temp_count++;
+    }
+    bool successful=true;
+    unsigned int i=0;
+    while(successful)
+    {
+        access_count++;
+        successful=access_address(birthday_random_address[i]<<line_bit_number,false,0);
+        i=(i+1)%result_set_count;
+        if(successful==false)
+        {
+            cout<<"The device is wear-out!"<<endl;
+            break;
+        }
+
+        total_write_count++;
+
+        if(wear_leveling(wl_method)==false)
+        {
+            cout<<"The device is wear-out!"<<endl;
+            break;
+        }
+    }
+    return access_count;
+}
 
 void output_result()
 {
@@ -321,7 +407,6 @@ void output_result()
     }
 
     cout<<"method:"<<wl_method<<endl;
-    cout<<"trace file: "<<trace<<endl;
     cout<<"pcm size(line):"<<pcm_size<<endl;
     if(strcmp(wl_method,"security_refresh")==0)
     {
@@ -352,7 +437,7 @@ void output_result()
     }
     if(outfile.is_open())
     {
-        outfile<<"***********"<<"filter unnormal writes"<<"***********"<<endl;
+
 #ifdef POINTER_CACHE
         outfile<<"***********"<<"with pointer cache"<<"***********"<<endl;
 #else
@@ -360,7 +445,6 @@ void output_result()
 #endif // POINETR_CACHE
         outfile<<"************random replacement sheme for pointer cache*******"<<endl;
         outfile<<"method:"<<wl_method<<endl;
-        outfile<<"trace file: "<<trace<<endl;
         outfile<<"pcm size(line):"<<pcm_size<<endl;
         if(strcmp(wl_method,"security_refresh")==0)
         {
@@ -390,6 +474,26 @@ void output_result()
         }
         outfile<<endl;
     }
+    out_footprint();
+}
+
+void out_footprint()
+{
+    unsigned int print_interval=4096>>line_bit_number;
+    unsigned int i,j;
+    outfile<<"footprint"<<endl;
+    cout<<"footprint"<<endl;
+    for(i=0;i<pcm_size;i=i+print_interval)
+    {
+        unsigned int temp_count=0;
+        for(j=0;j<print_interval;j++)
+        {
+            temp_count+=pcm.lines[i+j].write_count;
+        }
+        outfile<<i<<" "<<temp_count<<endl;
+        cout<<i<<" "<<temp_count<<endl;
+    }
+    outfile<<endl;
 }
 int main()
 {
@@ -421,6 +525,8 @@ int main()
     }
 
     access_from_file(trace);
+    //birthday_attack();
+    //repetation_attack();
     output_result();
     print_hops();
     outfile<<"=============================================================================="<<endl;
