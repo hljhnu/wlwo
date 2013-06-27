@@ -10,6 +10,7 @@ extern unsigned int gap2;//two lines are used as gaps.
 extern unsigned int frequency2;
 extern unsigned int random_map[];
 
+extern bool init_start_gap();
 extern bool start_gap();
 extern unsigned int start_gap_map(unsigned int line_address);
 

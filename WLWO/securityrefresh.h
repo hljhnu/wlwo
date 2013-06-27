@@ -3,15 +3,13 @@
 #include "global.h"
 #include <stdlib.h>
 using namespace std;
-//extern pcm_size;//unit:cacheline
-#define OUT_LEFT 26
-#define OUT_RIGHT 6
+
 #define pointer_cache_size (8192)  // 2048-set 4-way
 extern unsigned int sub_region_bit;
 extern unsigned int cache_line_bit;
 extern unsigned int outer_map_bits;
 extern unsigned int inner_map_bits;
-extern unsigned int outer_up_limitation;
+extern unsigned long long outer_up_limitation;
 extern unsigned int outer_down_limitation;
 extern unsigned int kp,kc,crp;//used for security refresh: kp--previous key, kc--current key, cp--current position
 extern unsigned int kp2,kc2,crp2;//used for security refresh on back device;
@@ -21,9 +19,18 @@ extern unsigned int refresh_requency2;
 //extern unsigned int total_write_count2;
 extern unsigned int refresh_count;
 extern unsigned int refresh_round;
+
+extern unsigned long long inner_write_count[];
+extern unsigned int inner_crp[];
+extern unsigned int inner_kp[];
+extern unsigned int inner_kc[];
+
+extern void init_security_refresh();
 extern unsigned int xor_map(unsigned int byte_address,unsigned int end, unsigned int start, unsigned int key);
 extern unsigned int security_refresh_map(unsigned int line_address,bool update);
 extern bool security_refresh();
+extern unsigned int sub_region_security_refresh_map(unsigned int line_address,bool update);
+extern bool sub_region_security_refresh();
 extern bool exchange_access_line(unsigned int line_address,unsigned int start_line_address,int deepth);
 class Pointer_Cache
 {

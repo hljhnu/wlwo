@@ -1,12 +1,13 @@
 #include "global.h"
-char wl_method[20]="start_gap";//
-unsigned int pivot=pcm_size*0.9;//pivot is the limitation between pcm space and back space;
+char wl_method[20]="security_refresh";//start_gap
+unsigned int pivot=pcm_size*1;//pivot is the limitation between pcm space and back space;
 unsigned long long total_write_count=0;
 unsigned int first_broken_write_count=0;
 unsigned int total_write_count2=0;//requested write access count, exclude write on refreshing
 unsigned int exceed_write_count=0;//number of address of write access beyond  1GB
 unsigned int wear_out_count=0;
 unsigned int access_count=0;//read from trace
+unsigned int last_written_line=0;//the last written line before the comming wear-leveling.
 unsigned int trace_data[10000000];
 unsigned int trace_len=0;
 unsigned int pointer_deepth[pcm_size];

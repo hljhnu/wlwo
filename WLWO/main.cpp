@@ -61,13 +61,13 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
             wear_out_count++;
             unsigned int re_mapped_address;
             bool success=remapping(mapped_address,&re_mapped_address);//A failure block is remapped to a logical address
-            unsigned int target_address = wear_leveling_map(re_mapped_address,wl_method,update);
+
             if(success)
             {
 #ifdef POINTER_CACHE
                 //bool in_cache=false;
                 //in_cache=Reverse_pointer_cache.lookup(target_address);
-
+                unsigned int target_address = wear_leveling_map(re_mapped_address,wl_method,update);
                 if((false==update)&&(start_line_address<=pivot))
                 {
                     pointer_cache.insert_entry(start_line_address,target_address);
@@ -305,12 +305,12 @@ unsigned int access_from_file(char * filename)
     return access_count;
 }
 
-unsigned int repetation_attack()//repetation address attack
+unsigned int repeatation_attack()//repetation address attack
 {
-    cout<<"***********"<<"birthday paradox attack"<<"***********"<<endl;
+    cout<<"***********"<<"repeatation attack"<<"***********"<<endl;
     if(outfile.is_open())
     {
-        outfile<<"***********"<<"birthday paradox attack"<<"***********"<<endl;
+        outfile<<"***********"<<"repeatation attack"<<"***********"<<endl;
     }
     unsigned int address=rand()%pivot;
     address=address<<line_bit_number;
@@ -338,7 +338,7 @@ unsigned int repetation_attack()//repetation address attack
     return access_count;
 }
 
-unsigned int birthday_attack()//birthday paradox attack
+unsigned int birthday_attack(unsigned int limit)//birthday paradox attack
 {
 #define PI 3.14
     cout<<"***********"<<"birthday paradox attack"<<"***********"<<endl;
@@ -376,7 +376,12 @@ unsigned int birthday_attack()//birthday paradox attack
         }
 
         total_write_count++;
-
+/*
+        if(total_write_count>limit)
+        {
+            break;
+        }
+*/
         if(wear_leveling(wl_method)==false)
         {
             cout<<"The device is wear-out!"<<endl;
@@ -474,7 +479,14 @@ void output_result()
         }
         outfile<<endl;
     }
+
+#ifdef PRINT_HOPS
+    print_hops();
+#endif
+#ifdef PRINT_FOOTPRINT
     out_footprint();
+#endif
+    outfile<<"=============================================================================="<<endl;
 }
 
 void out_footprint()
@@ -498,38 +510,33 @@ void out_footprint()
 int main()
 {
     cout << "WLWO begins ... " << endl;
-
+    if((strcmp(wl_method,"security_refresh")!=0)&&(strcmp(wl_method,"start_gap")!=0)&&(strcmp(wl_method,"none")!=0))
+    {
+        cout<<"non-existing wear-leveling method: "<<wl_method<<endl;
+        return 0;
+    }
     if(outfile.is_open()==false)
     {
-        cout<<"error opening result file:"<<result_path<<endl;
-        cout<<"result cannot been saved!"<<endl;
+        cout<<"Error: opening result file: "<<result_path<<endl;
+        return 0;
     }
-    if(strcmp(wl_method,"start_gap")==false)//random address for start_gap
+    if(strcmp(wl_method,"start_gap")==0)//random address for start_gap
     {
-        ifstream random_map_file(random);
-        if(random_map_file.is_open()==false)
+        if(false==init_start_gap())
         {
-            cout<<"Error: opening 24bits_randomized_addr.dat"<<endl;
             return 0;
         }
-        unsigned int i=0;
-        while(random_map_file.eof()==0)
-        {
-            random_map_file>>random_map[i];
-            i++;
-        }
-        if(random_map_file.is_open())
-        {
-            random_map_file.close();
-        }
+    }
+    else if(strcmp(wl_method,"security_refresh")==0)
+    {
+        init_security_refresh();
     }
 
     access_from_file(trace);
-    //birthday_attack();
-    //repetation_attack();
+    //birthday_attack(700000000);
+    //repeatation_attack();
     output_result();
-    print_hops();
-    outfile<<"=============================================================================="<<endl;
+
     if(outfile.is_open())
     {
         outfile.close();

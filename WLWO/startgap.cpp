@@ -1,5 +1,8 @@
 #include "startgap.h"
 #include "global.h"
+#include <fstream>
+#include <iostream>
+using namespace std;
 unsigned int visible_size=pcm_size-1;
 unsigned int start1=0;
 #ifdef PRE_WL
@@ -27,6 +30,27 @@ unsigned int random_map[0xffffff];//-16384
  0                                      pivot              pcm_size-1
 
 */
+
+bool init_start_gap()
+{
+    ifstream random_map_file(random);
+    if(random_map_file.is_open()==false)
+    {
+        cout<<"Error: opening start-gap random file: "<<random<<endl;
+        return false;
+    }
+    unsigned int i=0;
+    while(random_map_file.eof()==0)
+    {
+        random_map_file>>random_map[i];
+        i++;
+    }
+    if(random_map_file.is_open())
+    {
+        random_map_file.close();
+    }
+    return true;
+}
 bool start_gap()
 {
 #ifdef PRE_WL

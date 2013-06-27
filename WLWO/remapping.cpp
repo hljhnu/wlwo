@@ -52,6 +52,8 @@ void perform_access_pcm(unsigned int line_address)
 {
     //pcm.lines[line_address].write_count+=(pcm.lines[line_address].lifetime>1);
     pcm.lines[line_address].write_count++;
+    //last_written_line=line_address;
+    //unsigned int written_sub_region=line_address>>(SUB_REGION_BITS-line_bit_number);//if the system does wear-leveling, this region will be chosen.
 #ifdef PRE_WL
     //total_write_count++;
 #else
