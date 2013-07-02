@@ -64,8 +64,8 @@ unsigned int sub_region_security_refresh_map(unsigned int line_address,bool refr
 #ifdef PRE_WL
     unsigned int byte_address=line_address<<line_bit_number;
     unsigned int exchanged_address;
-    exchanged_address=xor_map(byte_address,INNER_LEFT,INNER_RIGHT,kc);
-    exchanged_address=xor_map(exchanged_address,INNER_LEFT,INNER_RIGHT,kp);
+    exchanged_address=xor_map(byte_address,INNER_LEFT,INNER_RIGHT,inner_kc[region_number]);
+    exchanged_address=xor_map(exchanged_address,INNER_LEFT,INNER_RIGHT,inner_kp[region_number]);
     bool use_kc=(byte_address<inner_crp[region_number])||(exchanged_address<inner_crp[region_number]);// line_address has been refreshed
     //use_kc=use_kc||((refreshing==true)&&((crp==(line_address<<line_bit_number))||(crp==exchanged_address)));//access the two address to be refreshed
     //use_kc=use_kc||((refreshing==false)&&((total_write_count%refresh_requency)==0));//crp is in the path of the address matched to crp;
@@ -322,7 +322,7 @@ bool sub_region_security_refresh()
             old_target2=lookup_target(inner_crp[last_written_sub_region]>>line_bit_number);
         }
 
-        refresh_count++;
+        refresh_count++;//total refresh count for the whole device.
 
         unsigned int this_up_limitation=(last_written_sub_region<<SUB_REGION_BITS)+((1<<SUB_REGION_BITS)-(1<<line_bit_number));
         unsigned int this_down_limitation=last_written_sub_region<<SUB_REGION_BITS;
@@ -353,7 +353,7 @@ bool sub_region_security_refresh()
             remap_success1=remapping(new_target1,&remapped_address1);
             if(remap_success1)
             {
-                new_target1=security_refresh_map(remapped_address1,true);
+                new_target1=sub_region_security_refresh_map(remapped_address1,true);
             }
             else
             {
@@ -365,7 +365,7 @@ bool sub_region_security_refresh()
             remap_success2=remapping(new_target2,&remapped_address2);
             if(remap_success2)
             {
-                new_target2=security_refresh_map(remapped_address2,true);
+                new_target2=sub_region_security_refresh_map(remapped_address2,true);
             }
             else
             {
@@ -436,7 +436,7 @@ bool exchange_access_line(unsigned int line_address,unsigned int start_line_addr
         }
         else
         {
-            perform_access_pcm(mapped_address);
+            perform_access_pcm(mapped_address,true);//Sometimes We do not count refreshing writes.
 #ifdef PRINT_POINTER_DEPTH
             int percent=wear_out_count/(pcm_size*0.1);
             if((pointer_printed[percent]==false)&&(wear_out_count>0)&&((wear_out_count%(pcm_size/10)==0)))

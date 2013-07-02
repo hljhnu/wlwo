@@ -1,5 +1,5 @@
 #include "global.h"
-char wl_method[20]="security_refresh";//start_gap
+char wl_method[20]="none";//start_gap security_refresh
 unsigned int pivot=pcm_size*1;//pivot is the limitation between pcm space and back space;
 unsigned long long total_write_count=0;
 unsigned int first_broken_write_count=0;
@@ -8,7 +8,7 @@ unsigned int exceed_write_count=0;//number of address of write access beyond  1G
 unsigned int wear_out_count=0;
 unsigned int access_count=0;//read from trace
 unsigned int last_written_line=0;//the last written line before the comming wear-leveling.
-unsigned int trace_data[10000000];
+unsigned int trace_data[100000000];
 unsigned int trace_len=0;
 unsigned int pointer_deepth[pcm_size];
 unsigned long long total_access_delay=0;
@@ -18,7 +18,7 @@ unsigned int access_hops[pcm_size];//recording access hops of every request.
 unsigned int access_path[1000]; //in case that access path forms a cycle.
 unsigned int access_depth=0;//used for testing cycle in access path.
 
-char trace[100] = "trace-LU.out";/*  D:\\programs\\WLWO\\WLWO\\  */
+char trace[100] = "D:\\traces\\byte-trace\\";/*  D:\\programs\\WLWO\\WLWO\\  */
 char random[100] = "24bits_randomized_addr.dat";
 char result_path[100]="result.txt";
 bool pointer_printed[10]={false,false,false,false,false,false,false,false,false,false};

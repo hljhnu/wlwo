@@ -8,6 +8,7 @@ the whole work.
 #include <cstdio>
 #include <cstring>
 #include <cmath>
+#include <ctime>
 #include "space.h"
 #include "global.h"
 #include "startgap.h"
@@ -93,7 +94,10 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
             }
         */
 #endif
-            perform_access_pcm(mapped_address);
+            if(false==update)
+            {
+                perform_access_pcm(mapped_address,update);
+            }
             if(false==update)
             {
                 access_hops[deepth]++;
@@ -264,6 +268,11 @@ unsigned int access_from_file(char * filename)
         bool successful=true;
         while(successful)
         {
+          if(total_write_count>RUN_LENGTH)
+            {
+                break;
+            }
+
             access_count++;
             address=trace_data[i];
             i=(i+1)%trace_len;
@@ -273,11 +282,15 @@ unsigned int access_from_file(char * filename)
             {
                 //cout<<"\naccessed line address "<<address/line_size<<" is larger than size of pcm : "<<pivot<<endl;
                 //return access_count;
+
+#ifdef ADDRESS_NARROWED
+                address=address%pivot;
+#else
                 exceed_write_count++;
-                //address=address%pivot;
                 continue;
+#endif
             }
-#define FILTER
+//#define FILTER
 #ifdef FILTER
             /*filter the abnormal(too many) accesses to a block*/
             if((address>>line_bit_number)==9535)
@@ -413,6 +426,9 @@ void output_result()
 
     cout<<"method:"<<wl_method<<endl;
     cout<<"pcm size(line):"<<pcm_size<<endl;
+#ifdef ADDRESS_NARROWED
+    cout<<"addresses have been narrowed."<<endl;
+#endif // ADDRESS_NARROWED
     if(strcmp(wl_method,"security_refresh")==0)
     {
         cout<<"refresh interval:"<<refresh_requency<<endl;
@@ -442,7 +458,11 @@ void output_result()
     }
     if(outfile.is_open())
     {
-
+        time_t t;
+        t=time(NULL);
+        char * time;
+        time=ctime(&t);
+        outfile<<time<<endl;
 #ifdef POINTER_CACHE
         outfile<<"***********"<<"with pointer cache"<<"***********"<<endl;
 #else
@@ -451,6 +471,12 @@ void output_result()
         outfile<<"************random replacement sheme for pointer cache*******"<<endl;
         outfile<<"method:"<<wl_method<<endl;
         outfile<<"pcm size(line):"<<pcm_size<<endl;
+#ifdef ADDRESS_NARROWED
+        outfile<<"addresses have been narrowed."<<endl;
+#endif // ADDRESS_NARROWED
+#ifdef WL_WRITE
+        outfile<<"include extra wear-leveling write"<<endl;
+#endif // WL_WRITE
         if(strcmp(wl_method,"security_refresh")==0)
         {
             outfile<<"refresh interval:"<<refresh_requency<<endl;
@@ -491,8 +517,10 @@ void output_result()
 
 void out_footprint()
 {
-    unsigned int print_interval=4096>>line_bit_number;
+    unsigned int print_interval=COUNT_INTERVAL;
     unsigned int i,j;
+    outfile<<"count interval: "<<COUNT_INTERVAL<<endl;
+    cout<<"count interval: "<<COUNT_INTERVAL<<endl;
     outfile<<"footprint"<<endl;
     cout<<"footprint"<<endl;
     for(i=0;i<pcm_size;i=i+print_interval)
@@ -502,40 +530,71 @@ void out_footprint()
         {
             temp_count+=pcm.lines[i+j].write_count;
         }
-        outfile<<i<<" "<<temp_count<<endl;
-        cout<<i<<" "<<temp_count<<endl;
+        if(temp_count>0)
+        {
+            outfile<<i<<" "<<temp_count<<endl;
+            cout<<i<<" "<<temp_count<<endl;
+        }
     }
     outfile<<endl;
 }
 int main()
 {
     cout << "WLWO begins ... " << endl;
-    if((strcmp(wl_method,"security_refresh")!=0)&&(strcmp(wl_method,"start_gap")!=0)&&(strcmp(wl_method,"none")!=0))
-    {
-        cout<<"non-existing wear-leveling method: "<<wl_method<<endl;
-        return 0;
-    }
-    if(outfile.is_open()==false)
-    {
-        cout<<"Error: opening result file: "<<result_path<<endl;
-        return 0;
-    }
-    if(strcmp(wl_method,"start_gap")==0)//random address for start_gap
-    {
-        if(false==init_start_gap())
+    char method_name[3][20]={"none","security_refresh","start_gap"};
+    char trace_name[9][50]={"pin-BARNES.out","pin-CHOLESKY.out","pin-C-LU.out",
+                            "pin-FFT.out","pin-FMM.out","pin-NON-C-LU.out","pin-NSQUARED.out",
+                            "pin-OCEAN.out","pin-WATER-SPATIAL.out"};
+
+        int i;
+        int chosen_method;
+        do{
+        cout<<"choose method"<<endl;
+        for(i=0;i<3;i++)
         {
+            cout<<i<<":"<<method_name[i]<<endl;
+        }
+        cin>>chosen_method;
+        }while((chosen_method>2)||(chosen_method<0));
+        strcpy(wl_method,method_name[chosen_method]);
+
+        int chosen_trace=0;
+        do{
+        cout<<"choose traces"<<endl;
+        for(i=0;i<9;i++)
+        {
+            cout<<i<<":"<<trace_name[i]<<endl;
+        }
+        cin>>chosen_trace;
+        }while((chosen_trace>8)||(chosen_trace<0));
+        strcat(trace,trace_name[chosen_trace]);
+
+        if((strcmp(wl_method,"security_refresh")!=0)&&(strcmp(wl_method,"start_gap")!=0)&&(strcmp(wl_method,"none")!=0))
+        {
+            cout<<"non-existing wear-leveling method: "<<wl_method<<endl;
             return 0;
         }
-    }
-    else if(strcmp(wl_method,"security_refresh")==0)
-    {
-        init_security_refresh();
-    }
+        if(outfile.is_open()==false)
+        {
+            cout<<"Error: opening result file: "<<result_path<<endl;
+            return 0;
+        }
+        if(strcmp(wl_method,"start_gap")==0)//random address for start_gap
+        {
+            if(false==init_start_gap())
+            {
+                return 0;
+            }
+        }
+        else if(strcmp(wl_method,"security_refresh")==0)
+        {
+            init_security_refresh();
+        }
 
-    access_from_file(trace);
-    //birthday_attack(700000000);
-    //repeatation_attack();
-    output_result();
+        access_from_file(trace);
+        //birthday_attack(700000000);
+        //repeatation_attack();
+        output_result();
 
     if(outfile.is_open())
     {
