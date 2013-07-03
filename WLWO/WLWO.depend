@@ -46,13 +46,14 @@
 	"securityrefresh.h"
 	<cstring>
 
-1372747914 source:d:\programs\wlwo\wlwo\global.cpp
+1372861898 source:d:\programs\wlwo\wlwo\global.cpp
 	"global.h"
 
-1372766522 d:\programs\wlwo\wlwo\global.h
+1372862846 d:\programs\wlwo\wlwo\global.h
 
-1372767698 source:d:\programs\wlwo\wlwo\main.cpp
+1372867836 source:d:\programs\wlwo\wlwo\main.cpp
 	<iostream>
+	<ostream>
 	<fstream>
 	<iomanip>
 	<cstdio>
@@ -68,18 +69,18 @@
 	<cstdlib>
 	"global.h"
 
-1372347334 d:\programs\wlwo\wlwo\startgap.h
+1372843273 d:\programs\wlwo\wlwo\startgap.h
 
 1372347098 d:\programs\wlwo\wlwo\securityrefresh.h
 	"global.h"
 	<stdlib.h>
 
-1372648694 source:d:\programs\wlwo\wlwo\remapping.cpp
+1372842375 source:d:\programs\wlwo\wlwo\remapping.cpp
 	"global.h"
 	"space.h"
 	<iostream>
 
-1372645567 source:d:\programs\wlwo\wlwo\securityrefresh.cpp
+1372817305 source:d:\programs\wlwo\wlwo\securityrefresh.cpp
 	"securityrefresh.h"
 	"space.h"
 	<math.h>
@@ -88,13 +89,13 @@
 1368798279 source:d:\programs\wlwo\wlwo\space.cpp
 	"space.h"
 
-1372347334 source:d:\programs\wlwo\wlwo\startgap.cpp
+1372863433 source:d:\programs\wlwo\wlwo\startgap.cpp
 	"startgap.h"
 	"global.h"
 	<fstream>
 	<iostream>
 
-1372341074 source:d:\programs\wlwo\wlwo\wearleveling.cpp
+1372843174 source:d:\programs\wlwo\wlwo\wearleveling.cpp
 	"global.h"
 	"startgap.h"
 	"securityrefresh.h"

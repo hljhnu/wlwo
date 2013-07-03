@@ -25,7 +25,7 @@ unsigned int refresh_requency2=100;
 class Pointer_Cache pointer_cache;
 class Reverse_Pointer_Cache reverse_pointer_cache;
 
-void init_security_refresh()
+void init_security_refresh()//for regioned security refresh
 {
     unsigned int i;
     for(i=0;i<(1<<REGION_BITS);i++)

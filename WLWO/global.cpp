@@ -17,7 +17,7 @@ unsigned int access_hops[pcm_size];//recording access hops of every request.
 
 unsigned int access_path[1000]; //in case that access path forms a cycle.
 unsigned int access_depth=0;//used for testing cycle in access path.
-
+unsigned int deepest_point=0;
 char trace[100] = "D:\\traces\\byte-trace\\";/*  D:\\programs\\WLWO\\WLWO\\  */
 char random[100] = "24bits_randomized_addr.dat";
 char result_path[100]="result.txt";

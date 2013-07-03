@@ -54,7 +54,11 @@ void perform_access_pcm(unsigned int line_address,bool update)
 #ifdef WL_WRITE
     if(false==update)//We do not count refreshing writes.
     {
-        pcm.lines[line_address].write_count++;
+        //if line_address==0xffffffff, it is an access to an extra line in start-gap.
+        if(line_address!=0xffffffff)
+        {
+            pcm.lines[line_address].write_count++;
+        }
         last_written_line=line_address;
     }
 #else

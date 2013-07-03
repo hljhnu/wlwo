@@ -13,5 +13,7 @@ extern unsigned int random_map[];
 extern bool init_start_gap();
 extern bool start_gap();
 extern unsigned int start_gap_map(unsigned int line_address);
-
+extern bool init_region_start_gap();
+extern bool region_start_gap();
+extern unsigned int region_start_gap_map(unsigned int line_address);
 #endif // _STARTGAP_H_

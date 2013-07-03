@@ -24,7 +24,7 @@ unsigned int wear_leveling_map(unsigned int line_address,char* method,bool updat
     }
     else if(strcmp(method,"start_gap")==0)
     {
-        mapped_address=start_gap_map(line_address);
+        mapped_address=region_start_gap_map(line_address);
     }
     return mapped_address;//it should return bool value. because address 0 is valid.
 }
@@ -37,7 +37,7 @@ bool wear_leveling(char* method)
     }
     else if(strcmp(method,"start_gap")==0)
     {
-        return start_gap();
+        return region_start_gap();
     }
     return true;
 }

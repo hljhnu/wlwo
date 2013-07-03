@@ -9,7 +9,7 @@
                                     //total space:     16793600
 #define OUT_LEFT (PCM_SIZE_BITS-1)
 #define OUT_RIGHT line_bit_number
-#define SUB_REGION_BITS (21)// a sub-region is 2MB, that is bit number of a sub-region
+#define SUB_REGION_BITS (24)//21(SR) 24(SG) a sub-region is 2MB(SR) or 16MB(SG), that is bit number of a sub-region
 #define REGION_BITS (PCM_SIZE_BITS-SUB_REGION_BITS)//bits of the number of regions
 #define INNER_LEFT (SUB_REGION_BITS-1)
 #define INNER_RIGHT line_bit_number
@@ -45,7 +45,7 @@ extern unsigned int access_hops[];
 
 extern unsigned int access_path[];
 extern unsigned int access_depth;
-
+extern unsigned int deepest_point;
 extern unsigned int wear_leveling_map(unsigned int line_address,char* method,bool update);
 extern bool wear_leveling(char* method);
 extern bool remapping(unsigned int valid_address,unsigned int * remapped_address);
@@ -56,6 +56,7 @@ extern bool access_address(unsigned int memory_address,bool update,int deepth);
 extern void print_pointer();
 extern bool check_cycle();
 extern void out_footprint();
+extern void compute_pointer_depth();
 
 extern unsigned int lookup_target(unsigned int line_address);//update:whether to update pointer deepth
 extern bool check_pointer_cycle(unsigned int line_address, unsigned int start_line_address,unsigned int depth);//update:whether to update pointer deepth

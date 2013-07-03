@@ -3,6 +3,7 @@ This file includes entrance "main" and the framwork of
 the whole work.
 ******************************************************/
 #include <iostream>
+#include <ostream>
 #include <fstream>
 #include <iomanip>
 #include <cstdio>
@@ -194,29 +195,9 @@ void print_hops()//print number of different hops of access
 }
 void print_pointer()
 {
-    unsigned int deepest_point=0;
     unsigned int i = 0;
-    for(i=0;i<pcm_size;i++)
-    {
-       /* if(pcm.lines[i].write_count>=0)
-        {
-            printf("%u : %u\n",i,pcm.lines[i].write_count);
-        }*/
-        if(deepest_point<pcm.lines[i].point_deep)
-        {
-            deepest_point=pcm.lines[i].point_deep;
-        }
-    }
-
-    for(i=0;i<pcm_size;i++)
-    {
-        if(pcm.lines[i].dpflag==true)
-        {
-            pointer_deepth[pcm.lines[i].point_deep]++;
-        }
-    }
+    compute_pointer_depth();
     cout<<"\nwear-out percent: "<<fixed<<setprecision(1)<<((float)wear_out_count/(float)pcm_size)<<endl;
-#ifdef PRINT_POINTER_DEPTH
     for(i=0;i<=deepest_point;i++)
     {
         if(pointer_deepth[i]>0)
@@ -236,14 +217,13 @@ void print_pointer()
             }
         }
     }
-#endif
 }
 unsigned int access_from_file(char * filename)
 {
-    cout<<"trace file: "<<trace<<endl;
+    cout<<"trace file: "<<filename<<endl;
     if(outfile.is_open())
     {
-        outfile<<"trace file: "<<trace<<endl;
+        outfile<<"trace file: "<<filename<<endl;
     }
     ifstream trace(filename);
     if(trace.is_open()==false)
@@ -404,9 +384,17 @@ unsigned int birthday_attack(unsigned int limit)//birthday paradox attack
     return access_count;
 }
 
-void output_result()
+char * get_time()
 {
-    unsigned int deepest_point=0;
+    time_t t;
+    t=time(NULL);
+    char * time;
+    time=ctime(&t);
+    return time;
+}
+void compute_pointer_depth()
+{
+    //unsigned int deepest_point=0;
     unsigned int i = 0;
     for(i=0;i<pcm_size;i++)
     {
@@ -424,51 +412,19 @@ void output_result()
         }
     }
 
-    cout<<"method:"<<wl_method<<endl;
-    cout<<"pcm size(line):"<<pcm_size<<endl;
-#ifdef ADDRESS_NARROWED
-    cout<<"addresses have been narrowed."<<endl;
-#endif // ADDRESS_NARROWED
-    if(strcmp(wl_method,"security_refresh")==0)
-    {
-        cout<<"refresh interval:"<<refresh_requency<<endl;
-        cout<<"last crp:"<<(crp>>line_bit_number)<<endl;
-        cout<<"refresh count: "<<refresh_count<<endl;
-        cout<<"refresh round: "<<refresh_round<<endl;
-    }
-    cout<<"cell lifetime: "<<pcm.lines[0].lifetime<<endl;
-    cout<<"deepth of the deepest point: " << deepest_point<<endl;
-    cout<<"access count: "<<access_count<<endl;
-    cout<<"total write count: "<<total_write_count<<endl;
-    cout<<"total write count(without remapping): "<<first_broken_write_count<<endl;
-    cout<<"percent(without/with remapping): "<<fixed<<setprecision(4)<<((float)first_broken_write_count/(float)total_write_count)<<endl;
-    cout<<"wear-out count: "<<wear_out_count<<endl;
-    cout<<"exceeded write count: "<<exceed_write_count<<endl;
-    //cout<<"total access delay: "<<total_access_delay<<" ns"<<endl;
-    cout<<"average access delay: "<<(total_access_delay/total_write_count)<<" ns"<<endl;
-    cout<<"normal space : backup space = "<<pivot<<" : "<< (pcm_size-pivot)<<" backup space percent:"<<setprecision(2)<<(float)(pcm_size-pivot)/(float)pcm_size<<endl;
-    cout<<"\nwear-out percent: "<<fixed<<setprecision(4)<<((float)wear_out_count/(float)pcm_size)<<endl;
-
-    for(i=0;i<=deepest_point;i++)
-    {
-        if(pointer_deepth[i]>0)
-        {
-                cout<<"pointer deepth = "<<i<<"  ; count = "<<pointer_deepth[i]<<endl;
-        }
-    }
+}
+void output_result(ofstream &outfile)
+{
     if(outfile.is_open())
     {
-        time_t t;
-        t=time(NULL);
-        char * time;
-        time=ctime(&t);
-        outfile<<time<<endl;
+        outfile<<get_time()<<endl;
+        outfile<<"pointer cache: ";
 #ifdef POINTER_CACHE
-        outfile<<"***********"<<"with pointer cache"<<"***********"<<endl;
+        outfile<<"yes"<<endl;
 #else
-        outfile<<"***********"<<"without pointer cache"<<"********"<<endl;
+        outfile<<"no"<<endl;
 #endif // POINETR_CACHE
-        outfile<<"************random replacement sheme for pointer cache*******"<<endl;
+        outfile<<"random replacement sheme for pointer cache"<<endl;
         outfile<<"method:"<<wl_method<<endl;
         outfile<<"pcm size(line):"<<pcm_size<<endl;
 #ifdef ADDRESS_NARROWED
@@ -496,6 +452,7 @@ void output_result()
         outfile<<"average access delay: "<<(total_access_delay/total_write_count)<<" ns"<<endl;
         outfile<<"normal space : backup space = "<<pivot<<" : "<< (pcm_size-pivot)<<" backup space percent:"<<setprecision(2)<<(float)(pcm_size-pivot)/(float)pcm_size<<endl;
         outfile<<"\nwear-out percent: "<<fixed<<setprecision(4)<<((float)wear_out_count/(float)pcm_size)<<endl;
+        unsigned int i;
         for(i=0;i<=deepest_point;i++)
         {
             if(pointer_deepth[i]>0)
@@ -505,24 +462,25 @@ void output_result()
         }
         outfile<<endl;
     }
-
-#ifdef PRINT_HOPS
-    print_hops();
-#endif
-#ifdef PRINT_FOOTPRINT
-    out_footprint();
-#endif
-    outfile<<"=============================================================================="<<endl;
 }
 
-void out_footprint()
+
+void out_footprint(ostream &outfile)
 {
+    if(!outfile.good())
+    {
+        cout<<"file for footprint is not open"<<endl;
+        return ;
+    }
     unsigned int print_interval=COUNT_INTERVAL;
     unsigned int i,j;
     outfile<<"count interval: "<<COUNT_INTERVAL<<endl;
-    cout<<"count interval: "<<COUNT_INTERVAL<<endl;
+    //cout<<"count interval: "<<COUNT_INTERVAL<<endl;
     outfile<<"footprint"<<endl;
-    cout<<"footprint"<<endl;
+    //cout<<"footprint"<<endl;
+    unsigned long sum=0;
+    unsigned long count_larger_zero=0;
+    unsigned int groups[10000];
     for(i=0;i<pcm_size;i=i+print_interval)
     {
         unsigned int temp_count=0;
@@ -533,10 +491,32 @@ void out_footprint()
         if(temp_count>0)
         {
             outfile<<i<<" "<<temp_count<<endl;
-            cout<<i<<" "<<temp_count<<endl;
+            //cout<<i<<" "<<temp_count<<endl;
+            groups[count_larger_zero]=temp_count;
+            count_larger_zero++;
         }
+        sum=sum+temp_count;
     }
+    double avr=(double)sum/(double)count_larger_zero;
+    double var=0.0;
+    for(i=0;i<count_larger_zero;i++)
+    {
+        var=var+(groups[i]-avr)*(groups[i]-avr);
+    }
+    var=var/(double)count_larger_zero;
+    double stdev=sqrt(var);
+    double cov=stdev/avr;
+    outfile<<"var: "<<var<<endl;
+    outfile<<"stdev: "<<stdev<<endl;
+    outfile<<"avr: "<<avr<<endl;
+    outfile<<"cov: "<<cov<<endl;
+    //cout<<"var: "<<var<<endl;
+    //cout<<"stdev: "<<stdev<<endl;
+    //cout<<"avr: "<<avr<<endl;
+    //cout<<"cov: "<<cov<<endl;
     outfile<<endl;
+
+
 }
 int main()
 {
@@ -581,7 +561,7 @@ int main()
         }
         if(strcmp(wl_method,"start_gap")==0)//random address for start_gap
         {
-            if(false==init_start_gap())
+            if(false==init_region_start_gap())
             {
                 return 0;
             }
@@ -594,11 +574,61 @@ int main()
         access_from_file(trace);
         //birthday_attack(700000000);
         //repeatation_attack();
-        output_result();
+        //output_result(outfile);
+
+    char single_result_name[200];
+    memset(single_result_name,'\0',200);
+    strcpy(single_result_name,trace_name[chosen_trace]);
+    strcat(single_result_name,"-");
+    strcat(single_result_name,method_name[chosen_method]);
+    strcat(single_result_name,"-");
+    strcat(single_result_name,get_time());
+    strcat(single_result_name,"-");
+    strcat(single_result_name,".txt");
+    char no_letters[10]={':','\0','\n','\\',' '};
+    for(i=0;single_result_name[i]!='\0';i++)
+    {
+        int j;
+        for(j=0;j<5;j++)
+        {
+            if(single_result_name[i]==no_letters[j])
+            {
+                single_result_name[i]='-';
+            }
+        }
+    }
+    ofstream single_result_file(single_result_name);
+    if(single_result_file.is_open())
+    {
+        out_footprint(single_result_file);
+        single_result_file.close();
+    }
+    else
+    {
+        cout<<"file for single result is not open"<<endl;
+    }
+    output_result(outfile);
+    output_result(single_result_file);
+#ifdef PRINT_POINTER_DEPTH
+    print_pointer();
+#endif // PRINT_POINTER_DEPTH
+#ifdef PRINT_HOPS
+    print_hops(outfile);
+#endif
+#ifdef PRINT_FOOTPRINT
+    out_footprint(outfile);
+    out_footprint(single_result_file);
+#endif
+    outfile<<"=============================================================================="<<endl;
+    out_footprint(cout);
 
     if(outfile.is_open())
     {
         outfile.close();
+    }
+    if(single_result_file.is_open())
+    {
+        single_result_file.close();
     }
     cout << "WLWO ends!" << endl;
     return 0;
