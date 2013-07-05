@@ -28,11 +28,11 @@ unsigned int a_access_count=0;
  * \param  start_line_address:the head of an access path
  * \param  is_start: whether param line_address is the head of the access path
  * \param  update: access happens when perfrom security refreshing
- * \param  deepth: the deepth of pointer which points to line_address
+ * \param  depth: the depth of pointer which points to line_address
  * \return bool: A return "true" indicates the success of the access.
  *
  */
-bool access_line(unsigned int line_address,unsigned int start_line_address,bool is_start,bool update,int deepth)//update:whether to update pointer deepth
+bool access_line(unsigned int line_address,unsigned int start_line_address,bool is_start,bool update,int depth)//update:whether to update pointer depth
 {
     total_access_delay+=50;
     if((line_address==start_line_address)&&(false==is_start))
@@ -50,7 +50,7 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
     if(update)
     {
         //pointer_cache.invalid(mapped_address);
-        pcm.lines[mapped_address].point_deep=deepth+1;
+        pcm.lines[mapped_address].point_deep=depth+1;
     }
     if(pcm.lines[mapped_address].dpflag)//if dpflag == true , it is data in that cacheline.
     {
@@ -76,7 +76,7 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
                     reverse_pointer_cache.insert_entry(start_line_address,target_address);
                 }
 #endif
-                return access_line(re_mapped_address,start_line_address,is_start,update,deepth+1);
+                return access_line(re_mapped_address,start_line_address,is_start,update,depth+1);
                 //perform_access_pcm(re_mapped_address);
                 //wear_leveling("start_gap");
             }
@@ -101,7 +101,7 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
             }
             if(false==update)
             {
-                access_hops[deepth]++;
+                access_hops[depth]++;
             }
 #ifdef PRINT_POINTER_DEPTH
             int percent=wear_out_count/(pcm_size*0.1);
@@ -127,7 +127,7 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
             if(found)
             {
                //remapped_address = target_address;
-               perform_access_pcm(target_address);
+               perform_access_pcm(target_address,update);
                return true;
             }
             else
@@ -142,12 +142,12 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
 #else
             remapped_address=pcm.lines[mapped_address].remap_address;
 #endif
-        return access_line(remapped_address,start_line_address,is_start,update,deepth+1);
+        return access_line(remapped_address,start_line_address,is_start,update,depth+1);
     }
 }
-bool access_address(unsigned int memory_address,bool update,int deepth)
+bool access_address(unsigned int memory_address,bool update,int depth)
 {
-    return access_line(memory_address/line_size,memory_address/line_size,true,update,deepth);
+    return access_line(memory_address/line_size,memory_address/line_size,true,update,depth);
 }
 
 unsigned int write_count_sum[pcm_size];
@@ -193,27 +193,18 @@ void print_hops()//print number of different hops of access
     cout<<endl;
     outfile<<endl;
 }
-void print_pointer()
+void print_pointer(ostream &outfile)
 {
     unsigned int i = 0;
     compute_pointer_depth();
-    cout<<"\nwear-out percent: "<<fixed<<setprecision(1)<<((float)wear_out_count/(float)pcm_size)<<endl;
-    for(i=0;i<=deepest_point;i++)
-    {
-        if(pointer_deepth[i]>0)
-        {
-                cout<<"pointer deepth = "<<i<<"  ; count = "<<pointer_deepth[i]<<endl;
-        }
-    }
-
-    if(outfile.is_open())
+    if(outfile.good())
     {
         outfile<<"\nwear-out percent: "<<fixed<<setprecision(1)<<((float)wear_out_count/(float)pcm_size)<<endl;
         for(i=0;i<=deepest_point;i++)
         {
             if(pointer_deepth[i]>0)
             {
-                    outfile<<"pointer deepth = "<<i<<"  ; count = "<<pointer_deepth[i]<<endl;
+                    outfile<<"pointer depth = "<<i<<"  ; count = "<<pointer_deepth[i]<<endl;
             }
         }
     }
@@ -236,6 +227,7 @@ unsigned int access_from_file(char * filename)
         trace>>trace_data[trace_len];
         trace_len++;
     }
+    trace_len--;//the last one is the end position of the file.
     cout<<"trace length= "<<trace_len<<endl;
     if(trace.is_open())
     {
@@ -248,14 +240,20 @@ unsigned int access_from_file(char * filename)
         bool successful=true;
         while(successful)
         {
-          if(total_write_count>RUN_LENGTH)
+            if(inner_write_count[0]>10000000)
             {
                 break;
             }
 
+            /*if(total_write_count>RUN_LENGTH)
+            {
+                break;
+            }
+            */
             access_count++;
             address=trace_data[i];
             i=(i+1)%trace_len;
+            //i=i+1;
 
             //cout<<address<<" ";
             if((address>>line_bit_number)>pivot)//addresss larger than pivot are used for remapping and are unvisible to OS.
@@ -264,7 +262,7 @@ unsigned int access_from_file(char * filename)
                 //return access_count;
 
 #ifdef ADDRESS_NARROWED
-                address=address%pivot;
+                address=address%(pivot<<line_bit_number);
 #else
                 exceed_write_count++;
                 continue;
@@ -413,9 +411,9 @@ void compute_pointer_depth()
     }
 
 }
-void output_result(ofstream &outfile)
+void output_result(ostream &outfile)
 {
-    if(outfile.is_open())
+    if(outfile.good())
     {
         outfile<<get_time()<<endl;
         outfile<<"pointer cache: ";
@@ -440,8 +438,12 @@ void output_result(ofstream &outfile)
             outfile<<"refresh count: "<<refresh_count<<endl;
             outfile<<"refresh round: "<<refresh_round<<endl;
         }
+        if(strcmp(wl_method,"start_gap")==0)
+        {
+            outfile<<"frequency: "<<frequency1<<endl;
+        }
         outfile<<"cell lifetime: "<<pcm.lines[0].lifetime<<endl;
-        outfile<<"deepth of the deepest point: " << deepest_point<<endl;
+        outfile<<"max depth: " << deepest_point<<endl;
         outfile<<"access count: "<<access_count<<endl;
         outfile<<"total write count: "<<total_write_count<<endl;
         outfile<<"total write count(without remapping): "<<first_broken_write_count<<endl;
@@ -450,14 +452,15 @@ void output_result(ofstream &outfile)
         outfile<<"exceeded write count: "<<exceed_write_count<<endl;
         //outfile<<"total access delay: "<<total_access_delay<<" ns"<<endl;
         outfile<<"average access delay: "<<(total_access_delay/total_write_count)<<" ns"<<endl;
-        outfile<<"normal space : backup space = "<<pivot<<" : "<< (pcm_size-pivot)<<" backup space percent:"<<setprecision(2)<<(float)(pcm_size-pivot)/(float)pcm_size<<endl;
-        outfile<<"\nwear-out percent: "<<fixed<<setprecision(4)<<((float)wear_out_count/(float)pcm_size)<<endl;
+        outfile<<"normal space : backup space = "<<pivot<<" : "<< (pcm_size-pivot)<<endl;
+        outfile<<"backup space percent:"<<setprecision(2)<<(float)(pcm_size-pivot)/(float)pcm_size<<endl;
+        outfile<<"wear-out percent: "<<fixed<<setprecision(4)<<((float)wear_out_count/(float)pcm_size)<<endl;
         unsigned int i;
         for(i=0;i<=deepest_point;i++)
         {
             if(pointer_deepth[i]>0)
             {
-                outfile<<"pointer deepth = "<<i<<"  ; count = "<<pointer_deepth[i]<<endl;
+                outfile<<"pointer depth = "<<i<<"  ; count = "<<pointer_deepth[i]<<endl;
             }
         }
         outfile<<endl;
@@ -480,7 +483,7 @@ void out_footprint(ostream &outfile)
     //cout<<"footprint"<<endl;
     unsigned long sum=0;
     unsigned long count_larger_zero=0;
-    unsigned int groups[10000];
+    //unsigned int groups[10000];
     for(i=0;i<pcm_size;i=i+print_interval)
     {
         unsigned int temp_count=0;
@@ -490,7 +493,7 @@ void out_footprint(ostream &outfile)
         }
         if(temp_count>0)
         {
-            outfile<<i<<" "<<temp_count<<endl;
+            outfile<<i<<","<<temp_count<<endl;
             //cout<<i<<" "<<temp_count<<endl;
             groups[count_larger_zero]=temp_count;
             count_larger_zero++;
@@ -584,7 +587,7 @@ int main()
     strcat(single_result_name,"-");
     strcat(single_result_name,get_time());
     strcat(single_result_name,"-");
-    strcat(single_result_name,".txt");
+    strcat(single_result_name,".csv");
     char no_letters[10]={':','\0','\n','\\',' '};
     for(i=0;single_result_name[i]!='\0';i++)
     {
@@ -598,17 +601,8 @@ int main()
         }
     }
     ofstream single_result_file(single_result_name);
-    if(single_result_file.is_open())
-    {
-        out_footprint(single_result_file);
-        single_result_file.close();
-    }
-    else
-    {
-        cout<<"file for single result is not open"<<endl;
-    }
-    output_result(outfile);
-    output_result(single_result_file);
+
+    //output_result(outfile);
 #ifdef PRINT_POINTER_DEPTH
     print_pointer();
 #endif // PRINT_POINTER_DEPTH
@@ -616,11 +610,20 @@ int main()
     print_hops(outfile);
 #endif
 #ifdef PRINT_FOOTPRINT
-    out_footprint(outfile);
-    out_footprint(single_result_file);
+    //out_footprint(outfile);
+    if(single_result_file.is_open())
+    {
+        output_result(single_result_file);
+        out_footprint(single_result_file);
+    }
+    else
+    {
+        cout<<"file for single result is not open"<<endl;
+    }
 #endif
     outfile<<"=============================================================================="<<endl;
-    out_footprint(cout);
+    output_result(cout);
+    //out_footprint(cout);
 
     if(outfile.is_open())
     {

@@ -14,7 +14,7 @@ unsigned int pointer_deepth[pcm_size];
 unsigned long long total_access_delay=0;
 unsigned int birthday_random_address[20000];//chosen addresses for birthday paradox attack, 20000 is large enough for 4GB memory.
 unsigned int access_hops[pcm_size];//recording access hops of every request.
-
+unsigned int groups[1<<(PCM_SIZE_BITS-line_bit_number)];
 unsigned int access_path[1000]; //in case that access path forms a cycle.
 unsigned int access_depth=0;//used for testing cycle in access path.
 unsigned int deepest_point=0;

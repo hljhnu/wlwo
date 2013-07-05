@@ -9,7 +9,14 @@ extern unsigned int start2;
 extern unsigned int gap2;//two lines are used as gaps.
 extern unsigned int frequency2;
 extern unsigned int random_map[];
-
+extern unsigned int region_count[];
+extern unsigned int region_write_count[];
+extern unsigned int region_gap[];
+extern unsigned int region_start[];
+extern unsigned int region_begin[];// first addresses of regions
+extern unsigned int region_end[];// last addresses of regions
+extern unsigned int gaps[];//extra lines for all gaps.
+extern unsigned int region_visible_size;
 extern bool init_start_gap();
 extern bool start_gap();
 extern unsigned int start_gap_map(unsigned int line_address);

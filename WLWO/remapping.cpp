@@ -80,7 +80,7 @@ void perform_access_pcm(unsigned int line_address,bool update)
 #endif // PRE_WL
 }
 
-unsigned int lookup_target(unsigned int line_address)//update:whether to update pointer deepth
+unsigned int lookup_target(unsigned int line_address)//update:whether to update pointer depth
 {
     unsigned int mapped_address = wear_leveling_map(line_address,wl_method,false);
     if(pcm.lines[mapped_address].dpflag)//if dpflag == true , it is data in that cacheline.
@@ -94,7 +94,7 @@ unsigned int lookup_target(unsigned int line_address)//update:whether to update 
     }
 }
 
-bool check_pointer_cycle(unsigned int line_address, unsigned int start_line_address,unsigned int depth)//update:whether to update pointer deepth
+bool check_pointer_cycle(unsigned int line_address, unsigned int start_line_address,unsigned int depth)//update:whether to update pointer depth
 {
     if((depth!=0)&&(line_address==start_line_address))
     {

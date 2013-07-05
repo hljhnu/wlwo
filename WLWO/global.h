@@ -16,10 +16,10 @@
 //#define POINTER_CACHE
 //#define PRINT_POINTER_DEPTH
 //#define PRINT_HOPS
-#define WL_WRITE  //whether count extar wear-leveling writes.
+#define WL_WRITE  //whether count extra wear-leveling writes.
 #define PRINT_FOOTPRINT
 #define RUN_LENGTH (100000000LLU)//(2000000000LLU)//the system stops after writting RUN_LENGTH times.
-#define COUNT_INTERVAL (2048)  //(1<<11)  //the numbers of lines to be added up to a group.
+#define COUNT_INTERVAL (1<<0)  //(1<<11)  //the numbers of lines to be added up to a group.
 #define ADDRESS_NARROWED
 #define PRE_WL
 #define DEBUG
@@ -42,7 +42,7 @@ extern bool pointer_printed[];
 extern unsigned long long total_access_delay;
 extern unsigned int birthday_random_address[];
 extern unsigned int access_hops[];
-
+extern unsigned int groups[];
 extern unsigned int access_path[];
 extern unsigned int access_depth;
 extern unsigned int deepest_point;
@@ -51,13 +51,13 @@ extern bool wear_leveling(char* method);
 extern bool remapping(unsigned int valid_address,unsigned int * remapped_address);
 extern bool allocate_address(unsigned int valid_address,unsigned int * remapped_address);
 extern void perform_access_pcm(unsigned int line_address,bool update);
-extern bool access_line(unsigned int line_address,unsigned int start_line_address,bool is_start,bool update, int deepth);
-extern bool access_address(unsigned int memory_address,bool update,int deepth);
+extern bool access_line(unsigned int line_address,unsigned int start_line_address,bool is_start,bool update, int depth);
+extern bool access_address(unsigned int memory_address,bool update,int depth);
 extern void print_pointer();
 extern bool check_cycle();
 extern void out_footprint();
 extern void compute_pointer_depth();
 
-extern unsigned int lookup_target(unsigned int line_address);//update:whether to update pointer deepth
-extern bool check_pointer_cycle(unsigned int line_address, unsigned int start_line_address,unsigned int depth);//update:whether to update pointer deepth
+extern unsigned int lookup_target(unsigned int line_address);//update:whether to update pointer depth
+extern bool check_pointer_cycle(unsigned int line_address, unsigned int start_line_address,unsigned int depth);//update:whether to update pointer depth
 #endif

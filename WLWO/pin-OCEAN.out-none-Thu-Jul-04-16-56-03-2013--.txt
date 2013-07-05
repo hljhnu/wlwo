@@ -1,0 +1,51 @@
+Thu Jul 04 16:56:03 2013
+
+pointer cache: no
+random replacement sheme for pointer cache
+method:none
+pcm size(line):16777216
+addresses have been narrowed.
+include extra wear-leveling write
+cell lifetime: 100000000
+max depth: 0
+access count: 100000001
+total write count: 100000001
+total write count(without remapping): 0
+percent(without/with remapping): 0.0000
+wear-out count: 0
+exceeded write count: 0
+average access delay: 50 ns
+normal space : backup space = 16777216 : 0
+backup space percent:0.00
+wear-out percent: 0.0000
+
+count interval: 2048
+footprint
+0 328
+26624 328
+43008 328
+86016 33784
+110592 802222
+112640 5039064
+114688 10763318
+116736 11119923
+118784 10715136
+120832 11072494
+122880 10747904
+124928 10730164
+126976 10715136
+129024 7038022
+145408 11089013
+153600 328
+188416 328
+196608 328
+225280 328
+229376 328
+237568 328
+2101248 37061
+2275328 93808
+var: 25484710941148.6406
+stdev: 5048238.3998
+avr: 4347826.1304
+cov: 1.1611
+

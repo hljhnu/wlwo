@@ -18,7 +18,6 @@ unsigned int start2=0;
 unsigned int gap2=pcm_size-1;//two lines are used as gaps.
 unsigned int frequency2=100;
 unsigned int random_map[0xffffff];//-16384
-unsigned int region_count[1<<REGION_BITS];
 unsigned int region_write_count[1<<REGION_BITS];
 unsigned int region_gap[1<<REGION_BITS];
 unsigned int region_start[1<<REGION_BITS];
@@ -80,7 +79,7 @@ bool init_region_start_gap()//for regioned start-gap
     }
     for(i=0;i<(1<<REGION_BITS);i++)
     {
-        region_count[i]=0;
+        region_write_count[i]=0;
         region_begin[i]=i<<(SUB_REGION_BITS-line_bit_number);
         region_end[i]=region_begin[i]+(1<<(SUB_REGION_BITS-line_bit_number))-1;
         region_start[i]=0;

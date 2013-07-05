@@ -31,6 +31,7 @@ void init_security_refresh()//for regioned security refresh
     for(i=0;i<(1<<REGION_BITS);i++)
     {
         inner_crp[i]=i<<SUB_REGION_BITS;
+        inner_write_count[i]=0;
     }
 }
 
@@ -409,13 +410,13 @@ bool sub_region_security_refresh()
     return true;
 }
 
-bool exchange_access_line(unsigned int line_address,unsigned int start_line_address,int deepth)//update:whether to update pointer deepth
+bool exchange_access_line(unsigned int line_address,unsigned int start_line_address,int depth)//update:whether to update pointer depth
 {
     total_access_delay+=50;
     //we do not need to consider read access.
     unsigned int mapped_address = wear_leveling_map(line_address,wl_method,true);
     //pointer_cache.invalid(mapped_address);
-    pcm.lines[mapped_address].point_deep=deepth+1;
+    pcm.lines[mapped_address].point_deep=depth+1;
     if(pcm.lines[mapped_address].dpflag)//if dpflag == true , it is data in that cacheline.
     {
         if(pcm.lines[mapped_address].write_count>=pcm.lines[mapped_address].lifetime)
@@ -425,7 +426,7 @@ bool exchange_access_line(unsigned int line_address,unsigned int start_line_addr
             bool success=remapping(mapped_address,&re_mapped_address);//A failure block is remapped to a logical address
             if(success)
             {
-                return access_line(re_mapped_address,start_line_address,false,true,deepth+1);
+                return access_line(re_mapped_address,start_line_address,false,true,depth+1);
                 //perform_access_pcm(re_mapped_address);
                 //wear_leveling("start_gap");
             }
@@ -451,6 +452,6 @@ bool exchange_access_line(unsigned int line_address,unsigned int start_line_addr
     }
     else// dp == false , it is a pointer in that line.
     {
-         return access_line(pcm.lines[mapped_address].remap_address,start_line_address,false,true,deepth+1);
+         return access_line(pcm.lines[mapped_address].remap_address,start_line_address,false,true,depth+1);
     }
 }

@@ -31,7 +31,7 @@ extern unsigned int security_refresh_map(unsigned int line_address,bool update);
 extern bool security_refresh();
 extern unsigned int sub_region_security_refresh_map(unsigned int line_address,bool update);
 extern bool sub_region_security_refresh();
-extern bool exchange_access_line(unsigned int line_address,unsigned int start_line_address,int deepth);
+extern bool exchange_access_line(unsigned int line_address,unsigned int start_line_address,int depth);
 class Pointer_Cache
 {
 public:
