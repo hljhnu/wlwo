@@ -18,8 +18,9 @@
 //#define PRINT_HOPS
 #define WL_WRITE  //whether count extra wear-leveling writes.
 #define PRINT_FOOTPRINT
-#define RUN_LENGTH (100000000LLU)//(2000000000LLU)//the system stops after writting RUN_LENGTH times.
-#define COUNT_INTERVAL (1<<0)  //(1<<11)  //the numbers of lines to be added up to a group.
+#define RUN_LENGTH (4000000000LLU)//(2000000000LLU)//the system stops after writting RUN_LENGTH times.
+#define COUNT_INTERVAL_BITS (0)
+#define COUNT_INTERVAL (1<<COUNT_INTERVAL_BITS)  //(1<<11)  //the numbers of lines to be added up to a group.
 #define ADDRESS_NARROWED
 #define PRE_WL
 #define DEBUG

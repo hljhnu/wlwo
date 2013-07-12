@@ -24,6 +24,8 @@ extern unsigned long long inner_write_count[];
 extern unsigned int inner_crp[];
 extern unsigned int inner_kp[];
 extern unsigned int inner_kc[];
+extern unsigned int inner_refresh_round[];
+extern unsigned int inner_refresh_count[];
 
 extern void init_security_refresh();
 extern unsigned int xor_map(unsigned int byte_address,unsigned int end, unsigned int start, unsigned int key);

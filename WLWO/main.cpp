@@ -240,16 +240,16 @@ unsigned int access_from_file(char * filename)
         bool successful=true;
         while(successful)
         {
-            if(inner_write_count[0]>10000000)
+          //  if( (inner_write_count[0]>100000000) || (region_write_count[0]>100000000) )
+           // {
+           //     break;
+           // }
+
+            if(total_write_count>RUN_LENGTH)
             {
                 break;
             }
 
-            /*if(total_write_count>RUN_LENGTH)
-            {
-                break;
-            }
-            */
             access_count++;
             address=trace_data[i];
             i=(i+1)%trace_len;
@@ -518,9 +518,29 @@ void out_footprint(ostream &outfile)
     //cout<<"avr: "<<avr<<endl;
     //cout<<"cov: "<<cov<<endl;
     outfile<<endl;
-
-
 }
+
+void print_sr_round(ostream & outfile)
+{
+    int i;
+    unsigned int sr_region=1<<REGION_BITS;
+    outfile<<"refresh round: "<<endl;
+    outfile<<"region number, round"<<endl;
+    for(i=0;i<sr_region;i++)
+    {
+        outfile<<i<<","<<inner_refresh_round[i]<<endl;
+    }
+    outfile<<endl;
+
+    outfile<<"refresh count: "<<endl;
+    outfile<<"region number, count"<<endl;
+    for(i=0;i<sr_region;i++)
+    {
+        outfile<<i<<","<<inner_refresh_count[i]<<endl;
+    }
+    outfile<<endl;
+}
+
 int main()
 {
     cout << "WLWO begins ... " << endl;
@@ -624,6 +644,7 @@ int main()
     outfile<<"=============================================================================="<<endl;
     output_result(cout);
     //out_footprint(cout);
+    print_sr_round(single_result_file);
 
     if(outfile.is_open())
     {

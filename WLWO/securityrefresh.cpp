@@ -15,6 +15,8 @@ unsigned long long inner_write_count[1<<REGION_BITS];
 unsigned int inner_crp[1<<REGION_BITS];
 unsigned int inner_kp[1<<REGION_BITS];
 unsigned int inner_kc[1<<REGION_BITS];
+unsigned int inner_refresh_round[1<<REGION_BITS];
+unsigned int inner_refresh_count[1<<REGION_BITS];
 
 unsigned int kp=0,kc=(rand()%pcm_size)<<line_bit_number,crp=0;//used for security refresh: kp--previous key, kc--current key, cp--current position
 unsigned int kp2,kc2,crp2;//used for security refresh on back device;
@@ -32,6 +34,9 @@ void init_security_refresh()//for regioned security refresh
     {
         inner_crp[i]=i<<SUB_REGION_BITS;
         inner_write_count[i]=0;
+        inner_kp[i]=0;
+        inner_kc[i]=(rand()%(1<<(SUB_REGION_BITS-COUNT_INTERVAL_BITS-line_bit_number)))<<(COUNT_INTERVAL_BITS+line_bit_number);// modeling and shifting for non-zero in XOR bits.
+        inner_refresh_round[i]=0;
     }
 }
 
@@ -332,13 +337,16 @@ bool sub_region_security_refresh()
             //refresh_round++;
             inner_crp[last_written_sub_region]=this_down_limitation;
             inner_kp[last_written_sub_region]=inner_kc[last_written_sub_region];
-            inner_kc[last_written_sub_region]=(rand()%pcm_size)<<line_bit_number;
+            inner_kc[last_written_sub_region]=(rand()%(1<<(SUB_REGION_BITS-COUNT_INTERVAL_BITS-line_bit_number)))<<(COUNT_INTERVAL_BITS+line_bit_number);// modeling and shifting for non-zero in XOR bits.
+            inner_refresh_round[last_written_sub_region]++;
             return true;
         }
         else
         {
             inner_crp[last_written_sub_region]=inner_crp[last_written_sub_region]+line_size;
         }
+        inner_refresh_count[last_written_sub_region]++;
+
         new_cycle1=check_pointer_cycle(exchange_address>>line_bit_number,exchange_address>>line_bit_number,0);
         new_cycle2=check_pointer_cycle(inner_crp[last_written_sub_region]>>line_bit_number,inner_crp[last_written_sub_region]>>line_bit_number,0);
         new_target1=old_target2;
