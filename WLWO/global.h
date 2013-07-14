@@ -1,7 +1,8 @@
 #ifndef _GLOBAL_H_
 #define _GLOBAL_H_
-
-#define PCM_CELL_ENDURANCE  (100000000)
+#include <iostream>
+using namespace std;
+#define PCM_CELL_ENDURANCE  (1000)
 #define PCM_SIZE_BITS (30)
 #define line_bit_number (6)
 #define line_size (1<<line_bit_number)
@@ -15,9 +16,9 @@
 #define INNER_RIGHT line_bit_number
 //#define POINTER_CACHE
 //#define PRINT_POINTER_DEPTH
-//#define PRINT_HOPS
+#define PRINT_HOPS
 #define WL_WRITE  //whether count extra wear-leveling writes.
-#define PRINT_FOOTPRINT
+//#define PRINT_FOOTPRINT
 #define RUN_LENGTH (4000000000LLU)//(2000000000LLU)//the system stops after writting RUN_LENGTH times.
 #define COUNT_INTERVAL_BITS (0)
 #define COUNT_INTERVAL (1<<COUNT_INTERVAL_BITS)  //(1<<11)  //the numbers of lines to be added up to a group.
@@ -47,6 +48,8 @@ extern unsigned int groups[];
 extern unsigned int access_path[];
 extern unsigned int access_depth;
 extern unsigned int deepest_point;
+extern ofstream outfile;
+
 extern unsigned int wear_leveling_map(unsigned int line_address,char* method,bool update);
 extern bool wear_leveling(char* method);
 extern bool remapping(unsigned int valid_address,unsigned int * remapped_address);
@@ -56,7 +59,7 @@ extern bool access_line(unsigned int line_address,unsigned int start_line_addres
 extern bool access_address(unsigned int memory_address,bool update,int depth);
 extern void print_pointer();
 extern bool check_cycle();
-extern void out_footprint();
+extern void out_footprint(ostream &outfile);
 extern void compute_pointer_depth();
 
 extern unsigned int lookup_target(unsigned int line_address);//update:whether to update pointer depth

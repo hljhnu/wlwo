@@ -101,3 +101,59 @@
 	"securityrefresh.h"
 	<cstring>
 
+1373619588 source:d:\programs\wlwo-no-cache\wlwo\global.cpp
+	"global.h"
+
+1373685933 d:\programs\wlwo-no-cache\wlwo\global.h
+	<iostream>
+
+1373640108 source:d:\programs\wlwo-no-cache\wlwo\main.cpp
+	<iostream>
+	<ostream>
+	<fstream>
+	<iomanip>
+	<cstdio>
+	<cstring>
+	<cmath>
+	<ctime>
+	"space.h"
+	"global.h"
+	"startgap.h"
+	"securityrefresh.h"
+
+1373614144 d:\programs\wlwo-no-cache\wlwo\space.h
+	<cstdlib>
+	"global.h"
+
+1373614144 d:\programs\wlwo-no-cache\wlwo\startgap.h
+
+1373614144 d:\programs\wlwo-no-cache\wlwo\securityrefresh.h
+	"global.h"
+	<stdlib.h>
+
+1373614143 source:d:\programs\wlwo-no-cache\wlwo\remapping.cpp
+	"global.h"
+	"space.h"
+	<iostream>
+
+1373620895 source:d:\programs\wlwo-no-cache\wlwo\securityrefresh.cpp
+	"securityrefresh.h"
+	"space.h"
+	<math.h>
+	<iostream>
+
+1373614144 source:d:\programs\wlwo-no-cache\wlwo\space.cpp
+	"space.h"
+
+1373614144 source:d:\programs\wlwo-no-cache\wlwo\startgap.cpp
+	"startgap.h"
+	"global.h"
+	<fstream>
+	<iostream>
+
+1373614144 source:d:\programs\wlwo-no-cache\wlwo\wearleveling.cpp
+	"global.h"
+	"startgap.h"
+	"securityrefresh.h"
+	<cstring>
+

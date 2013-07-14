@@ -17,10 +17,6 @@ the whole work.
 using namespace std;
 
 ofstream outfile(result_path,ofstream::out|ofstream::app);
-#ifdef DEBUG
-unsigned int a_access_count=0;
-#endif // DEBUG
-
 
 /** \brief access_line: This function is the main framwork of the whole work.
  *
@@ -46,7 +42,7 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
         line_address=random_map[line_address];
     }
     unsigned int mapped_address = wear_leveling_map(line_address,wl_method,false);
-    //unsigned int start_mapped_address = wear_leveling_map(start_line_address,wl_method,false);
+
     if(update)
     {
         //pointer_cache.invalid(mapped_address);
@@ -66,6 +62,15 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
 
             if(success)
             {
+                unsigned int new_mapped_address=wear_leveling_map(re_mapped_address,wl_method,update);
+                if(start_line_address<=pivot)//
+                {
+                    pcm.lines[new_mapped_address].point_deep=1;
+                    unsigned int start_mapped_address = wear_leveling_map(start_line_address,wl_method,false);
+                    unsigned int start_remapped_address=pcm.lines[start_mapped_address].remap_address;
+                    pcm.lines[start_mapped_address].remap_address=re_mapped_address;
+                    pcm.lines[mapped_address].remap_address=start_remapped_address;
+                }
 #ifdef POINTER_CACHE
                 //bool in_cache=false;
                 //in_cache=Reverse_pointer_cache.lookup(target_address);
@@ -175,7 +180,7 @@ unsigned int overlay()//in order to reduce runing time, we overlay write count b
         kc=rand()%0xffffffff;
     }
 }
-void print_hops()//print number of different hops of access
+void print_hops(ostream & outfile)//print number of different hops of access
 {
     unsigned int i;
     cout<<endl;
@@ -193,7 +198,7 @@ void print_hops()//print number of different hops of access
     cout<<endl;
     outfile<<endl;
 }
-void print_pointer(ostream &outfile)
+void print_pointer()
 {
     unsigned int i = 0;
     compute_pointer_depth();
@@ -245,11 +250,11 @@ unsigned int access_from_file(char * filename)
            //     break;
            // }
 
-            if(total_write_count>RUN_LENGTH)
+/*          if(total_write_count>RUN_LENGTH)
             {
                 break;
             }
-
+*/
             access_count++;
             address=trace_data[i];
             i=(i+1)%trace_len;
@@ -644,7 +649,7 @@ int main()
     outfile<<"=============================================================================="<<endl;
     output_result(cout);
     //out_footprint(cout);
-    print_sr_round(single_result_file);
+    //print_sr_round(single_result_file);
 
     if(outfile.is_open())
     {
