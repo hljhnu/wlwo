@@ -46,12 +46,12 @@
 	"securityrefresh.h"
 	<cstring>
 
-1373271973 source:d:\programs\wlwo\wlwo\global.cpp
+1374133659 source:d:\programs\wlwo\wlwo\global.cpp
 	"global.h"
 
-1373507934 d:\programs\wlwo\wlwo\global.h
+1374139041 d:\programs\wlwo\wlwo\global.h
 
-1373526546 source:d:\programs\wlwo\wlwo\main.cpp
+1374133392 source:d:\programs\wlwo\wlwo\main.cpp
 	<iostream>
 	<ostream>
 	<fstream>
@@ -80,7 +80,7 @@
 	"space.h"
 	<iostream>
 
-1373526546 source:d:\programs\wlwo\wlwo\securityrefresh.cpp
+1374132137 source:d:\programs\wlwo\wlwo\securityrefresh.cpp
 	"securityrefresh.h"
 	"space.h"
 	<math.h>
@@ -95,7 +95,7 @@
 	<fstream>
 	<iostream>
 
-1372843174 source:d:\programs\wlwo\wlwo\wearleveling.cpp
+1373897854 source:d:\programs\wlwo\wlwo\wearleveling.cpp
 	"global.h"
 	"startgap.h"
 	"securityrefresh.h"

@@ -17,9 +17,7 @@ the whole work.
 using namespace std;
 
 ofstream outfile(result_path,ofstream::out|ofstream::app);
-#ifdef DEBUG
-unsigned int a_access_count=0;
-#endif // DEBUG
+unsigned long a_write_count=0;
 
 
 /** \brief access_line: This function is the main framwork of the whole work.
@@ -66,12 +64,24 @@ bool access_line(unsigned int line_address,unsigned int start_line_address,bool 
 
             if(success)
             {
+#ifdef EXCHANGE_POINTER
+                unsigned int new_mapped_address=wear_leveling_map(re_mapped_address,wl_method,update);
+                if(start_line_address<=pivot)//
+                {
+                    pcm.lines[new_mapped_address].point_deep=1;
+                    unsigned int start_mapped_address = wear_leveling_map(start_line_address,wl_method,false);
+                    unsigned int start_remapped_address=pcm.lines[start_mapped_address].remap_address;
+                    pcm.lines[start_mapped_address].remap_address=re_mapped_address;
+                    pcm.lines[mapped_address].remap_address=start_remapped_address;
+                }
+#endif
 #ifdef POINTER_CACHE
                 //bool in_cache=false;
                 //in_cache=Reverse_pointer_cache.lookup(target_address);
                 unsigned int target_address = wear_leveling_map(re_mapped_address,wl_method,update);
                 if((false==update)&&(start_line_address<=pivot))
                 {
+                    reverse_pointer_cache.invalid(mapped_address);
                     pointer_cache.insert_entry(start_line_address,target_address);
                     reverse_pointer_cache.insert_entry(start_line_address,target_address);
                 }
@@ -244,12 +254,13 @@ unsigned int access_from_file(char * filename)
            // {
            //     break;
            // }
-
+#define LIMITED_TIME
+#ifdef LIMITED_TIME
             if(total_write_count>RUN_LENGTH)
             {
                 break;
             }
-
+#endif
             access_count++;
             address=trace_data[i];
             i=(i+1)%trace_len;
@@ -286,7 +297,11 @@ unsigned int access_from_file(char * filename)
             }
 
             total_write_count++;
-
+if(total_write_count==321799)
+{
+    int i=0;
+    i++;
+}
             if(wear_leveling(wl_method)==false)
             {
                 cout<<"The device is wear-out!"<<endl;
@@ -421,7 +436,7 @@ void output_result(ostream &outfile)
         outfile<<"yes"<<endl;
 #else
         outfile<<"no"<<endl;
-#endif // POINETR_CACHE
+#endif // POINTER_CACHE
         outfile<<"random replacement sheme for pointer cache"<<endl;
         outfile<<"method:"<<wl_method<<endl;
         outfile<<"pcm size(line):"<<pcm_size<<endl;
@@ -547,7 +562,7 @@ int main()
     char method_name[3][20]={"none","security_refresh","start_gap"};
     char trace_name[9][50]={"pin-BARNES.out","pin-CHOLESKY.out","pin-C-LU.out",
                             "pin-FFT.out","pin-FMM.out","pin-NON-C-LU.out","pin-NSQUARED.out",
-                            "pin-OCEAN.out","pin-WATER-SPATIAL.out"};
+                            "pin-OCEAN.out","pin-WATER-SPATIAL.out"};//trace-LU.out
 
         int i;
         int chosen_method;
@@ -622,12 +637,12 @@ int main()
     }
     ofstream single_result_file(single_result_name);
 
-    //output_result(outfile);
+    output_result(outfile);
 #ifdef PRINT_POINTER_DEPTH
     print_pointer();
 #endif // PRINT_POINTER_DEPTH
 #ifdef PRINT_HOPS
-    print_hops(outfile);
+    print_hops();
 #endif
 #ifdef PRINT_FOOTPRINT
     //out_footprint(outfile);
@@ -644,7 +659,7 @@ int main()
     outfile<<"=============================================================================="<<endl;
     output_result(cout);
     //out_footprint(cout);
-    print_sr_round(single_result_file);
+    //print_sr_round(single_result_file);
 
     if(outfile.is_open())
     {

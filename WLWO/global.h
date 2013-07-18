@@ -1,7 +1,7 @@
 #ifndef _GLOBAL_H_
 #define _GLOBAL_H_
 
-#define PCM_CELL_ENDURANCE  (100000000)
+#define PCM_CELL_ENDURANCE  (10)
 #define PCM_SIZE_BITS (30)
 #define line_bit_number (6)
 #define line_size (1<<line_bit_number)
@@ -13,6 +13,7 @@
 #define REGION_BITS (PCM_SIZE_BITS-SUB_REGION_BITS)//bits of the number of regions
 #define INNER_LEFT (SUB_REGION_BITS-1)
 #define INNER_RIGHT line_bit_number
+//#define EXCHANGE_POINTER
 //#define POINTER_CACHE
 //#define PRINT_POINTER_DEPTH
 //#define PRINT_HOPS

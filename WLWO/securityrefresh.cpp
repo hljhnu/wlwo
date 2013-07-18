@@ -20,7 +20,7 @@ unsigned int inner_refresh_count[1<<REGION_BITS];
 
 unsigned int kp=0,kc=(rand()%pcm_size)<<line_bit_number,crp=0;//used for security refresh: kp--previous key, kc--current key, cp--current position
 unsigned int kp2,kc2,crp2;//used for security refresh on back device;
-unsigned int refresh_requency=100;
+unsigned int refresh_requency=10;
 //unsigned int total_write_count=0;
 unsigned int refresh_requency2=100;
 //unsigned int total_write_count2=0;

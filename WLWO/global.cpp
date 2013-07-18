@@ -1,6 +1,6 @@
 #include "global.h"
 char wl_method[20]="none";//start_gap security_refresh
-unsigned int pivot=pcm_size*1;//pivot is the limitation between pcm space and back space;
+unsigned int pivot=pcm_size*0.9;//pivot is the limitation between pcm space and back space;
 unsigned long long total_write_count=0;
 unsigned int first_broken_write_count=0;
 unsigned int total_write_count2=0;//requested write access count, exclude write on refreshing
@@ -18,7 +18,7 @@ unsigned int groups[1<<(PCM_SIZE_BITS-line_bit_number)];
 unsigned int access_path[1000]; //in case that access path forms a cycle.
 unsigned int access_depth=0;//used for testing cycle in access path.
 unsigned int deepest_point=0;
-char trace[100] = "D:\\traces\\byte-trace\\";/*  D:\\programs\\WLWO\\WLWO\\  */
+char trace[100] = "D:\\traces\\byte-trace\\";/* D:\\programs\\WLWO\\WLWO\\   */  /**/
 char random[100] = "24bits_randomized_addr.dat";
 char result_path[100]="result.txt";
 bool pointer_printed[10]={false,false,false,false,false,false,false,false,false,false};
