@@ -32,7 +32,7 @@ unsigned long a_write_count=0;
  */
 bool access_line(unsigned int line_address,unsigned int start_line_address,bool is_start,bool update,int depth)//update:whether to update pointer depth
 {
-    total_access_delay+=50;
+    total_access_delay+=450;
     if((line_address==start_line_address)&&(false==is_start))
     {
         return true;
@@ -185,22 +185,18 @@ unsigned int overlay()//in order to reduce runing time, we overlay write count b
         kc=rand()%0xffffffff;
     }
 }
-void print_hops()//print number of different hops of access
+void print_hops(ostream &outfile)//print number of different hops of access
 {
     unsigned int i;
-    cout<<endl;
-    cout<<"access hops:"<<endl;
     outfile<<endl;
     outfile<<"access hops:"<<endl;
     for(i=0;i<pcm_size;i++)
     {
         if(access_hops[i]>0)
         {
-            cout<<"hops: "<<i<<" ; count: "<<access_hops[i]<<endl;
             outfile<<"hops: "<<i<<" ; count: "<<access_hops[i]<<endl;
         }
     }
-    cout<<endl;
     outfile<<endl;
 }
 void print_pointer(ostream &outfile)
@@ -254,7 +250,7 @@ unsigned int access_from_file(char * filename)
            // {
            //     break;
            // }
-#define LIMITED_TIME
+
 #ifdef LIMITED_TIME
             if(total_write_count>RUN_LENGTH)
             {
@@ -297,11 +293,7 @@ unsigned int access_from_file(char * filename)
             }
 
             total_write_count++;
-if(total_write_count==321799)
-{
-    int i=0;
-    i++;
-}
+
             if(wear_leveling(wl_method)==false)
             {
                 cout<<"The device is wear-out!"<<endl;
@@ -431,6 +423,12 @@ void output_result(ostream &outfile)
     if(outfile.good())
     {
         outfile<<get_time()<<endl;
+        outfile<<"exchange pointer: ";
+#ifdef EXCHANGE_POINTER
+        outfile<<"yes"<<endl;
+#else
+        outfile<<"no"<<endl;
+#endif // EXCHANGE_POINTER
         outfile<<"pointer cache: ";
 #ifdef POINTER_CACHE
         outfile<<"yes"<<endl;
@@ -438,18 +436,24 @@ void output_result(ostream &outfile)
         outfile<<"no"<<endl;
 #endif // POINTER_CACHE
         outfile<<"random replacement sheme for pointer cache"<<endl;
-        outfile<<"method:"<<wl_method<<endl;
-        outfile<<"pcm size(line):"<<pcm_size<<endl;
+        outfile<<"method: "<<wl_method<<endl;
+        outfile<<"pcm size(line): "<<pcm_size<<endl;
+        outfile<<"addresses narrowed: ";
 #ifdef ADDRESS_NARROWED
-        outfile<<"addresses have been narrowed."<<endl;
+        outfile<<"yes"<<endl;
+#else
+        outfile<<"no"<<endl;
 #endif // ADDRESS_NARROWED
+        outfile<<"include extra wear-leveling write:";
 #ifdef WL_WRITE
-        outfile<<"include extra wear-leveling write"<<endl;
+        outfile<<"yes"<<endl;
+#else
+        outfile<<"no"<<endl;
 #endif // WL_WRITE
         if(strcmp(wl_method,"security_refresh")==0)
         {
-            outfile<<"refresh interval:"<<refresh_requency<<endl;
-            outfile<<"last crp:"<<(crp>>line_bit_number)<<endl;
+            outfile<<"refresh interval: "<<refresh_requency<<endl;
+            outfile<<"last crp: "<<(crp>>line_bit_number)<<endl;
             outfile<<"refresh count: "<<refresh_count<<endl;
             outfile<<"refresh round: "<<refresh_round<<endl;
         }
@@ -468,14 +472,15 @@ void output_result(ostream &outfile)
         //outfile<<"total access delay: "<<total_access_delay<<" ns"<<endl;
         outfile<<"average access delay: "<<(total_access_delay/total_write_count)<<" ns"<<endl;
         outfile<<"normal space : backup space = "<<pivot<<" : "<< (pcm_size-pivot)<<endl;
-        outfile<<"backup space percent:"<<setprecision(2)<<(float)(pcm_size-pivot)/(float)pcm_size<<endl;
+        outfile<<"backup space percent: "<<setprecision(2)<<(float)(pcm_size-pivot)/(float)pcm_size<<endl;
         outfile<<"wear-out percent: "<<fixed<<setprecision(4)<<((float)wear_out_count/(float)pcm_size)<<endl;
         unsigned int i;
+        outfile<<"pointer depth, count: "<<endl;
         for(i=0;i<=deepest_point;i++)
         {
             if(pointer_deepth[i]>0)
             {
-                outfile<<"pointer depth = "<<i<<"  ; count = "<<pointer_deepth[i]<<endl;
+                outfile<<i<<", "<<pointer_deepth[i]<<endl;
             }
         }
         outfile<<endl;
@@ -494,7 +499,7 @@ void out_footprint(ostream &outfile)
     unsigned int i,j;
     outfile<<"count interval: "<<COUNT_INTERVAL<<endl;
     //cout<<"count interval: "<<COUNT_INTERVAL<<endl;
-    outfile<<"footprint"<<endl;
+    outfile<<"footprint, count, acumulated count: "<<endl;
     //cout<<"footprint"<<endl;
     unsigned long sum=0;
     unsigned long count_larger_zero=0;
@@ -508,12 +513,12 @@ void out_footprint(ostream &outfile)
         }
         if(temp_count>0)
         {
-            outfile<<i<<","<<temp_count<<endl;
-            //cout<<i<<" "<<temp_count<<endl;
+            sum=sum+temp_count;
+            outfile<<i<<", "<<temp_count<<", "<<sum<<endl;
             groups[count_larger_zero]=temp_count;
             count_larger_zero++;
         }
-        sum=sum+temp_count;
+
     }
     double avr=(double)sum/(double)count_larger_zero;
     double var=0.0;
@@ -528,16 +533,13 @@ void out_footprint(ostream &outfile)
     outfile<<"stdev: "<<stdev<<endl;
     outfile<<"avr: "<<avr<<endl;
     outfile<<"cov: "<<cov<<endl;
-    //cout<<"var: "<<var<<endl;
-    //cout<<"stdev: "<<stdev<<endl;
-    //cout<<"avr: "<<avr<<endl;
-    //cout<<"cov: "<<cov<<endl;
+
     outfile<<endl;
 }
 
-void print_sr_round(ostream & outfile)
+void print_sr_round(ostream & outfile)// print refresh count for every subregion in SR
 {
-    int i;
+    unsigned int i;
     unsigned int sr_region=1<<REGION_BITS;
     outfile<<"refresh round: "<<endl;
     outfile<<"region number, round"<<endl;
@@ -559,63 +561,43 @@ void print_sr_round(ostream & outfile)
 int main()
 {
     cout << "WLWO begins ... " << endl;
+
     char method_name[3][20]={"none","security_refresh","start_gap"};
     char trace_name[9][50]={"pin-BARNES.out","pin-CHOLESKY.out","pin-C-LU.out",
                             "pin-FFT.out","pin-FMM.out","pin-NON-C-LU.out","pin-NSQUARED.out",
                             "pin-OCEAN.out","pin-WATER-SPATIAL.out"};//trace-LU.out
-
-        int i;
-        int chosen_method;
-        do{
+    int i;
+    int chosen_method;
+    do{
         cout<<"choose method"<<endl;
         for(i=0;i<3;i++)
         {
             cout<<i<<":"<<method_name[i]<<endl;
         }
         cin>>chosen_method;
-        }while((chosen_method>2)||(chosen_method<0));
-        strcpy(wl_method,method_name[chosen_method]);
+    }while((chosen_method>2)||(chosen_method<0));
+    strcpy(wl_method,method_name[chosen_method]);
 
-        int chosen_trace=0;
-        do{
-        cout<<"choose traces"<<endl;
+    int chosen_trace=0;
+    do{
+        cout<<"choose trace"<<endl;
         for(i=0;i<9;i++)
         {
             cout<<i<<":"<<trace_name[i]<<endl;
         }
         cin>>chosen_trace;
-        }while((chosen_trace>8)||(chosen_trace<0));
-        strcat(trace,trace_name[chosen_trace]);
+    }while((chosen_trace>8)||(chosen_trace<0));
+    strcat(trace,trace_name[chosen_trace]);
 
-        if((strcmp(wl_method,"security_refresh")!=0)&&(strcmp(wl_method,"start_gap")!=0)&&(strcmp(wl_method,"none")!=0))
-        {
-            cout<<"non-existing wear-leveling method: "<<wl_method<<endl;
-            return 0;
-        }
-        if(outfile.is_open()==false)
-        {
-            cout<<"Error: opening result file: "<<result_path<<endl;
-            return 0;
-        }
-        if(strcmp(wl_method,"start_gap")==0)//random address for start_gap
-        {
-            if(false==init_region_start_gap())
-            {
-                return 0;
-            }
-        }
-        else if(strcmp(wl_method,"security_refresh")==0)
-        {
-            init_security_refresh();
-        }
-
-        access_from_file(trace);
-        //birthday_attack(700000000);
-        //repeatation_attack();
-        //output_result(outfile);
+    if((strcmp(wl_method,"security_refresh")!=0)&&(strcmp(wl_method,"start_gap")!=0)&&(strcmp(wl_method,"none")!=0))
+    {
+        cout<<"non-existing wear-leveling method: "<<wl_method<<endl;
+        return 0;
+    }
 
     char single_result_name[200];
     memset(single_result_name,'\0',200);
+    strcpy(single_result_name,"results\\");
     strcpy(single_result_name,trace_name[chosen_trace]);
     strcat(single_result_name,"-");
     strcat(single_result_name,method_name[chosen_method]);
@@ -623,43 +605,74 @@ int main()
     strcat(single_result_name,get_time());
     strcat(single_result_name,"-");
     strcat(single_result_name,".csv");
-    char no_letters[10]={':','\0','\n','\\',' '};
+    char no_letters[10]={':','\n'};
     for(i=0;single_result_name[i]!='\0';i++)
     {
         int j;
-        for(j=0;j<5;j++)
+        for(j=0;j<2;j++)
         {
             if(single_result_name[i]==no_letters[j])
             {
-                single_result_name[i]='-';
+                single_result_name[i]='_';
             }
         }
     }
     ofstream single_result_file(single_result_name);
+    if(!single_result_file.is_open())
+    {
+        cout<<"cannot open:"<<single_result_name<<endl;
+        return 0;
+    }
+
+
+    if(outfile.is_open()==false)
+    {
+        cout<<"Error: opening result file: "<<result_path<<endl;
+        return 0;
+    }
+    if(strcmp(wl_method,"start_gap")==0)//random address for start_gap
+    {
+        if(false==init_region_start_gap())
+        {
+            return 0;
+        }
+    }
+    else if(strcmp(wl_method,"security_refresh")==0)
+    {
+        init_security_refresh();
+    }
+
+    access_from_file(trace);
+    //birthday_attack(700000000);
+    //repeatation_attack();
+    //output_result(outfile);
 
     output_result(outfile);
+    output_result(single_result_file);
+
 #ifdef PRINT_POINTER_DEPTH
-    print_pointer();
+    print_pointer(outfile);
+    print_pointer(single_result_file);
 #endif // PRINT_POINTER_DEPTH
+
 #ifdef PRINT_HOPS
-    print_hops();
+    print_hops(outfile);
+    print_hops(single_result_file);
 #endif
+
 #ifdef PRINT_FOOTPRINT
-    //out_footprint(outfile);
-    if(single_result_file.is_open())
-    {
-        output_result(single_result_file);
-        out_footprint(single_result_file);
-    }
-    else
-    {
-        cout<<"file for single result is not open"<<endl;
-    }
+    out_footprint(outfile);
+    out_footprint(single_result_file);
 #endif
+
+#ifdef PRINT_SR_ROUND
+    print_sr_round(outfile);
+    print_sr_round(single_result_file);
+#endif // PRINT_SR_ROUND
+    outfile<<get_time()<<endl;
     outfile<<"=============================================================================="<<endl;
     output_result(cout);
     //out_footprint(cout);
-    //print_sr_round(single_result_file);
 
     if(outfile.is_open())
     {

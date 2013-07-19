@@ -20,7 +20,7 @@ unsigned int wear_leveling_map(unsigned int line_address,char* method,bool updat
     unsigned int mapped_address=line_address;
     if(strcmp(method,"security_refresh")==0)
     {
-        mapped_address=security_refresh_map(line_address,update);
+        mapped_address=sub_region_security_refresh_map(line_address,update);
     }
     else if(strcmp(method,"start_gap")==0)
     {
@@ -33,7 +33,7 @@ bool wear_leveling(char* method)
 {
     if(strcmp(method,"security_refresh")==0)
     {
-        return security_refresh();
+        return sub_region_security_refresh();
     }
     else if(strcmp(method,"start_gap")==0)
     {

@@ -20,7 +20,7 @@ unsigned int access_depth=0;//used for testing cycle in access path.
 unsigned int deepest_point=0;
 char trace[100] = "D:\\traces\\byte-trace\\";/* D:\\programs\\WLWO\\WLWO\\   */  /**/
 char random[100] = "24bits_randomized_addr.dat";
-char result_path[100]="result.txt";
+char result_path[100]="results\\result.txt";
 bool pointer_printed[10]={false,false,false,false,false,false,false,false,false,false};
 
 bool check_cycle(unsigned int start_address)

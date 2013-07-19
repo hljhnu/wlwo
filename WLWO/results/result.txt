@@ -1,0 +1,134 @@
+trace file: D:\traces\byte-trace\pin-BARNES.out
+Fri Jul 19 11:19:37 2013
+
+pointer cache: no
+random replacement sheme for pointer cache
+method:security_refresh
+pcm size(line):16777216
+addresses have been narrowed.
+include extra wear-leveling write
+refresh interval:10
+last crp:0
+refresh count: 199999998
+refresh round: 0
+cell lifetime: 100000000
+max depth: 0
+access count: 2000000001
+total write count: 2000000001
+total write count(without remapping): 0
+percent(without/with remapping): 0.0000
+wear-out count: 0
+exceeded write count: 0
+average access delay: 459 ns
+normal space : backup space = 15099494 : 1677722
+backup space percent:0.10
+wear-out percent: 0.0000
+
+==============================================================================
+trace file: D:\traces\byte-trace\pin-BARNES.out
+Fri Jul 19 12:42:17 2013
+
+pointer cache: no
+random replacement sheme for pointer cache
+method:security_refresh
+pcm size(line): 16777216
+addresses narrowed: yes
+include extra wear-leveling write:yes
+refresh interval: 10
+last crp: 0
+refresh count: 399999997
+refresh round: 0
+cell lifetime: 100000000
+max depth: 0
+access count: 4000000001
+total write count: 4000000001
+total write count(without remapping): 2801413973
+percent(without/with remapping): 0.7004
+wear-out count: 11
+exceeded write count: 0
+average access delay: 493 ns
+normal space : backup space = 15099494 : 1677722
+backup space percent: 0.10
+wear-out percent: 0.0000
+
+count interval: 16384
+footprint
+65536,874049
+114688,313803
+131072,800865
+180224,647134
+1966080,1382
+1982464,2764
+2031616,1382
+2097152,34123679
+2113536,20978688
+2129920,39314061
+2146304,18357007
+2162688,18352570
+2179072,23591063
+2195456,18352264
+2211840,23590607
+2228224,18350517
+2244608,28835304
+2260992,31456278
+2277376,19119882
+2293760,28831531
+2310144,18353440
+2326528,26210641
+2342912,18354553
+2359296,33611282
+2375680,33771818
+2392064,37161074
+2408448,38153923
+2424832,27157482
+2441216,29245734
+2457600,24488074
+2473984,26376843
+2490368,30195757
+2506752,31075560
+2523136,29423698
+2539520,27264060
+2555904,24284174
+2572288,25212582
+2588672,28403267
+2605056,28353827
+4718592,179240928
+4734976,169573678
+4751360,191037390
+4767744,193167085
+4784128,188580610
+4800512,210862093
+4816896,151388415
+4833280,176563130
+4849664,167444373
+4866048,197099795
+4882432,133202065
+4898816,171048903
+4915200,219053932
+4931584,171115227
+4947968,143196211
+4964352,180879780
+14942208,21463070
+14958592,21626810
+14974976,12288020
+14991360,25395220
+15007744,18350120
+15024128,17694710
+15040512,22955587
+15056896,21463050
+15073280,12615660
+15089664,20250650
+15106048,19660810
+15122432,21299210
+15138816,23429110
+15155200,10649540
+15171584,19824700
+15187968,4587500
+var: 4478707567374158.5000
+stdev: 66923146.7235
+avr: 56338028.1831
+cov: 1.1879
+
+Fri Jul 19 12:42:17 2013
+
+==============================================================================
